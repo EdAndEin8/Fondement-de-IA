@@ -1,0 +1,29 @@
+[project]
+name = "fondement-de-ia"
+version = "0.1.0"
+description = "TP Intelligence artificielle : Fondements — la course à la balise (recherche, raisonnement, décision adversariale)"
+readme = "README.md"
+authors = [
+    { name = "Anton Dion" },
+    { name = "Matthieu Meunier" },
+    { name = "Sean Persand" },
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+course-balise = "course_balise.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["uv_build>=0.9,<0.12"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.uv.build-backend]
+module-name = "course_balise"
