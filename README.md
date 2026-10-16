@@ -33,11 +33,11 @@ uv run pytest    # lance les tests
 ## Utilisation
 
 ```bash
-uv run course-balise cartes                                   # lister les cartes
-uv run course-balise afficher exemple_7x7                     # afficher une carte
-uv run course-balise chemin porte_raccourci --algo astar --heuristique cles
-uv run course-balise jouer salle_fermee --bleu astar --rouge astar --animation
-uv run course-balise jouer exemple_7x7 --bleu astar --rouge aleatoire --graine 3
+uv run fondement-de-ia cartes                                   # lister les cartes
+uv run fondement-de-ia afficher exemple_7x7                     # afficher une carte
+uv run fondement-de-ia chemin porte_raccourci --algo astar --heuristique cles
+uv run fondement-de-ia jouer salle_fermee --bleu astar --rouge astar --animation
+uv run fondement-de-ia jouer exemple_7x7 --bleu astar --rouge aleatoire --graine 3
 
 uv run python experiences/comparaison_recherche.py            # Partie I -> resultats/
 uv run python experiences/plan_fige.py salle_fermee

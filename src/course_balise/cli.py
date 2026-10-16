@@ -1,10 +1,10 @@
 """Interface en ligne de commande.
 
 Exemples :
-    uv run course-balise cartes
-    uv run course-balise afficher exemple_7x7
-    uv run course-balise chemin porte_raccourci --algo astar --heuristique cles
-    uv run course-balise jouer exemple_7x7 --bleu astar --rouge aleatoire --animation
+    uv run fondement-de-ia cartes
+    uv run fondement-de-ia afficher exemple_7x7
+    uv run fondement-de-ia chemin porte_raccourci --algo astar --heuristique cles
+    uv run fondement-de-ia jouer exemple_7x7 --bleu astar --rouge aleatoire --animation
 """
 
 from __future__ import annotations
@@ -32,7 +32,7 @@ def creer_agent(nom: str):
 
 
 def main(argv: list[str] | None = None) -> None:
-    parser = argparse.ArgumentParser(prog="course-balise", description=__doc__,
+    parser = argparse.ArgumentParser(prog="fondement-de-ia", description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = parser.add_subparsers(dest="commande", required=True)
 

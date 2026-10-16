@@ -12,7 +12,7 @@ requires-python = ">=3.14"
 dependencies = []
 
 [project.scripts]
-course-balise = "course_balise.cli:main"
+fondement-de-ia = "course_balise.cli:main"
 
 [dependency-groups]
 dev = ["pytest>=8"]
