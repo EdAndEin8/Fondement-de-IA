@@ -11,13 +11,15 @@ from __future__ import annotations
 import argparse
 
 from .affichage import afficher, legende_symboles
-from .agents import AgentAleatoire
+from .agents import AgentAleatoire, AgentAStar
 from .carte import charger_carte, lister_cartes
 from .etat import BLEU, ROUGE
 from .jeu import jouer
 
 AGENTS = {
     "aleatoire": AgentAleatoire,
+    "astar": AgentAStar,
+    "astar-manhattan": lambda: AgentAStar("manhattan"),
 }
 
 
