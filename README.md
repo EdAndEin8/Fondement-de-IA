@@ -1,4 +1,4 @@
-# La course à la balise
+# Fondement-de-IA
 
 Projet de TP — *Intelligence artificielle : Fondements* (4e année du cycle FISA ICy, INSA Hauts-de-France, 2026–2027, A. Daoud).
 
