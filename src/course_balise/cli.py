@@ -3,7 +3,8 @@
 Exemples :
     uv run course-balise cartes
     uv run course-balise afficher exemple_7x7
-    uv run course-balise jouer exemple_7x7 --bleu aleatoire --rouge aleatoire --animation
+    uv run course-balise chemin porte_raccourci --algo astar --heuristique cles
+    uv run course-balise jouer exemple_7x7 --bleu astar --rouge aleatoire --animation
 """
 
 from __future__ import annotations
@@ -40,6 +41,13 @@ def main(argv: list[str] | None = None) -> None:
     p_aff = sub.add_parser("afficher", help="afficher une carte")
     p_aff.add_argument("carte")
 
+    p_ch = sub.add_parser("chemin", help="chercher un chemin vers la balise (Partie I)")
+    p_ch.add_argument("carte")
+    p_ch.add_argument("--algo", choices=["bfs", "ucs", "dfs", "astar"], default="astar")
+    p_ch.add_argument("--heuristique", choices=["nulle", "manhattan", "relaxee", "cles"],
+                      default="manhattan")
+    p_ch.add_argument("--robot", choices=["B", "R"], default="B")
+
     p_jeu = sub.add_parser("jouer", help="simuler une partie")
     p_jeu.add_argument("carte")
     p_jeu.add_argument("--bleu", default="aleatoire")
@@ -58,6 +66,23 @@ def main(argv: list[str] | None = None) -> None:
         from .etat import etat_initial
         print(afficher(etat_initial(carte), carte, entete=False))
         print(legende_symboles())
+    elif args.commande == "chemin":
+        from .etat import etat_initial
+        from .recherche import HEURISTIQUES, ProblemeChemin, astar, bfs, dfs, ucs
+        carte = charger_carte(args.carte)
+        etat = etat_initial(carte)
+        pb = ProblemeChemin.depuis_etat(carte, etat, args.robot)
+        if args.algo == "astar":
+            r = astar(pb, HEURISTIQUES[args.heuristique](carte), f"A* {args.heuristique}")
+        else:
+            r = {"bfs": bfs, "ucs": ucs, "dfs": dfs}[args.algo](pb)
+        print(afficher(etat, carte, entete=False, chemin=r.positions()[1:-1]))
+        if r.trouve:
+            print(f"{r.algorithme} : {r.longueur} coups : {' '.join(r.actions)}")
+        else:
+            print(f"{r.algorithme} : aucun chemin")
+        print(f"nœuds développés : {r.noeuds_developpes}, générés : {r.noeuds_generes}, "
+              f"temps : {r.temps * 1000:.3f} ms")
     elif args.commande == "jouer":
         carte = charger_carte(args.carte)
         r = jouer(

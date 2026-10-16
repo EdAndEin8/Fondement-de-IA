@@ -1,0 +1,28 @@
+=== Plans figés sur salle_fermee ===
+Plan initial de Bleu (21 coups) : E E E E O O O O S S S S S S E E E E N N N
+Plan initial de Rouge (21 coups) : O O O O E E E E S S S S S S O O O O N N N
+
+Tour  0 | trait : Bleu  | clé Bleu : 0 | clé Rouge : 0 | passes : 0
+   0 1 2 3 4 5 6 7 8
+ 0 B . . . K . . . R
+ 1 . # # # # # # # .
+ 2 . # . . . . . # .
+ 3 . # . . G . . # .
+ 4 . # . . . . . # .
+ 5 . # # # D # # # .
+ 6 . . . . . . . . .
+
+t=7 : l'action prévue par Rouge (O) est illégale (légales : ['E']). Le plan figé est caduc.
+Tour  7 | trait : Rouge | clé Bleu : 1 | clé Rouge : 0 | passes : 0
+   0 1 2 3 4 5 6 7 8
+ 0 . . . . B R . . .
+ 1 . # # # # # # # .
+ 2 . # . . . . . # .
+ 3 . # . . G . . # .
+ 4 . # . . . . . # .
+ 5 . # # # D # # # .
+ 6 . . . . . . . . .
+=> Rouge doit improviser (ici : E) : sans replanification, son plan ne mène plus nulle part.
+
+=== Agents A* qui replanifient à chaque tour ===
+victoire B en 41 tours
