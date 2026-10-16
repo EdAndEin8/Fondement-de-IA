@@ -38,3 +38,19 @@ def test_rouge_peut_commencer():
     carte = charger_carte("couloir_5x5")
     r = jouer(AgentAleatoire(), AgentAleatoire(), carte, graine=1, premier=ROUGE)
     assert r.coups[0].joueur == ROUGE
+
+
+def test_agent_astar_bat_l_aleatoire():
+    from course_balise.agents import AgentAStar
+    # Sur couloir_5x5 Rouge est plus proche : un Rouge aléatoire peut y gagner.
+    for nom in ["exemple_7x7", "porte_raccourci", "salle_fermee", "labyrinthe_11x11"]:
+        carte = charger_carte(nom)
+        for g in range(5):
+            assert jouer(AgentAStar(), AgentAleatoire(), carte, graine=g).gagnant == "B"
+
+
+def test_agent_astar_contre_lui_meme_couloir():
+    from course_balise.agents import AgentAStar
+    # Bleu à 6 coups, Rouge à 4 : Rouge gagne malgré le trait.
+    r = jouer(AgentAStar(), AgentAStar(), charger_carte("couloir_5x5"))
+    assert r.gagnant == "R" and r.tours == 8
