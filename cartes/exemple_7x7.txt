@@ -1,0 +1,8 @@
+% Plateau de la figure 1 de l'énoncé
+B..#...
+.#...#.
+..K#...
+#..G.#.
+..#D#..
+.#...#.
+.....KR

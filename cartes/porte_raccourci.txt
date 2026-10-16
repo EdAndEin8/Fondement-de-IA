@@ -1,0 +1,8 @@
+% La porte du haut est un raccourci pour Bleu (7 coups au lieu de 13)
+B.K......
+.###D###.
+.#.....#.
+.#..G..#.
+.#.....#.
+.###.###.
+........R

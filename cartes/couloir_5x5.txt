@@ -1,0 +1,6 @@
+% Petite carte sans clé ni porte (tests unitaires)
+B...#
+.##.#
+.#G..
+.#.#.
+....R

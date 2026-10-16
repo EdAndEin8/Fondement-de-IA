@@ -1,0 +1,8 @@
+% La balise n'est accessible que par la porte : une seule clé pour deux robots
+B...K...R
+.#######.
+.#.....#.
+.#..G..#.
+.#.....#.
+.###D###.
+.........
