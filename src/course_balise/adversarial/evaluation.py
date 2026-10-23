@@ -13,18 +13,31 @@ Rouge minimise), comme l'utilité U(s) de l'énoncé.
 - kB, kR : possession d'une clé (0 ou 1).
 - mB, mR : mobilité, nombre de déplacements légaux (0 à 4).
 
-Choix des poids :
-- w1 = 10 : la distance relative est le facteur principal ; un pas d'avance
-  vaut 10 points.
-- w2 = 4 : la clé est déjà prise en compte dans la distance (un robot sans
-  clé doit faire le détour) ; ce terme ne sert qu'à départager, et reste
-  inférieur à la valeur d'un pas.
-- w3 = 1 : la mobilité départage les positions équivalentes et pénalise
-  les culs-de-sac, sans jamais compenser un pas de retard.
+Normalisation et poids (voir docs/seance2.md). Les trois termes sont
+exprimés en « pas » puis multipliés par la valeur d'un pas :
 
-Normalisation : dR - dB est borné à [-DMAX, DMAX] avec DMAX = 40, donc
-|E| <= 10 * 40 + 4 + 4 = 408 < 1000 - Tmax : une victoire ou une défaite
-certaine prime toujours sur l'heuristique.
+    pas = 400 / Dcap,   Dcap = 2 * (plus grande distance à G sur la carte) + 1
+
+    E(s) = pas * [ (dR - dB) + 0.4 (kB - kR) + 0.1 (mB - mR) ]
+
+- Dcap majore toute distance finie (même avec le détour par une clé) et
+  sert de distance pour un robot qui ne peut plus atteindre G : l'écart de
+  distance reste dans [-Dcap, Dcap] et le terme principal dans [-400, 400].
+- w1 = pas : la distance relative est le facteur principal.
+- w2 = 0.4 pas : la clé est déjà prise en compte dans la distance (un robot
+  sans clé doit faire le détour) ; ce terme ne fait que départager et vaut
+  moins qu'un pas.
+- w3 = 0.1 pas : la mobilité (0 à 4) départage les positions équivalentes
+  et pénalise les culs-de-sac, sans jamais compenser un pas de retard.
+
+Normaliser par la taille de la carte plutôt qu'écrêter l'écart est
+important : avec un écart écrêté, dès que l'adversaire ne peut plus gagner
+(il n'a plus de clé à prendre), l'écart reste au plafond quelle que soit la
+position de l'agent, qui n'a plus aucune raison d'avancer et laisse filer
+la partie jusqu'au nul (cas observé sur salle_fermee).
+
+Borne : |E| <= 400 + 0.8 pas < 1000 - Tmax, donc une
+victoire ou une défaite certaine prime toujours sur l'heuristique.
 """
 
 from __future__ import annotations
@@ -37,8 +50,9 @@ from ..etat import BLEU, ROUGE, Etat
 from ..recherche.heuristiques import distances_bfs
 from ..regles import deplacement
 
-DMAX = 40
-BORNE_EVALUATION = 10 * DMAX + 4 + 4  # borne de |E|, < 1000 - Tmax
+AMPLITUDE_DISTANCE = 400
+# Pas maximal : 400 / 3 (Dcap >= 3). Borne de |E| tous termes compris.
+BORNE_EVALUATION = AMPLITUDE_DISTANCE + 0.8 * AMPLITUDE_DISTANCE / 3
 
 
 class Distances:
@@ -58,8 +72,9 @@ class Distances:
 
     def __init__(self, carte: Carte):
         self.carte = carte
-        self.infini = carte.largeur * carte.hauteur
         self.d_relaxee = distances_bfs(carte, carte.balise)
+        #: Majorant des distances finies, utilisé aussi pour « inaccessible ».
+        self.infini = 2 * max(self.d_relaxee.values()) + 1
         self._fermees: dict[frozenset[Pos], dict[Pos, int]] = {}
         self._depuis_cle: dict[tuple[Pos, frozenset[Pos]], dict[Pos, int]] = {}
 
@@ -107,9 +122,10 @@ def mobilite(carte: Carte, etat: Etat, joueur: str) -> int:
 
 @dataclass(frozen=True)
 class Poids:
-    distance: float = 10
-    cle: float = 4
-    mobilite: float = 1
+    """Poids relatifs, exprimés en « pas »."""
+    distance: float = 1.0
+    cle: float = 0.4
+    mobilite: float = 0.1
 
 
 POIDS_BASE = Poids()
@@ -122,19 +138,20 @@ class Evaluation:
         self.carte = carte
         self.poids = poids
         self.distances = Distances(carte)
+        self.pas = AMPLITUDE_DISTANCE / self.distances.infini
 
     def termes(self, etat: Etat) -> dict[str, float]:
         """Détail des termes (utile pour comprendre une décision)."""
         d_b = self.distances.du_joueur(etat, BLEU)
         d_r = self.distances.du_joueur(etat, ROUGE)
-        ecart = max(-DMAX, min(DMAX, d_r - d_b))
+        pas = self.pas
         termes = {
             "dB": d_b,
             "dR": d_r,
-            "distance": self.poids.distance * ecart,
-            "cle": self.poids.cle * (etat.kb - etat.kr),
-            "mobilite": self.poids.mobilite * (mobilite(self.carte, etat, BLEU)
-                                               - mobilite(self.carte, etat, ROUGE)),
+            "distance": pas * self.poids.distance * (d_r - d_b),
+            "cle": pas * self.poids.cle * (etat.kb - etat.kr),
+            "mobilite": pas * self.poids.mobilite * (mobilite(self.carte, etat, BLEU)
+                                                     - mobilite(self.carte, etat, ROUGE)),
         }
         return termes
 

@@ -56,3 +56,15 @@ def test_evaluation_bornee_sous_les_utilites(nom):
     ev = Evaluation(carte)
     for s in etats_de_test(nom, 20):
         assert abs(ev(s)) <= BORNE_EVALUATION < 1000 - 80
+
+
+def test_avancer_reste_utile_quand_l_adversaire_est_bloque():
+    """Rouge ne peut plus gagner (plus de clé) : avancer doit encore payer.
+
+    Avec un écart de distance écrêté, toutes ces positions avaient la même
+    valeur et Bleu ne cherchait plus à atteindre la balise."""
+    jeu = Jeu(charger_carte("salle_fermee"))
+    ev = Evaluation(jeu.carte)
+    s = jeu.etat_initial().avec(pr=(0, 0), kb=1, cles_sol=frozenset())
+    loin, pres = s.avec(pb=(8, 0)), s.avec(pb=(4, 6))
+    assert ev(pres) > ev(loin)
