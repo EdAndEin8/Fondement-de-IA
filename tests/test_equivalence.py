@@ -26,7 +26,7 @@ def test_alphabeta_meme_valeur_que_minimax(nom, ordre):
             assert mm.valeurs_racine[ab.action] == mm.valeur
 
 
-@pytest.mark.parametrize("nom", ["exemple_7x7", "labyrinthe_11x11"])
+@pytest.mark.parametrize("nom", ["exemple_7x7", "arene_9x9"])
 def test_meme_valeur_a_profondeur_6(nom):
     jeu = Jeu(charger_carte(nom))
     ev = Evaluation(jeu.carte)

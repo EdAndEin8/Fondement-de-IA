@@ -1,7 +1,9 @@
 """Tests de Min-Max et Alpha-Bêta (Partie III)."""
 
 from course_balise.adversarial.minimax import alphabeta, minimax
+from course_balise.adversarial.ordre import ORDRES
 from course_balise.carte import Carte, charger_carte
+from course_balise.etat import BLEU
 from course_balise.recherche.heuristiques import distances_bfs
 from course_balise.regles import Jeu
 
@@ -70,3 +72,20 @@ def test_statistiques():
     d = minimax(jeu, jeu.etat_initial(), 2, evaluation_simple(jeu))
     assert d.stats.noeuds == 1 + 2 + d.stats.feuilles  # racine, 2 fils de Bleu, feuilles
     assert d.profondeur == 2 and d.stats.temps > 0
+
+
+def test_bon_ordre_reduit_les_noeuds():
+    from course_balise.adversarial.evaluation import Evaluation
+    jeu = Jeu(charger_carte("arene_9x9"))
+    ev = Evaluation(jeu.carte)
+    s = jeu.etat_initial()
+    n = {o: alphabeta(jeu, s, 6, ev, ordre=o).stats.noeuds for o in ORDRES}
+    assert n["evaluation"] < n["naturel"] < n["pire"]
+
+
+def test_ordre_aleatoire_reproductible():
+    jeu = Jeu(charger_carte("arene_9x9"))
+    s = jeu.etat_initial()
+    o = ORDRES["aleatoire"]
+    assert o(jeu, s, ["N", "S", "O", "E"], None) == o(jeu, s, ["N", "S", "O", "E"], None)
+    assert s.joueur == BLEU
