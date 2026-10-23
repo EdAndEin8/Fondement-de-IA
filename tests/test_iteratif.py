@@ -1,9 +1,11 @@
-"""Tests de l'approfondissement itératif."""
+"""Tests de l'approfondissement itératif et des agents adversariaux."""
 
 from course_balise.adversarial.evaluation import Evaluation
 from course_balise.adversarial.iteratif import approfondissement_iteratif
 from course_balise.adversarial.minimax import TempsEcoule, alphabeta
+from course_balise.agents import AgentAlphaBeta, AgentAlphaBetaIteratif, AgentMinMax
 from course_balise.carte import Carte, charger_carte
+from course_balise.jeu import jouer
 from course_balise.regles import Jeu
 
 
@@ -44,3 +46,20 @@ def test_echeance_depassee_leve_une_exception():
         pass
     else:
         raise AssertionError("TempsEcoule attendue")
+
+
+def test_agents_adversariaux_jouent_des_parties_completes():
+    carte = charger_carte("exemple_7x7")
+    for bleu, rouge in [(AgentMinMax(3), AgentAlphaBeta(4)),
+                        (AgentAlphaBeta(4), AgentAlphaBetaIteratif(0.01))]:
+        r = jouer(bleu, rouge, carte)
+        assert r.raison != "en cours"
+        assert all(c.noeuds > 0 for c in r.coups)
+
+
+def test_minmax_et_alphabeta_jouent_la_meme_partie_sans_ex_aequo():
+    """Mêmes valeurs à chaque coup : les parties ont la même issue."""
+    carte = charger_carte("labyrinthe_11x11")
+    r1 = jouer(AgentMinMax(4), AgentMinMax(4), carte)
+    r2 = jouer(AgentAlphaBeta(4, ordre="naturel"), AgentAlphaBeta(4, ordre="naturel"), carte)
+    assert (r1.gagnant, r1.tours) == (r2.gagnant, r2.tours)
