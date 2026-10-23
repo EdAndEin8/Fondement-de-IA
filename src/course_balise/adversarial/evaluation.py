@@ -36,8 +36,24 @@ important : avec un écart écrêté, dès que l'adversaire ne peut plus gagner
 position de l'agent, qui n'a plus aucune raison d'avancer et laisse filer
 la partie jusqu'au nul (cas observé sur salle_fermee).
 
-Borne : |E| <= 400 + 0.8 pas < 1000 - Tmax, donc une
+Borne : |E| <= 400 + 50 + 0.8 pas < 1000 - Tmax, donc une
 victoire ou une défaite certaine prime toujours sur l'heuristique.
+
+Évaluation améliorée E+ (``course=True``). Elle estime l'issue de la
+« course » si les deux robots filaient vers G sans se gêner. Avec le trait,
+Bleu fait son dB-ième pas au demi-coup 2 dB - 1 et Rouge au demi-coup 2 dR,
+donc :
+    Bleu arrive le premier  <=>  dB <= dR  si Bleu a le trait,
+                                 dB <  dR  si Rouge a le trait.
+Le terme de distance est alors remplacé par
+
+    E+ = ± (400 + 50 - pas * d_gagnant)   (+ termes clé et mobilité)
+
+La valeur ne dépend plus que de la distance du robot qui gagne la course :
+avancer l'améliore toujours. Avec E, ouvrir une porte peut faire chuter
+l'évaluation (la porte ouverte rapproche aussi l'adversaire, qui n'a plus
+besoin de clé), et à faible profondeur l'agent refuse d'ouvrir alors que
+la victoire est à 3 coups : effet d'horizon observé sur salle_fermee.
 """
 
 from __future__ import annotations
@@ -51,8 +67,9 @@ from ..recherche.heuristiques import distances_bfs
 from ..regles import deplacement
 
 AMPLITUDE_DISTANCE = 400
+BONUS_COURSE = 50
 # Pas maximal : 400 / 3 (Dcap >= 3). Borne de |E| tous termes compris.
-BORNE_EVALUATION = AMPLITUDE_DISTANCE + 0.8 * AMPLITUDE_DISTANCE / 3
+BORNE_EVALUATION = AMPLITUDE_DISTANCE + 0.8 * AMPLITUDE_DISTANCE / 3 + BONUS_COURSE
 
 
 class Distances:
@@ -126,9 +143,11 @@ class Poids:
     distance: float = 1.0
     cle: float = 0.4
     mobilite: float = 0.1
+    course: bool = False  # True : évaluation améliorée E+
 
 
 POIDS_BASE = Poids()
+POIDS_AMELIORES = Poids(course=True)
 
 
 class Evaluation:
@@ -139,6 +158,7 @@ class Evaluation:
         self.poids = poids
         self.distances = Distances(carte)
         self.pas = AMPLITUDE_DISTANCE / self.distances.infini
+        self.nom = "E+" if poids.course else "E"
 
     def termes(self, etat: Etat) -> dict[str, float]:
         """Détail des termes (utile pour comprendre une décision)."""
@@ -153,6 +173,11 @@ class Evaluation:
             "mobilite": pas * self.poids.mobilite * (mobilite(self.carte, etat, BLEU)
                                                      - mobilite(self.carte, etat, ROUGE)),
         }
+        if self.poids.course and min(d_b, d_r) < self.distances.infini:
+            bleu_premier = d_b <= d_r if etat.joueur == BLEU else d_b < d_r
+            d_gagnant = d_b if bleu_premier else d_r
+            valeur = AMPLITUDE_DISTANCE + BONUS_COURSE - pas * d_gagnant
+            termes["distance"] = valeur if bleu_premier else -valeur
         return termes
 
     def __call__(self, etat: Etat) -> float:

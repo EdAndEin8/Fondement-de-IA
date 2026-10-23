@@ -9,7 +9,8 @@ Exemples :
     uv run fondement-de-ia decider exemple_7x7 --profondeur 6
 
 Agents : aleatoire, astar, astar-manhattan, minmax-dN, alphabeta-dN,
-iteratif-Nms (Alpha-Bêta itératif, budget de N millisecondes par coup).
+alphabeta+-dN (évaluation améliorée), iteratif-Nms (Alpha-Bêta itératif,
+budget de N millisecondes par coup).
 """
 
 from __future__ import annotations
@@ -18,8 +19,8 @@ import argparse
 import re
 
 from .affichage import afficher, legende_symboles
-from .agents import (AgentAleatoire, AgentAlphaBeta, AgentAlphaBetaIteratif, AgentAStar,
-                     AgentMinMax)
+from .agents import (AgentAleatoire, AgentAlphaBeta, AgentAlphaBetaAmeliore,
+                     AgentAlphaBetaIteratif, AgentAStar, AgentMinMax)
 from .carte import charger_carte, lister_cartes
 from .etat import BLEU, ROUGE
 from .jeu import jouer
@@ -38,6 +39,8 @@ def creer_agent(nom: str):
         return AgentMinMax(int(m[1]))
     if m := re.fullmatch(r"alphabeta-d(\d+)", nom):
         return AgentAlphaBeta(int(m[1]))
+    if m := re.fullmatch(r"alphabeta\+-d(\d+)", nom):
+        return AgentAlphaBetaAmeliore(int(m[1]))
     if m := re.fullmatch(r"iteratif-(\d+)ms", nom):
         return AgentAlphaBetaIteratif(int(m[1]) / 1000)
     raise SystemExit(f"agent inconnu : {nom} (voir --help)")
@@ -63,6 +66,7 @@ def main(argv: list[str] | None = None) -> None:
     p_dec = sub.add_parser("decider", help="détail d'une décision Min-Max / Alpha-Bêta")
     p_dec.add_argument("carte")
     p_dec.add_argument("--profondeur", type=int, default=4)
+    p_dec.add_argument("--ameliore", action="store_true", help="évaluation E+")
     p_dec.add_argument("--rouge-commence", action="store_true")
 
     p_jeu = sub.add_parser("jouer", help="simuler une partie")
@@ -101,12 +105,12 @@ def main(argv: list[str] | None = None) -> None:
         print(f"nœuds développés : {r.noeuds_developpes}, générés : {r.noeuds_generes}, "
               f"temps : {r.temps * 1000:.3f} ms")
     elif args.commande == "decider":
-        from .adversarial.evaluation import Evaluation
+        from .adversarial.evaluation import POIDS_AMELIORES, POIDS_BASE, Evaluation
         from .adversarial.minimax import alphabeta, minimax
         from .regles import Jeu
         jeu = Jeu(charger_carte(args.carte))
         etat = jeu.etat_initial(ROUGE if args.rouge_commence else BLEU)
-        ev = Evaluation(jeu.carte)
+        ev = Evaluation(jeu.carte, POIDS_AMELIORES if args.ameliore else POIDS_BASE)
         print(afficher(etat, jeu.carte))
         print(f"E(s) = {ev(etat):.0f}  {ev.termes(etat)}")
         for nom, f in (("Min-Max", minimax), ("Alpha-Bêta", alphabeta)):
