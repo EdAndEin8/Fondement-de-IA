@@ -31,7 +31,19 @@ Démonstration `experiences/plan_fige.py`. *(à rédiger, voir docs/seance1.md �
 
 ## 4. Partie II — Connaissances et raisonnement *(à venir)*
 
-## 5. Partie III — Décision adversariale *(séance 2)*
+## 5. Partie III — Décision adversariale
+
+### 5.1 Valeurs terminales et fonction d'évaluation
+Utilités ±(1000 − ply) pour préférer les victoires rapides. Distances avec clés et portes (BFS précalculés), normalisation par la taille de la carte, poids 1 / 0,4 / 0,1 pas, borne |E| < 920. Erreur de la première version (écart écrêté qui sature). *(à rédiger, voir docs/seance2.md §3)*
+
+### 5.2 Min-Max et Alpha-Bêta
+Mêmes fonctions de transition, de test terminal et d'évaluation ; égalité des valeurs vérifiée sur 500 cas. Tableau des nœuds et des temps par profondeur : `resultats/minimax_alphabeta.md`. Graphique nœuds = f(d), échelle logarithmique. *(à rédiger)*
+
+### 5.3 Ordre des coups
+Naturel, aléatoire, meilleur d'abord, pire d'abord : facteur 3 à 8 sur les nœuds à d = 8. *(à rédiger)*
+
+### 5.4 Budget de calcul et effet d'horizon
+Approfondissement itératif (`resultats/iteratif.md`) ; effet d'horizon devant la porte de salle_fermee et évaluation améliorée E+ (`resultats/horizon.md`). *(à rédiger)*
 
 ## 6. Partie IV — Information partielle *(à venir)*
 

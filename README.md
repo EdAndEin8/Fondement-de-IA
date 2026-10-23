@@ -4,11 +4,11 @@ Projet de TP — *Intelligence artificielle : Fondements* (4e année du cycle FI
 
 Groupe :
 
-| Membre | GitHub | Parties prises en charge (séance 1) |
-|---|---|---|
-| Anton Dion | EdAndEin8 | modélisation, règles et tests, organisation du dépôt |
-| Matthieu Meunier | Omicr0ne | recherche (BFS, UCS, DFS, A*), heuristiques, comparaison |
-| Sean Persand | SPUPH | affichage, boucle de jeu, agents, générateur de cartes |
+| Membre | GitHub | Séance 1 | Séance 2 |
+|---|---|---|---|
+| Anton Dion | EdAndEin8 | modélisation, règles et tests, organisation du dépôt | fonction d'évaluation, tests d'équivalence, effet d'horizon |
+| Matthieu Meunier | Omicr0ne | recherche (BFS, UCS, DFS, A*), heuristiques, comparaison | Min-Max, Alpha-Bêta, ordre des coups, mesures |
+| Sean Persand | SPUPH | affichage, boucle de jeu, agents, générateur de cartes | agents adversariaux, approfondissement itératif, arène |
 
 Deux robots, Bleu et Rouge, se disputent une balise dans un labyrinthe avec murs, clés et portes. Le projet couvre la recherche dans un espace d'états, la représentation des connaissances, la décision adversariale (Min-Max, Alpha-Bêta), l'information partielle et une campagne d'évaluation.
 
@@ -19,7 +19,7 @@ Deux robots, Bleu et Rouge, se disputent une balise dans un labyrinthe avec murs
 | Simulateur | carte, état, règles R1–R8, affichage ASCII, `jouer()` | fait (séance 1) |
 | I — Recherche | BFS, UCS, DFS, A* (3 heuristiques), expériences | fait (séance 1) |
 | II — Connaissances | base de faits, règles, chaînage avant | à venir |
-| III — Adversarial | Min-Max, Alpha-Bêta, approfondissement itératif | séance 2 |
+| III — Adversarial | évaluation, Min-Max, Alpha-Bêta, ordre des coups, approfondissement itératif, expériences | fait (séance 2) |
 | IV — Information partielle | vue locale, exploration des frontières | à venir |
 | V — Évaluation | tournoi entre agents | à venir |
 
@@ -39,11 +39,26 @@ uv run fondement-de-ia chemin porte_raccourci --algo astar --heuristique cles
 uv run fondement-de-ia jouer salle_fermee --bleu astar --rouge astar --animation
 uv run fondement-de-ia jouer exemple_7x7 --bleu astar --rouge aleatoire --graine 3
 
+uv run fondement-de-ia decider salle_fermee --profondeur 6       # Min-Max et Alpha-Bêta sur un état
+uv run fondement-de-ia jouer salle_fermee --bleu alphabeta+-d4 --rouge iteratif-100ms --animation
+
 uv run python experiences/comparaison_recherche.py            # Partie I -> resultats/
 uv run python experiences/plan_fige.py salle_fermee
+uv run python experiences/minimax_alphabeta.py                # Partie III -> resultats/
+uv run python experiences/iteratif_budget.py
+uv run python experiences/horizon.py
 ```
 
-Agents disponibles : `aleatoire`, `astar` (heuristique « clés »), `astar-manhattan`.
+Agents disponibles :
+
+| Nom | Agent |
+|---|---|
+| `aleatoire` | coup légal au hasard |
+| `astar`, `astar-manhattan` | planificateur A* (heuristique « clés » ou Manhattan), replanifie à chaque tour |
+| `minmax-dN` | Min-Max à profondeur N, évaluation E |
+| `alphabeta-dN` | Alpha-Bêta à profondeur N, évaluation E, coups triés par E |
+| `alphabeta+-dN` | Alpha-Bêta à profondeur N, évaluation améliorée E+ |
+| `iteratif-Nms` | Alpha-Bêta itératif avec E+, budget de N ms par coup |
 
 ## Organisation du code
 
@@ -56,9 +71,10 @@ src/course_balise/
   affichage.py             afficher(etat, carte) et animation ASCII
   jeu.py                   jouer(agent_bleu, agent_rouge, carte, graine)
   recherche/               Partie I : problème, BFS/UCS/DFS/A*, heuristiques
-  agents/                  aléatoire, planificateur A*
+  adversarial/             Partie III : évaluation, Min-Max/Alpha-Bêta, ordre des coups, itératif
+  agents/                  aléatoire, A*, Min-Max, Alpha-Bêta, Alpha-Bêta itératif
   cli.py                   ligne de commande
-tests/                     pytest (règles, partie, recherche)
+tests/                     pytest (règles, partie, recherche, adversarial)
 experiences/               scripts d'expériences (graines fixées)
 resultats/                 sorties des expériences (CSV, Markdown)
 outils/                    générateur de labyrinthes
