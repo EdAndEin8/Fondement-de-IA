@@ -5,14 +5,20 @@ Exemples :
     uv run fondement-de-ia afficher exemple_7x7
     uv run fondement-de-ia chemin porte_raccourci --algo astar --heuristique cles
     uv run fondement-de-ia jouer exemple_7x7 --bleu astar --rouge aleatoire --animation
+    uv run fondement-de-ia jouer salle_fermee --bleu alphabeta-d6 --rouge minmax-d4
+    uv run fondement-de-ia decider exemple_7x7 --profondeur 6
+
+Agents : aleatoire, astar, astar-manhattan, minmax-dN, alphabeta-dN
+(N : profondeur de recherche).
 """
 
 from __future__ import annotations
 
 import argparse
+import re
 
 from .affichage import afficher, legende_symboles
-from .agents import AgentAleatoire, AgentAStar
+from .agents import AgentAleatoire, AgentAlphaBeta, AgentAStar, AgentMinMax
 from .carte import charger_carte, lister_cartes
 from .etat import BLEU, ROUGE
 from .jeu import jouer
@@ -25,10 +31,13 @@ AGENTS = {
 
 
 def creer_agent(nom: str):
-    try:
+    if nom in AGENTS:
         return AGENTS[nom]()
-    except KeyError:
-        raise SystemExit(f"agent inconnu : {nom} (choix : {', '.join(AGENTS)})")
+    if m := re.fullmatch(r"minmax-d(\d+)", nom):
+        return AgentMinMax(int(m[1]))
+    if m := re.fullmatch(r"alphabeta-d(\d+)", nom):
+        return AgentAlphaBeta(int(m[1]))
+    raise SystemExit(f"agent inconnu : {nom} (voir --help)")
 
 
 def main(argv: list[str] | None = None) -> None:
@@ -47,6 +56,11 @@ def main(argv: list[str] | None = None) -> None:
     p_ch.add_argument("--heuristique", choices=["nulle", "manhattan", "relaxee", "cles"],
                       default="manhattan")
     p_ch.add_argument("--robot", choices=["B", "R"], default="B")
+
+    p_dec = sub.add_parser("decider", help="détail d'une décision Min-Max / Alpha-Bêta")
+    p_dec.add_argument("carte")
+    p_dec.add_argument("--profondeur", type=int, default=4)
+    p_dec.add_argument("--rouge-commence", action="store_true")
 
     p_jeu = sub.add_parser("jouer", help="simuler une partie")
     p_jeu.add_argument("carte")
@@ -83,6 +97,19 @@ def main(argv: list[str] | None = None) -> None:
             print(f"{r.algorithme} : aucun chemin")
         print(f"nœuds développés : {r.noeuds_developpes}, générés : {r.noeuds_generes}, "
               f"temps : {r.temps * 1000:.3f} ms")
+    elif args.commande == "decider":
+        from .adversarial.evaluation import Evaluation
+        from .adversarial.minimax import alphabeta, minimax
+        from .regles import Jeu
+        jeu = Jeu(charger_carte(args.carte))
+        etat = jeu.etat_initial(ROUGE if args.rouge_commence else BLEU)
+        ev = Evaluation(jeu.carte)
+        print(afficher(etat, jeu.carte))
+        print(f"E(s) = {ev(etat):.0f}  {ev.termes(etat)}")
+        for nom, f in (("Min-Max", minimax), ("Alpha-Bêta", alphabeta)):
+            d = f(jeu, etat, args.profondeur, ev)
+            print(f"{nom:<10} d={args.profondeur} : action {d.action}, valeur {d.valeur:.0f}, "
+                  f"{d.stats.noeuds} nœuds, {d.stats.temps * 1000:.1f} ms")
     elif args.commande == "jouer":
         carte = charger_carte(args.carte)
         r = jouer(
