@@ -1,8 +1,10 @@
-"""Min-Max à profondeur limitée (Partie III).
+"""Min-Max et Alpha-Bêta à profondeur limitée (Partie III).
 
-La recherche utilise les fonctions du jeu (``jeu.actions_legales``,
-``jeu.transition``, ``jeu.terminal``) et :func:`valeur_feuille`, qui
-renvoie l'utilité d'un état terminal ou l'évaluation heuristique sinon.
+Les deux algorithmes utilisent exactement les mêmes fonctions :
+``jeu.actions_legales``, ``jeu.transition``, ``jeu.terminal`` et
+:func:`valeur_feuille` (utilité ou évaluation). Ils ne diffèrent que par
+l'élagage, si bien qu'à profondeur et évaluation identiques ils renvoient
+la même valeur (testé dans tests/test_equivalence.py).
 
 Convention : Bleu est MAX, Rouge est MIN, quel que soit le joueur qui
 appelle la recherche. Valeurs terminales, avec ``ply`` le nombre de coups
@@ -35,6 +37,7 @@ type FonctionEvaluation = Callable[[Etat], float]
 class Statistiques:
     noeuds: int = 0        # appels récursifs (racine comprise)
     feuilles: int = 0      # nœuds évalués (terminaux ou profondeur 0)
+    coupures: int = 0      # coupures alpha ou bêta
     temps: float = 0.0     # secondes
 
 
@@ -91,5 +94,53 @@ def minimax(jeu: Jeu, etat: Etat, profondeur: int, evaluation: FonctionEvaluatio
         racine[a] = v
         if (maxi and v > meilleure) or (not maxi and v < meilleure):
             meilleure, meilleure_action = v, a
+    stats.temps = time.perf_counter() - debut
+    return Decision(meilleure_action, meilleure, profondeur, stats, racine)
+
+
+# --------------------------------------------------------------- Alpha-Bêta
+def alphabeta(jeu: Jeu, etat: Etat, profondeur: int, evaluation: FonctionEvaluation,
+              ordre: str | Ordre | None = None) -> Decision:
+    ordonner = _resoudre_ordre(ordre)
+    stats = Statistiques()
+
+    def valeur(s: Etat, d: int, ply: int, alpha: float, beta: float) -> float:
+        stats.noeuds += 1
+        if d == 0 or jeu.terminal(s):
+            stats.feuilles += 1
+            return valeur_feuille(jeu, s, ply, evaluation)
+        if s.joueur == BLEU:
+            v = -INF
+            for a in ordonner(jeu, s, jeu.actions_legales(s), evaluation):
+                v = max(v, valeur(jeu.transition(s, a), d - 1, ply + 1, alpha, beta))
+                if v >= beta:
+                    stats.coupures += 1
+                    return v
+                alpha = max(alpha, v)
+            return v
+        v = INF
+        for a in ordonner(jeu, s, jeu.actions_legales(s), evaluation):
+            v = min(v, valeur(jeu.transition(s, a), d - 1, ply + 1, alpha, beta))
+            if v <= alpha:
+                stats.coupures += 1
+                return v
+            beta = min(beta, v)
+        return v
+
+    debut = time.perf_counter()
+    stats.noeuds += 1
+    actions = ordonner(jeu, etat, jeu.actions_legales(etat), evaluation)
+    maxi = etat.joueur == BLEU
+    alpha, beta = -INF, INF
+    meilleure, meilleure_action, racine = (-INF if maxi else INF), None, {}
+    for a in actions:
+        v = valeur(jeu.transition(etat, a), profondeur - 1, 1, alpha, beta)
+        racine[a] = v  # borne seulement, sauf pour le meilleur coup
+        if maxi and v > meilleure:
+            meilleure, meilleure_action = v, a
+            alpha = max(alpha, v)
+        elif not maxi and v < meilleure:
+            meilleure, meilleure_action = v, a
+            beta = min(beta, v)
     stats.temps = time.perf_counter() - debut
     return Decision(meilleure_action, meilleure, profondeur, stats, racine)
