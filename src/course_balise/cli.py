@@ -8,8 +8,8 @@ Exemples :
     uv run fondement-de-ia jouer salle_fermee --bleu alphabeta-d6 --rouge minmax-d4
     uv run fondement-de-ia decider exemple_7x7 --profondeur 6
 
-Agents : aleatoire, astar, astar-manhattan, minmax-dN, alphabeta-dN
-(N : profondeur de recherche).
+Agents : aleatoire, astar, astar-manhattan, minmax-dN, alphabeta-dN,
+iteratif-Nms (Alpha-Bêta itératif, budget de N millisecondes par coup).
 """
 
 from __future__ import annotations
@@ -18,7 +18,8 @@ import argparse
 import re
 
 from .affichage import afficher, legende_symboles
-from .agents import AgentAleatoire, AgentAlphaBeta, AgentAStar, AgentMinMax
+from .agents import (AgentAleatoire, AgentAlphaBeta, AgentAlphaBetaIteratif, AgentAStar,
+                     AgentMinMax)
 from .carte import charger_carte, lister_cartes
 from .etat import BLEU, ROUGE
 from .jeu import jouer
@@ -37,6 +38,8 @@ def creer_agent(nom: str):
         return AgentMinMax(int(m[1]))
     if m := re.fullmatch(r"alphabeta-d(\d+)", nom):
         return AgentAlphaBeta(int(m[1]))
+    if m := re.fullmatch(r"iteratif-(\d+)ms", nom):
+        return AgentAlphaBetaIteratif(int(m[1]) / 1000)
     raise SystemExit(f"agent inconnu : {nom} (voir --help)")
 
 

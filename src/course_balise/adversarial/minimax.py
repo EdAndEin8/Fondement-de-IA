@@ -33,12 +33,24 @@ INF = float("inf")
 type FonctionEvaluation = Callable[[Etat], float]
 
 
+class TempsEcoule(Exception):
+    """Levée quand l'échéance de calcul est dépassée (approfondissement itératif)."""
+
+
 @dataclass
 class Statistiques:
     noeuds: int = 0        # appels récursifs (racine comprise)
     feuilles: int = 0      # nœuds évalués (terminaux ou profondeur 0)
     coupures: int = 0      # coupures alpha ou bêta
     temps: float = 0.0     # secondes
+    echeance: float | None = None  # instant perf_counter() à ne pas dépasser
+
+    def verifier_temps(self) -> None:
+        # Vérification tous les 64 nœuds : perf_counter() n'est pas gratuit,
+        # mais au-delà le budget serait dépassé sur les petits arbres.
+        if self.echeance is not None and self.noeuds & 63 == 0:
+            if time.perf_counter() > self.echeance:
+                raise TempsEcoule
 
 
 @dataclass
@@ -72,12 +84,13 @@ def _resoudre_ordre(ordre: str | Ordre | None) -> Ordre:
 
 # ------------------------------------------------------------------ Min-Max
 def minimax(jeu: Jeu, etat: Etat, profondeur: int, evaluation: FonctionEvaluation,
-            ordre: str | Ordre | None = None) -> Decision:
+            ordre: str | Ordre | None = None, echeance: float | None = None) -> Decision:
     ordonner = _resoudre_ordre(ordre)
-    stats = Statistiques()
+    stats = Statistiques(echeance=echeance)
 
     def valeur(s: Etat, d: int, ply: int) -> float:
         stats.noeuds += 1
+        stats.verifier_temps()
         if d == 0 or jeu.terminal(s):
             stats.feuilles += 1
             return valeur_feuille(jeu, s, ply, evaluation)
@@ -100,12 +113,16 @@ def minimax(jeu: Jeu, etat: Etat, profondeur: int, evaluation: FonctionEvaluatio
 
 # --------------------------------------------------------------- Alpha-Bêta
 def alphabeta(jeu: Jeu, etat: Etat, profondeur: int, evaluation: FonctionEvaluation,
-              ordre: str | Ordre | None = None) -> Decision:
+              ordre: str | Ordre | None = None, echeance: float | None = None,
+              premier_coup: str | None = None) -> Decision:
+    """Alpha-Bêta. ``premier_coup`` place une action en tête à la racine
+    (meilleur coup de l'itération précédente en approfondissement itératif)."""
     ordonner = _resoudre_ordre(ordre)
-    stats = Statistiques()
+    stats = Statistiques(echeance=echeance)
 
     def valeur(s: Etat, d: int, ply: int, alpha: float, beta: float) -> float:
         stats.noeuds += 1
+        stats.verifier_temps()
         if d == 0 or jeu.terminal(s):
             stats.feuilles += 1
             return valeur_feuille(jeu, s, ply, evaluation)
@@ -130,6 +147,8 @@ def alphabeta(jeu: Jeu, etat: Etat, profondeur: int, evaluation: FonctionEvaluat
     debut = time.perf_counter()
     stats.noeuds += 1
     actions = ordonner(jeu, etat, jeu.actions_legales(etat), evaluation)
+    if premier_coup in actions:
+        actions = [premier_coup] + [a for a in actions if a != premier_coup]
     maxi = etat.joueur == BLEU
     alpha, beta = -INF, INF
     meilleure, meilleure_action, racine = (-INF if maxi else INF), None, {}
