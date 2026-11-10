@@ -6,14 +6,57 @@
 
 ## 1. Introduction
 
-Le jeu, les objectifs, le plan du rapport. *(à rédiger)*
+Deux robots, Bleu et Rouge, se disputent une balise G sur un plateau quadrillé. Des murs bloquent le passage, des portes verrouillées ne s'ouvrent qu'avec une clé, et une clé ramassée disparaît du plateau. Le premier robot qui entre sur G gagne ; la partie est nulle après 80 tours ou après deux passes consécutives. Le jeu est à deux joueurs, à somme nulle, déterministe et, dans sa version de référence, à information complète.
+
+Le projet construit pas à pas des agents de plus en plus élaborés pour ce jeu :
+
+- un simulateur fidèle aux règles R1 à R8, testé règle par règle (section 2) ;
+- des agents de recherche qui ignorent l'adversaire : BFS, UCS, DFS et A* avec trois heuristiques (section 3, Partie I) ;
+- une base de connaissances avec chaînage avant, qui justifie ou interdit une action (section 4, Partie II) ;
+- des agents adversariaux : Min-Max, Alpha-Bêta, approfondissement itératif, avec deux fonctions d'évaluation (section 5, Partie III) ;
+- un mode à information partielle, où chaque robot ne voit que les cases voisines et découvre la carte (section 6, Partie IV) ;
+- une campagne d'évaluation de 1 104 parties entre cinq agents (section 7, Partie V).
+
+Le code est écrit en Python 3.14 avec la seule bibliothèque standard ; les algorithmes sont tous implémentés par le groupe. Le projet est géré avec `uv`, et les 190 tests passent avec `uv run pytest`. Toutes les expériences sont reproductibles : les graines sont fixées et les scripts de `experiences/` écrivent leurs résultats dans `resultats/`.
 
 ## 2. Modélisation et simulateur
 
-- Séparation carte immuable / état hashable `s = (PB, PR, j, KB, KR, Ksol, Douvert, t, p)`.
-- Règles R1–R8 centralisées dans `regles.py`, fonction `deplacement` partagée avec la recherche.
-- Format texte des cartes, cartes de test, générateur de labyrinthes.
-- Tests : un test par règle (voir `tests/test_regles.py`).
+### 2.1 Carte et état
+
+La **carte** (`carte.py`) regroupe tout ce qui ne change jamais : dimensions, murs, portes et clés initiales, balise, cases de départ. Elle se lit depuis un fichier texte (une ligne par rangée, `#` mur, `.` libre, `B`, `R`, `K` clé, `D` porte, `G` balise). L'**état** (`etat.py`) est exactement le n-uplet de l'énoncé, `s = (PB, PR, j, KB, KR, Ksol, Douvert, t, p)`.
+
+L'état est une `dataclass` gelée dont les ensembles sont des `frozenset` :
+
+- `transition` ne peut pas modifier l'état d'entrée : elle renvoie une copie ;
+- l'état est hashable : il sert d'élément d'ensemble ou de clé de dictionnaire, comme l'exige l'énoncé pour les ensembles d'états explorés.
+
+Séparer la carte de l'état garde les états petits, ce qui compte quand une recherche en mémorise des milliers.
+
+### 2.2 Règles
+
+Les règles R1 à R8 sont centralisées dans `regles.py`. La fonction `deplacement` applique R2 à R5 à un robot isolé ; elle sert à la fois au jeu à deux joueurs (classe `Jeu`) et aux problèmes de recherche de la Partie I. Les règles ne peuvent donc pas diverger entre la simulation et la planification. La classe `Jeu` fournit les opérations demandées : `actions_legales`, `transition`, `terminal`, `utilite`. La fonction `jouer(agent_bleu, agent_rouge, carte, graine)` (`jeu.py`) simule une partie et mesure le temps de chaque décision, séparément du temps d'affichage.
+
+Points de règle retenus : un robot qui possède déjà une clé passe sur une autre sans la ramasser (R4) ; ouvrir une porte consomme la clé et la porte reste ouverte pour les deux robots (R5) ; la victoire est testée avant les nuls, donc un coup gagnant au 80e tour reste une victoire (R6, R8) ; `PASSER` n'est légal que si aucun déplacement ne l'est (R7). Le joueur qui commence est un paramètre, ce qui permet d'inverser l'ordre dans la campagne d'évaluation.
+
+### 2.3 Cartes
+
+| Carte | Taille | Rôle |
+|---|---|---|
+| `couloir_5x5` | 5 × 5 | petite carte sans clé ni porte ; Rouge est à 4 pas de G, Bleu à 6 |
+| `exemple_7x7` | 7 × 7 | plateau de la figure 1 de l'énoncé |
+| `porte_raccourci` | 9 × 7 | une porte offre un raccourci de 7 pas au lieu de 13 |
+| `salle_fermee` | 9 × 7 | G enfermée derrière une porte, une seule clé pour deux robots |
+| `arene_9x9` | 9 × 9 | salle ouverte, symétrique, jusqu'à 4 coups par robot |
+| `labyrinthe_11x11` | 11 × 11 | labyrinthe symétrique par rapport au centre |
+| `grand_labyrinthe_25x25` | 25 × 25 | labyrinthe généré (`outils/generer_labyrinthe.py`, graine 27) |
+
+Sur le grand labyrinthe, chaque robot a besoin de plus de 60 pas : la limite de 80 tours rend toute victoire impossible. Cette carte sert à la recherche (Partie I) et à l'exploration (Partie IV), pas aux confrontations.
+
+### 2.4 Affichage, ligne de commande et tests
+
+`afficher(etat, carte)` produit un plateau ASCII, en couleurs dans un terminal, et `jouer(..., animation=True)` l'anime en place. La commande `uv run fondement-de-ia` donne accès à tout le projet : `afficher`, `chemin`, `jouer`, `decider`, `raisonner`, `decouvrir`.
+
+`tests/test_regles.py` contient 25 tests, au moins un par règle : murs, collisions, ramassage des clés, une seule clé par robot, porte sans clé, ouverture, porte partagée, victoire des deux couleurs, passes, limite de tours, immuabilité et hashabilité de l'état. Chaque situation est une petite carte écrite dans le test, lisible d'un coup d'œil. Les tests de la Partie I vérifient aussi que, sur chaque carte fournie, chaque robot a un chemin vers G (`tests/test_recherche.py`).
 
 ## 3. Partie I — Recherche et planification
 
@@ -283,4 +326,21 @@ Min-Max (ordre naturel) contre Alpha-Bêta (tri par E), même évaluation E, 4 c
 
 **A* aussi fort que Min-Max à d = 4.** Sur des cartes symétriques où la course domine, anticiper 4 demi-coups n'apporte presque rien contre un adversaire qui va droit au but. Les situations où l'anticipation compte (bloquer un couloir, prendre la clé de l'autre) sont rares dans nos cartes, et demandent souvent une profondeur supérieure à 4.
 
-## 8. Conclusion et limites *(à rédiger)*
+## 8. Conclusion et limites
+
+Le projet fournit un simulateur testé et cinq familles d'agents : recherche, raisonnement, décision adversariale, information partielle et campagne d'évaluation. Quelques enseignements :
+
+- **Une seule source de vérité pour les règles.** La fonction `deplacement` est partagée par le jeu, la recherche, l'évaluation, et vérifiée par la base de connaissances. Des tests de cohérence le garantissent : les déplacements déduits par chaînage avant et ceux déduits de la vue locale coïncident avec `actions_legales`.
+- **La fonction d'évaluation compte plus que la profondeur.** Les plus gros écarts de la campagne viennent de l'évaluation (E contre E+ sur `salle_fermee` et `couloir_5x5`), pas de l'algorithme : à profondeur égale, Min-Max et Alpha-Bêta ont la même valeur et jouent presque toujours la même partie, mais Alpha-Bêta visite jusqu'à 15 fois moins de nœuds.
+- **Le premier joueur a un net avantage** sur des cartes symétriques (81 % de victoires) : toute comparaison doit alterner le joueur qui commence.
+- **L'information partielle coûte cher**, de 1 à 6 fois plus de pas qu'avec la carte complète, et l'optimisme n'est pas toujours payant : dans un labyrinthe, connaître la position de G sans connaître les murs peut doubler le trajet.
+
+Limites :
+
+- le chaînage avant ne porte que sur l'état courant, avec des clauses de Horn positives : pas de négation, pas de raisonnement sur les actions futures ;
+- E+ n'a plus de gradient pour le robot qui perd la course, ce qui le rend passif contre un adversaire faible (7.4) ;
+- nos cartes sont petites et souvent symétriques : les situations stratégiques fines (blocage d'un couloir, vol de clé) y sont rares, et la campagne ne compare que la profondeur 4 ;
+- en information partielle, l'adversaire est supposé immobile hors du champ de vision et sans clé ; aucune croyance probabiliste sur l'état n'est maintenue (approfondissement facultatif de l'énoncé) ;
+- les temps sont mesurés sur une seule machine, sur des décisions de l'ordre de la milliseconde : seuls les rapports entre agents sont significatifs.
+
+Pistes : ajouter un terme de distance propre à E+, une recherche de quiescence contre l'effet d'horizon, des tables de transposition (les états sont déjà hashables), et une campagne à budget de temps égal (approfondissement itératif) plutôt qu'à profondeur égale.

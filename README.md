@@ -4,11 +4,11 @@ Projet de TP — *Intelligence artificielle : Fondements* (4e année du cycle FI
 
 Groupe :
 
-| Membre | GitHub | Séance 1 | Séance 2 |
-|---|---|---|---|
-| Anton Dion | EdAndEin8 | modélisation, règles et tests, organisation du dépôt | fonction d'évaluation, tests d'équivalence, effet d'horizon |
-| Matthieu Meunier | Omicr0ne | recherche (BFS, UCS, DFS, A*), heuristiques, comparaison | Min-Max, Alpha-Bêta, ordre des coups, mesures |
-| Sean Persand | SPUPH | affichage, boucle de jeu, agents, générateur de cartes | agents adversariaux, approfondissement itératif, arène |
+| Membre | GitHub | Séance 1 | Séance 2 | Séance 3 |
+|---|---|---|---|---|
+| Anton Dion | EdAndEin8 | modélisation, règles et tests, organisation du dépôt | fonction d'évaluation, tests d'équivalence, effet d'horizon | base de faits, règles, chaînage avant, rapport |
+| Matthieu Meunier | Omicr0ne | recherche (BFS, UCS, DFS, A*), heuristiques, comparaison | Min-Max, Alpha-Bêta, ordre des coups, mesures | campagne d'évaluation entre agents |
+| Sean Persand | SPUPH | affichage, boucle de jeu, agents, générateur de cartes | agents adversariaux, approfondissement itératif, arène | information partielle, exploration des frontières |
 
 Deux robots, Bleu et Rouge, se disputent une balise dans un labyrinthe avec murs, clés et portes. Le projet couvre la recherche dans un espace d'états, la représentation des connaissances, la décision adversariale (Min-Max, Alpha-Bêta), l'information partielle et une campagne d'évaluation.
 
@@ -18,10 +18,10 @@ Deux robots, Bleu et Rouge, se disputent une balise dans un labyrinthe avec murs
 |---|---|---|
 | Simulateur | carte, état, règles R1–R8, affichage ASCII, `jouer()` | fait (séance 1) |
 | I — Recherche | BFS, UCS, DFS, A* (3 heuristiques), expériences | fait (séance 1) |
-| II — Connaissances | base de faits, règles, chaînage avant | à venir |
+| II — Connaissances | base de faits, règles, chaînage avant, justifications | fait (séance 3) |
 | III — Adversarial | évaluation, Min-Max, Alpha-Bêta, ordre des coups, approfondissement itératif, expériences | fait (séance 2) |
-| IV — Information partielle | vue locale, exploration des frontières | à venir |
-| V — Évaluation | tournoi entre agents | à venir |
+| IV — Information partielle | vue locale, mémoire, exploration des frontières, planification optimiste | fait (séance 3) |
+| V — Évaluation | tournoi entre agents, Min-Max contre Alpha-Bêta | fait (séance 3) |
 
 ## Installation (uv)
 
@@ -42,11 +42,17 @@ uv run fondement-de-ia jouer exemple_7x7 --bleu astar --rouge aleatoire --graine
 uv run fondement-de-ia decider salle_fermee --profondeur 6       # Min-Max et Alpha-Bêta sur un état
 uv run fondement-de-ia jouer salle_fermee --bleu alphabeta+-d4 --rouge iteratif-100ms --animation
 
+uv run fondement-de-ia raisonner salle_fermee                  # faits observés et déduits (Partie II)
+uv run fondement-de-ia decouvrir labyrinthe_11x11 --rayon 1     # robot seul qui découvre la carte (Partie IV)
+uv run fondement-de-ia jouer arene_9x9 --bleu explorateur-r2 --rouge astar
+
 uv run python experiences/comparaison_recherche.py            # Partie I -> resultats/
 uv run python experiences/plan_fige.py salle_fermee
 uv run python experiences/minimax_alphabeta.py                # Partie III -> resultats/
 uv run python experiences/iteratif_budget.py
 uv run python experiences/horizon.py
+uv run python experiences/information_partielle.py           # Partie IV
+uv run python experiences/campagne.py                        # Partie V
 ```
 
 Agents disponibles :
@@ -59,6 +65,10 @@ Agents disponibles :
 | `alphabeta-dN` | Alpha-Bêta à profondeur N, évaluation E, coups triés par E |
 | `alphabeta+-dN` | Alpha-Bêta à profondeur N, évaluation améliorée E+ |
 | `iteratif-Nms` | Alpha-Bêta itératif avec E+, budget de N ms par coup |
+| `explorateur` | information partielle : exploration des frontières, puis A* optimiste vers G |
+| `optimiste-dN` | information partielle : comme `explorateur`, Alpha-Bêta sur le jeu supposé quand l'adversaire est visible |
+
+Pour les agents à information partielle, les suffixes `-rN` (rayon de vue N, 1 par défaut) et `-g` (position de la balise connue au départ) se combinent : `explorateur-r2-g`, `optimiste-d4-r2`.
 
 ## Organisation du code
 
@@ -71,10 +81,12 @@ src/course_balise/
   affichage.py             afficher(etat, carte) et animation ASCII
   jeu.py                   jouer(agent_bleu, agent_rouge, carte, graine)
   recherche/               Partie I : problème, BFS/UCS/DFS/A*, heuristiques
+  raisonnement/            Partie II : base de faits, règles, chaînage avant
   adversarial/             Partie III : évaluation, Min-Max/Alpha-Bêta, ordre des coups, itératif
-  agents/                  aléatoire, A*, Min-Max, Alpha-Bêta, Alpha-Bêta itératif
+  partiel/                 Partie IV : vue locale, mémoire, frontières, course en solitaire
+  agents/                  aléatoire, A*, Min-Max, Alpha-Bêta, itératif, explorateur, optimiste
   cli.py                   ligne de commande
-tests/                     pytest (règles, partie, recherche, adversarial)
+tests/                     pytest (règles, partie, recherche, raisonnement, adversarial, information partielle)
 experiences/               scripts d'expériences (graines fixées)
 resultats/                 sorties des expériences (CSV, Markdown)
 outils/                    générateur de labyrinthes
