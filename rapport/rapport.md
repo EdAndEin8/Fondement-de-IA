@@ -126,7 +126,62 @@ Naturel, aléatoire, meilleur d'abord, pire d'abord : facteur 3 à 8 sur les nœ
 ### 5.4 Budget de calcul et effet d'horizon
 Approfondissement itératif (`resultats/iteratif.md`) ; effet d'horizon devant la porte de salle_fermee et évaluation améliorée E+ (`resultats/horizon.md`). *(à rédiger)*
 
-## 6. Partie IV — Information partielle *(à venir)*
+## 6. Partie IV — Information partielle
+
+Code : `src/course_balise/partiel/` (`vue.py`, `memoire.py`, `solo.py`), `agents/partiels.py`, commande `uv run fondement-de-ia decouvrir <carte>`, tests `tests/test_partiel.py`, expérience `experiences/information_partielle.py` (résultats : `resultats/information_partielle.md`).
+
+### 6.1 Vue locale et mémoire
+
+Les règles physiques ne changent pas : seul ce que l'agent sait est restreint. `vue_locale(carte, etat, joueur, rayon)` renvoie une `Observation` : les cases à distance de Manhattan au plus `rayon` (1 dans l'énoncé, soit au plus 5 cases), avec leur contenu (`#` mur, `.` case ordinaire ou porte ouverte, `D` porte fermée, `K` clé, `G` balise), la clé du robot, et la position de l'adversaire s'il est dans le champ. On suppose seulement les dimensions du plateau connues. Cette fonction est le **seul** accès des agents partiels à l'état réel.
+
+La `Memoire` stocke, pour chaque case déjà vue, le dernier contenu observé ; une case vue reste connue. Ce contenu peut devenir faux sans que le robot le sache (une clé ramassée par l'adversaire hors du champ, une porte qu'il a ouverte) : il est corrigé à la prochaine observation. L'adversaire est supposé immobile à sa dernière position vue, jusqu'à ce que le robot voie cette case vide.
+
+Avec un rayon d'au moins 1, les quatre voisines du robot sont toujours observées. Les actions légales se déduisent donc exactement de la mémoire, et un test vérifie qu'elles coïncident avec `jeu.actions_legales` sur 72 états. Un autre test vérifie que l'agent joue le même coup sur deux cartes identiques autour de lui mais différentes ailleurs.
+
+### 6.2 Exploration des frontières et planification optimiste
+
+La **frontière** est l'ensemble des cases connues praticables qui ont au moins une voisine inconnue. L'agent `explorateur` décide ainsi à chaque tour :
+
+1. si G est connue, il calcule un plan **optimiste** par A* sur une carte supposée, où les cases inconnues sont libres, et joue son premier pas ;
+2. sinon, il va vers la case de frontière la plus proche (BFS sur les cases connues ; sans clé, les clés connues sont aussi des cibles, car il faudra sans doute franchir une porte).
+
+Le plan est recalculé à chaque tour : dès qu'une observation contredit l'hypothèse optimiste (un mur sur le chemin prévu), le plan change. La méthode termine : chaque pas vers une cible la rapproche, et chaque arrivée sur la frontière révèle au moins une case inconnue. Tant qu'une cible reste atteignable, l'agent finit donc par la découvrir.
+
+Avec un rayon de 1, G n'est vue qu'en arrivant à côté, si bien que la planification optimiste sert peu. Nous avons donc ajouté deux variantes : un rayon de 2 (`-r2`), et une balise dont seule la position est connue dès le départ (`-g`), comme si elle émettait un signal.
+
+### 6.3 Carte complète contre découverte progressive
+
+Course en solitaire (`partiel/solo.py`) : l'adversaire reste sur sa case de départ, le robot joue tous les coups jusqu'à G. Nombre de pas, Bleu / Rouge :
+
+| Carte | A* (carte complète) | explorateur | explorateur-r2 | explorateur-g | explorateur-r2-g |
+|---|---|---|---|---|---|
+| couloir_5x5 | 6 / 4 | 8 / 4 | 8 / 4 | 8 / 4 | 8 / 4 |
+| exemple_7x7 | 6 / 6 | 22 / 12 | 6 / 6 | 6 / 8 | 6 / 8 |
+| porte_raccourci | 7 / 7 | 13 / 19 | 13 / 17 | 13 / 17 | 13 / 17 |
+| salle_fermee | 21 / 21 | 63 / 63 | 59 / 59 | 63 / 63 | 59 / 59 |
+| arene_9x9 | 12 / 12 | 46 / 50 | 18 / 20 | 18 / 22 | 14 / 12 |
+| labyrinthe_11x11 | 22 / 22 | 24 / 22 | 24 / 24 | 44 / 48 | 38 / 38 |
+| grand_labyrinthe_25x25 | 62 / 66 | 174 / 242 | 196 / 388 | 364 / 318 | 280 / 246 |
+
+- L'explorateur arrive toujours, mais jamais en moins de pas que A* avec la carte complète (vérifié par test). Le surcoût va de 1 à près de 6.
+- Dans une salle ouverte (`arene_9x9`), voir plus loin compte beaucoup : de 46 à 18 pas pour Bleu avec un rayon de 2.
+- Sur `porte_raccourci`, aucun explorateur ne prend le raccourci : la porte n'est utile qu'avec la clé, et le robot ne le sait qu'après l'avoir vue. Sur `salle_fermee`, il faut d'abord trouver l'unique clé, en haut, puis revenir à la porte, en bas : le parcours est trois fois plus long.
+- Dans les labyrinthes, l'optimisme coûte cher : connaître la position de G (`-g`) **double** le nombre de pas sur `labyrinthe_11x11` (44 au lieu de 24). Le plan optimiste traverse des zones inconnues en ligne droite vers G, et le robot s'engage dans des culs-de-sac. L'exploration systématique de la frontière la plus proche parcourt les couloirs dans l'ordre et s'en sort mieux.
+- Un rayon plus grand n'aide pas toujours (Rouge sur le grand labyrinthe : 388 pas au lieu de 242) : la règle « frontière la plus proche » est gloutonne, et voir plus de cases change l'ordre de visite sans garantie de gain.
+
+En partie (cartes sans le 25 × 25, couleurs et premier joueur inversés, graines 0 à 4 contre l'aléatoire), l'explorateur gagne 56 % de ses parties contre l'agent aléatoire, avec 33 % de nuls, et seulement 12 % contre A* avec la carte complète, qui va droit au but. La meilleure variante, `optimiste-d4-r2-g`, monte à 74 % contre l'aléatoire.
+
+### 6.4 Pourquoi Min-Max ne s'applique pas directement à l'état caché
+
+Appliquer Min-Max à l'état réel reviendrait à faire décider le robot avec des informations qu'il n'a pas : la position des murs non vus, celle de l'adversaire, sa clé. La décision dépendrait alors de la partie cachée de la carte, ce que le robot ne peut pas faire en vrai. Deux situations qu'il ne sait pas distinguer recevraient des coups différents. De plus, Min-Max suppose que **les deux** joueurs connaissent l'état ; ici, l'adversaire a lui aussi une vue partielle, et ses réponses dépendent de ce qu'il a vu, pas de l'état réel. L'arbre de jeu correct porterait sur des ensembles d'états possibles (jeu à information imparfaite), ce qui sort du cadre du TP.
+
+**Approximation retenue** (`optimiste-dN`) : quand l'adversaire est visible et que G est connue, l'agent joue Alpha-Bêta, avec l'évaluation E+, sur un **jeu supposé** construit à partir des seules observations :
+
+- carte supposée optimiste : cases inconnues libres, murs, portes et clés tels qu'ils ont été vus ;
+- adversaire à sa position observée, supposé sans clé (sa clé n'est pas observable) ;
+- tour et passes connus de tous.
+
+Sinon, l'agent se comporte comme l'explorateur. Cette approximation ne prétend pas résoudre le jeu à information imparfaite : elle traite le jeu supposé comme s'il était le vrai. Elle reste sûre, car le coup choisi est toujours légal (les voisines sont observées), mais elle peut se tromper sur la suite. En pratique, avec un rayon de 1, l'adversaire n'est visible que lorsqu'il est collé au robot : Alpha-Bêta n'est utilisé que pour 8 % des décisions au plus selon la variante et l'adversaire, et jusqu'à 15 % avec un rayon de 2.
 
 ## 7. Partie V — Campagne d'évaluation *(à venir)*
 
