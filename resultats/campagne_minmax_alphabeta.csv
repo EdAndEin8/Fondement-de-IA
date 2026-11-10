@@ -1,0 +1,145 @@
+agent,adversaire,carte,couleur,premier,commence,graine,issue,raison,tours,duree_ms,decisions,temps_ms,noeuds
+minmax-d2,alphabeta-d2,couloir_5x5,B,B,True,0,defaite,victoire R,8,0.925,4,0.35,29
+alphabeta-d2,minmax-d2,couloir_5x5,R,B,False,0,victoire,victoire R,8,0.925,4,0.516,22
+minmax-d2,alphabeta-d2,couloir_5x5,B,R,False,0,defaite,victoire R,7,0.943,3,0.301,23
+alphabeta-d2,minmax-d2,couloir_5x5,R,R,True,0,victoire,victoire R,7,0.943,4,0.601,24
+minmax-d2,alphabeta-d2,couloir_5x5,R,B,False,0,victoire,victoire R,8,0.952,4,0.292,26
+alphabeta-d2,minmax-d2,couloir_5x5,B,B,True,0,defaite,victoire R,8,0.952,4,0.621,24
+minmax-d2,alphabeta-d2,couloir_5x5,R,R,True,0,victoire,victoire R,7,0.858,4,0.334,28
+alphabeta-d2,minmax-d2,couloir_5x5,B,R,False,0,defaite,victoire R,7,0.858,3,0.488,19
+minmax-d2,alphabeta-d2,exemple_7x7,B,B,True,0,victoire,victoire B,11,2.422,6,1.059,60
+alphabeta-d2,minmax-d2,exemple_7x7,R,B,False,0,defaite,victoire B,11,2.422,5,1.311,41
+minmax-d2,alphabeta-d2,exemple_7x7,B,R,False,0,defaite,victoire R,11,2.228,5,0.843,51
+alphabeta-d2,minmax-d2,exemple_7x7,R,R,True,0,victoire,victoire R,11,2.228,6,1.328,44
+minmax-d2,alphabeta-d2,exemple_7x7,R,B,False,0,defaite,victoire B,11,2.187,5,0.785,57
+alphabeta-d2,minmax-d2,exemple_7x7,B,B,True,0,victoire,victoire B,11,2.187,6,1.348,44
+minmax-d2,alphabeta-d2,exemple_7x7,R,R,True,0,victoire,victoire R,11,2.107,6,0.878,60
+alphabeta-d2,minmax-d2,exemple_7x7,B,R,False,0,defaite,victoire R,11,2.107,5,1.178,38
+minmax-d2,alphabeta-d2,porte_raccourci,B,B,True,0,victoire,victoire B,13,3.224,7,1.34,65
+alphabeta-d2,minmax-d2,porte_raccourci,R,B,False,0,defaite,victoire B,13,3.224,6,1.792,41
+minmax-d2,alphabeta-d2,porte_raccourci,B,R,False,0,defaite,victoire R,13,3.771,6,1.667,51
+alphabeta-d2,minmax-d2,porte_raccourci,R,R,True,0,victoire,victoire R,13,3.771,7,2.018,47
+minmax-d2,alphabeta-d2,porte_raccourci,R,B,False,0,defaite,victoire B,13,2.756,6,1.005,51
+alphabeta-d2,minmax-d2,porte_raccourci,B,B,True,0,victoire,victoire B,13,2.756,7,1.681,47
+minmax-d2,alphabeta-d2,porte_raccourci,R,R,True,0,victoire,victoire R,13,2.047,7,0.866,65
+alphabeta-d2,minmax-d2,porte_raccourci,B,R,False,0,defaite,victoire R,13,2.047,6,1.122,41
+minmax-d2,alphabeta-d2,salle_fermee,B,B,True,0,nul,nul (limite de tours),80,9.122,40,3.129,304
+alphabeta-d2,minmax-d2,salle_fermee,R,B,False,0,nul,nul (limite de tours),80,9.122,40,5.619,246
+minmax-d2,alphabeta-d2,salle_fermee,B,R,False,0,nul,nul (limite de tours),80,8.888,40,2.498,220
+alphabeta-d2,minmax-d2,salle_fermee,R,R,True,0,nul,nul (limite de tours),80,8.888,40,5.793,239
+minmax-d2,alphabeta-d2,salle_fermee,R,B,False,0,nul,nul (limite de tours),80,10.278,40,3.39,295
+alphabeta-d2,minmax-d2,salle_fermee,B,B,True,0,nul,nul (limite de tours),80,10.278,40,6.48,261
+minmax-d2,alphabeta-d2,salle_fermee,R,R,True,0,nul,nul (limite de tours),80,9.34,40,3.88,276
+alphabeta-d2,minmax-d2,salle_fermee,B,R,False,0,nul,nul (limite de tours),80,9.34,40,4.917,198
+minmax-d2,alphabeta-d2,arene_9x9,B,B,True,0,victoire,victoire B,23,7.262,12,3.054,210
+alphabeta-d2,minmax-d2,arene_9x9,R,B,False,0,defaite,victoire B,23,7.262,11,4.099,119
+minmax-d2,alphabeta-d2,arene_9x9,B,R,False,0,defaite,victoire R,23,7.674,11,3.052,196
+alphabeta-d2,minmax-d2,arene_9x9,R,R,True,0,victoire,victoire R,23,7.674,12,4.508,125
+minmax-d2,alphabeta-d2,arene_9x9,R,B,False,0,defaite,victoire B,23,7.842,11,3.139,196
+alphabeta-d2,minmax-d2,arene_9x9,B,B,True,0,victoire,victoire B,23,7.842,12,4.591,125
+minmax-d2,alphabeta-d2,arene_9x9,R,R,True,0,victoire,victoire R,23,7.252,12,2.93,210
+alphabeta-d2,minmax-d2,arene_9x9,B,R,False,0,defaite,victoire R,23,7.252,11,4.216,119
+minmax-d2,alphabeta-d2,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,7.799,22,2.782,181
+alphabeta-d2,minmax-d2,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,7.799,21,4.713,139
+minmax-d2,alphabeta-d2,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,6.499,21,2.228,170
+alphabeta-d2,minmax-d2,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,6.499,22,4.065,144
+minmax-d2,alphabeta-d2,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,6.635,21,2.524,170
+alphabeta-d2,minmax-d2,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,6.635,22,3.906,144
+minmax-d2,alphabeta-d2,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,6.654,22,2.499,181
+alphabeta-d2,minmax-d2,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,6.654,21,3.931,139
+minmax-d4,alphabeta-d4,couloir_5x5,B,B,True,0,defaite,victoire R,8,3.182,4,1.28,134
+alphabeta-d4,minmax-d4,couloir_5x5,R,B,False,0,victoire,victoire R,8,3.182,4,1.864,73
+minmax-d4,alphabeta-d4,couloir_5x5,B,R,False,0,defaite,victoire R,7,2.857,3,0.97,103
+alphabeta-d4,minmax-d4,couloir_5x5,R,R,True,0,victoire,victoire R,7,2.857,4,1.855,73
+minmax-d4,alphabeta-d4,couloir_5x5,R,B,False,0,victoire,victoire R,8,2.94,4,1.295,136
+alphabeta-d4,minmax-d4,couloir_5x5,B,B,True,0,defaite,victoire R,8,2.94,4,1.609,71
+minmax-d4,alphabeta-d4,couloir_5x5,R,R,True,0,victoire,victoire R,7,3.026,4,1.489,133
+alphabeta-d4,minmax-d4,couloir_5x5,B,R,False,0,defaite,victoire R,7,3.026,3,1.473,51
+minmax-d4,alphabeta-d4,exemple_7x7,B,B,True,0,victoire,victoire B,11,8.553,6,4.748,404
+alphabeta-d4,minmax-d4,exemple_7x7,R,B,False,0,defaite,victoire B,11,8.553,5,3.748,123
+minmax-d4,alphabeta-d4,exemple_7x7,B,R,False,0,defaite,victoire R,11,8.441,5,3.863,324
+alphabeta-d4,minmax-d4,exemple_7x7,R,R,True,0,victoire,victoire R,11,8.441,6,4.519,145
+minmax-d4,alphabeta-d4,exemple_7x7,R,B,False,0,defaite,victoire B,11,7.789,5,3.485,325
+alphabeta-d4,minmax-d4,exemple_7x7,B,B,True,0,victoire,victoire B,11,7.789,6,4.244,139
+minmax-d4,alphabeta-d4,exemple_7x7,R,R,True,0,victoire,victoire R,11,7.636,6,4.132,367
+alphabeta-d4,minmax-d4,exemple_7x7,B,R,False,0,defaite,victoire R,11,7.636,5,3.451,111
+minmax-d4,alphabeta-d4,porte_raccourci,B,B,True,0,victoire,victoire B,13,10.213,7,5.169,368
+alphabeta-d4,minmax-d4,porte_raccourci,R,B,False,0,defaite,victoire B,13,10.213,6,4.941,117
+minmax-d4,alphabeta-d4,porte_raccourci,B,R,False,0,defaite,victoire R,13,7.299,6,3.096,295
+alphabeta-d4,minmax-d4,porte_raccourci,R,R,True,0,victoire,victoire R,13,7.299,7,4.142,147
+minmax-d4,alphabeta-d4,porte_raccourci,R,B,False,0,defaite,victoire B,13,6.784,6,3.197,295
+alphabeta-d4,minmax-d4,porte_raccourci,B,B,True,0,victoire,victoire B,13,6.784,7,3.528,131
+minmax-d4,alphabeta-d4,porte_raccourci,R,R,True,0,victoire,victoire R,13,7.205,7,3.969,368
+alphabeta-d4,minmax-d4,porte_raccourci,B,R,False,0,defaite,victoire R,13,7.205,6,3.144,117
+minmax-d4,alphabeta-d4,salle_fermee,B,B,True,0,nul,nul (limite de tours),80,36.505,40,14.259,1198
+alphabeta-d4,minmax-d4,salle_fermee,R,B,False,0,nul,nul (limite de tours),80,36.505,40,20.228,701
+minmax-d4,alphabeta-d4,salle_fermee,B,R,False,0,nul,nul (limite de tours),80,32.242,40,12.858,870
+alphabeta-d4,minmax-d4,salle_fermee,R,R,True,0,nul,nul (limite de tours),80,32.242,40,18.829,683
+minmax-d4,alphabeta-d4,salle_fermee,R,B,False,0,nul,nul (limite de tours),80,42.499,40,18.178,1349
+alphabeta-d4,minmax-d4,salle_fermee,B,B,True,0,nul,nul (limite de tours),80,42.499,40,23.809,791
+minmax-d4,alphabeta-d4,salle_fermee,R,R,True,0,nul,nul (limite de tours),80,26.111,40,12.154,923
+alphabeta-d4,minmax-d4,salle_fermee,B,R,False,0,nul,nul (limite de tours),80,26.111,40,13.414,492
+minmax-d4,alphabeta-d4,arene_9x9,B,B,True,0,victoire,victoire B,23,61.161,12,36.302,2406
+alphabeta-d4,minmax-d4,arene_9x9,R,B,False,0,defaite,victoire B,23,61.161,11,24.683,527
+minmax-d4,alphabeta-d4,arene_9x9,B,R,False,0,defaite,victoire R,23,64.337,11,35.258,2288
+alphabeta-d4,minmax-d4,arene_9x9,R,R,True,0,victoire,victoire R,23,64.337,12,28.917,581
+minmax-d4,alphabeta-d4,arene_9x9,R,B,False,0,defaite,victoire B,23,66.53,11,37.498,2342
+alphabeta-d4,minmax-d4,arene_9x9,B,B,True,0,victoire,victoire B,23,66.53,12,28.877,583
+minmax-d4,alphabeta-d4,arene_9x9,R,R,True,0,victoire,victoire R,23,48.984,12,29.369,2406
+alphabeta-d4,minmax-d4,arene_9x9,B,R,False,0,defaite,victoire R,23,48.984,11,19.492,527
+minmax-d4,alphabeta-d4,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,21.381,22,9.927,905
+alphabeta-d4,minmax-d4,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,21.381,21,11.242,422
+minmax-d4,alphabeta-d4,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,20.772,21,9.176,857
+alphabeta-d4,minmax-d4,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,20.772,22,11.383,436
+minmax-d4,alphabeta-d4,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,21.461,21,9.481,849
+alphabeta-d4,minmax-d4,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,21.461,22,11.769,446
+minmax-d4,alphabeta-d4,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,20.163,22,9.049,905
+alphabeta-d4,minmax-d4,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,20.163,21,10.904,422
+minmax-d6,alphabeta-d6,couloir_5x5,B,B,True,0,defaite,victoire R,8,8.656,4,5.033,543
+alphabeta-d6,minmax-d6,couloir_5x5,R,B,False,0,victoire,victoire R,8,8.656,4,3.58,146
+minmax-d6,alphabeta-d6,couloir_5x5,B,R,False,0,defaite,victoire R,7,7.693,3,3.919,408
+alphabeta-d6,minmax-d6,couloir_5x5,R,R,True,0,victoire,victoire R,7,7.693,4,3.741,148
+minmax-d6,alphabeta-d6,couloir_5x5,R,B,False,0,victoire,victoire R,8,6.791,4,3.913,423
+alphabeta-d6,minmax-d6,couloir_5x5,B,B,True,0,defaite,victoire R,8,6.791,4,2.84,123
+minmax-d6,alphabeta-d6,couloir_5x5,R,R,True,0,victoire,victoire R,7,7.137,4,4.728,472
+alphabeta-d6,minmax-d6,couloir_5x5,B,R,False,0,defaite,victoire R,7,7.137,3,2.376,103
+minmax-d6,alphabeta-d6,exemple_7x7,B,B,True,0,victoire,victoire B,11,35.282,6,27.206,2562
+alphabeta-d6,minmax-d6,exemple_7x7,R,B,False,0,defaite,victoire B,11,35.282,5,8.023,269
+minmax-d6,alphabeta-d6,exemple_7x7,B,R,False,0,defaite,victoire R,11,27.172,5,15.443,1461
+alphabeta-d6,minmax-d6,exemple_7x7,R,R,True,0,victoire,victoire R,11,27.172,6,11.675,380
+minmax-d6,alphabeta-d6,exemple_7x7,R,B,False,0,defaite,victoire B,11,44.27,5,30.859,2251
+alphabeta-d6,minmax-d6,exemple_7x7,B,B,True,0,victoire,victoire B,11,44.27,6,13.346,372
+minmax-d6,alphabeta-d6,exemple_7x7,R,R,True,0,victoire,victoire R,11,25.262,6,19.488,2464
+alphabeta-d6,minmax-d6,exemple_7x7,B,R,False,0,defaite,victoire R,11,25.262,5,5.73,239
+minmax-d6,alphabeta-d6,porte_raccourci,B,B,True,0,victoire,victoire B,13,23.666,7,17.591,2235
+alphabeta-d6,minmax-d6,porte_raccourci,R,B,False,0,defaite,victoire B,13,23.666,6,6.011,248
+minmax-d6,alphabeta-d6,porte_raccourci,B,R,False,0,defaite,victoire R,13,19.53,6,10.175,1274
+alphabeta-d6,minmax-d6,porte_raccourci,R,R,True,0,victoire,victoire R,13,19.53,7,9.288,370
+minmax-d6,alphabeta-d6,porte_raccourci,R,B,False,0,defaite,victoire B,13,21.037,6,14.181,1666
+alphabeta-d6,minmax-d6,porte_raccourci,B,B,True,0,victoire,victoire B,13,21.037,7,6.803,283
+minmax-d6,alphabeta-d6,porte_raccourci,R,R,True,0,victoire,victoire R,13,23.6,7,17.64,2235
+alphabeta-d6,minmax-d6,porte_raccourci,B,R,False,0,defaite,victoire R,13,23.6,6,5.911,248
+minmax-d6,alphabeta-d6,salle_fermee,B,B,True,0,nul,nul (limite de tours),80,80.206,40,41.233,4499
+alphabeta-d6,minmax-d6,salle_fermee,R,B,False,0,nul,nul (limite de tours),80,80.206,40,38.581,1660
+minmax-d6,alphabeta-d6,salle_fermee,B,R,False,0,defaite,victoire R,41,53.532,20,26.648,1832
+alphabeta-d6,minmax-d6,salle_fermee,R,R,True,0,victoire,victoire R,41,53.532,21,26.537,803
+minmax-d6,alphabeta-d6,salle_fermee,R,B,False,0,defaite,victoire B,41,95.816,20,53.438,2953
+alphabeta-d6,minmax-d6,salle_fermee,B,B,True,0,victoire,victoire B,41,95.816,21,42.049,996
+minmax-d6,alphabeta-d6,salle_fermee,R,R,True,0,nul,nul (limite de tours),80,59.696,40,34.939,3125
+alphabeta-d6,minmax-d6,salle_fermee,B,R,False,0,nul,nul (limite de tours),80,59.696,40,24.245,1047
+minmax-d6,alphabeta-d6,arene_9x9,B,B,True,0,victoire,victoire B,23,367.502,12,306.463,28615
+alphabeta-d6,minmax-d6,arene_9x9,R,B,False,0,defaite,victoire B,23,367.502,11,60.92,1775
+minmax-d6,alphabeta-d6,arene_9x9,B,R,False,0,defaite,victoire R,23,456.292,11,365.44,26786
+alphabeta-d6,minmax-d6,arene_9x9,R,R,True,0,victoire,victoire R,23,456.292,12,90.71,1996
+minmax-d6,alphabeta-d6,arene_9x9,R,B,False,0,defaite,victoire B,23,479.55,11,377.029,26770
+alphabeta-d6,minmax-d6,arene_9x9,B,B,True,0,victoire,victoire B,23,479.55,12,102.336,1998
+minmax-d6,alphabeta-d6,arene_9x9,R,R,True,0,victoire,victoire R,23,530.398,12,440.901,28615
+alphabeta-d6,minmax-d6,arene_9x9,B,R,False,0,defaite,victoire R,23,530.398,11,89.251,1775
+minmax-d6,alphabeta-d6,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,99.273,22,61.177,4325
+alphabeta-d6,minmax-d6,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,99.273,21,37.808,1031
+minmax-d6,alphabeta-d6,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,99.837,21,59.065,4064
+alphabeta-d6,minmax-d6,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,99.837,22,40.44,1061
+minmax-d6,alphabeta-d6,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,83.446,21,48.141,4050
+alphabeta-d6,minmax-d6,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,83.446,22,35.059,1127
+minmax-d6,alphabeta-d6,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,93.939,22,56.978,4325
+alphabeta-d6,minmax-d6,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,93.939,21,36.668,1031

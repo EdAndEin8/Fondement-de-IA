@@ -1,0 +1,2209 @@
+agent,adversaire,carte,couleur,premier,commence,graine,issue,raison,tours,duree_ms,decisions,temps_ms,noeuds
+aleatoire,astar,couloir_5x5,B,B,True,0,defaite,victoire R,8,0.525,4,0.076,0
+astar,aleatoire,couloir_5x5,R,B,False,0,victoire,victoire R,8,0.525,4,0.376,10
+aleatoire,astar,couloir_5x5,B,B,True,1,defaite,victoire R,8,0.34,4,0.017,0
+astar,aleatoire,couloir_5x5,R,B,False,1,victoire,victoire R,8,0.34,4,0.28,10
+aleatoire,astar,couloir_5x5,B,B,True,2,defaite,victoire R,8,0.364,4,0.016,0
+astar,aleatoire,couloir_5x5,R,B,False,2,victoire,victoire R,8,0.364,4,0.305,10
+aleatoire,astar,couloir_5x5,B,B,True,3,defaite,victoire R,8,1.033,4,0.02,0
+astar,aleatoire,couloir_5x5,R,B,False,3,victoire,victoire R,8,1.033,4,0.958,10
+aleatoire,astar,couloir_5x5,B,B,True,4,defaite,victoire R,8,0.338,4,0.017,0
+astar,aleatoire,couloir_5x5,R,B,False,4,victoire,victoire R,8,0.338,4,0.279,10
+aleatoire,astar,couloir_5x5,B,B,True,5,defaite,victoire R,8,0.363,4,0.016,0
+astar,aleatoire,couloir_5x5,R,B,False,5,victoire,victoire R,8,0.363,4,0.304,10
+aleatoire,astar,couloir_5x5,B,B,True,6,defaite,victoire R,8,0.32,4,0.02,0
+astar,aleatoire,couloir_5x5,R,B,False,6,victoire,victoire R,8,0.32,4,0.26,10
+aleatoire,astar,couloir_5x5,B,B,True,7,defaite,victoire R,8,0.353,4,0.025,0
+astar,aleatoire,couloir_5x5,R,B,False,7,victoire,victoire R,8,0.353,4,0.267,10
+aleatoire,astar,couloir_5x5,B,B,True,8,defaite,victoire R,8,0.316,4,0.016,0
+astar,aleatoire,couloir_5x5,R,B,False,8,victoire,victoire R,8,0.316,4,0.26,10
+aleatoire,astar,couloir_5x5,B,B,True,9,defaite,victoire R,8,0.32,4,0.015,0
+astar,aleatoire,couloir_5x5,R,B,False,9,victoire,victoire R,8,0.32,4,0.264,10
+aleatoire,astar,couloir_5x5,B,R,False,0,defaite,victoire R,7,0.352,3,0.011,0
+astar,aleatoire,couloir_5x5,R,R,True,0,victoire,victoire R,7,0.352,4,0.304,10
+aleatoire,astar,couloir_5x5,B,R,False,1,defaite,victoire R,7,0.419,3,0.012,0
+astar,aleatoire,couloir_5x5,R,R,True,1,victoire,victoire R,7,0.419,4,0.37,10
+aleatoire,astar,couloir_5x5,B,R,False,2,defaite,victoire R,7,0.418,3,0.013,0
+astar,aleatoire,couloir_5x5,R,R,True,2,victoire,victoire R,7,0.418,4,0.365,10
+aleatoire,astar,couloir_5x5,B,R,False,3,defaite,victoire R,7,0.316,3,0.011,0
+astar,aleatoire,couloir_5x5,R,R,True,3,victoire,victoire R,7,0.316,4,0.269,10
+aleatoire,astar,couloir_5x5,B,R,False,4,defaite,victoire R,7,0.346,3,0.012,0
+astar,aleatoire,couloir_5x5,R,R,True,4,victoire,victoire R,7,0.346,4,0.298,10
+aleatoire,astar,couloir_5x5,B,R,False,5,defaite,victoire R,7,0.312,3,0.011,0
+astar,aleatoire,couloir_5x5,R,R,True,5,victoire,victoire R,7,0.312,4,0.265,10
+aleatoire,astar,couloir_5x5,B,R,False,6,defaite,victoire R,7,0.304,3,0.011,0
+astar,aleatoire,couloir_5x5,R,R,True,6,victoire,victoire R,7,0.304,4,0.259,10
+aleatoire,astar,couloir_5x5,B,R,False,7,defaite,victoire R,7,0.339,3,0.012,0
+astar,aleatoire,couloir_5x5,R,R,True,7,victoire,victoire R,7,0.339,4,0.29,10
+aleatoire,astar,couloir_5x5,B,R,False,8,defaite,victoire R,7,0.7,3,0.011,0
+astar,aleatoire,couloir_5x5,R,R,True,8,victoire,victoire R,7,0.7,4,0.648,10
+aleatoire,astar,couloir_5x5,B,R,False,9,defaite,victoire R,7,0.337,3,0.014,0
+astar,aleatoire,couloir_5x5,R,R,True,9,victoire,victoire R,7,0.337,4,0.282,10
+aleatoire,astar,couloir_5x5,R,B,False,0,victoire,victoire R,12,0.807,6,0.048,0
+astar,aleatoire,couloir_5x5,B,B,True,0,defaite,victoire R,12,0.807,6,0.658,50
+aleatoire,astar,couloir_5x5,R,B,False,1,defaite,victoire B,19,1.021,9,0.035,0
+astar,aleatoire,couloir_5x5,B,B,True,1,victoire,victoire B,19,1.021,10,0.888,53
+aleatoire,astar,couloir_5x5,R,B,False,2,defaite,victoire B,11,0.543,5,0.02,0
+astar,aleatoire,couloir_5x5,B,B,True,2,victoire,victoire B,11,0.543,6,0.466,21
+aleatoire,astar,couloir_5x5,R,B,False,3,defaite,victoire B,11,0.626,5,0.02,0
+astar,aleatoire,couloir_5x5,B,B,True,3,victoire,victoire B,11,0.626,6,0.547,21
+aleatoire,astar,couloir_5x5,R,B,False,4,defaite,victoire B,11,0.627,5,0.021,0
+astar,aleatoire,couloir_5x5,B,B,True,4,victoire,victoire B,11,0.627,6,0.548,21
+aleatoire,astar,couloir_5x5,R,B,False,5,defaite,victoire B,11,0.624,5,0.02,0
+astar,aleatoire,couloir_5x5,B,B,True,5,victoire,victoire B,11,0.624,6,0.545,21
+aleatoire,astar,couloir_5x5,R,B,False,6,defaite,victoire B,11,0.524,5,0.019,0
+astar,aleatoire,couloir_5x5,B,B,True,6,victoire,victoire B,11,0.524,6,0.444,21
+aleatoire,astar,couloir_5x5,R,B,False,7,defaite,victoire B,11,0.51,5,0.019,0
+astar,aleatoire,couloir_5x5,B,B,True,7,victoire,victoire B,11,0.51,6,0.435,21
+aleatoire,astar,couloir_5x5,R,B,False,8,defaite,victoire B,11,0.53,5,0.019,0
+astar,aleatoire,couloir_5x5,B,B,True,8,victoire,victoire B,11,0.53,6,0.453,21
+aleatoire,astar,couloir_5x5,R,B,False,9,defaite,victoire B,11,0.561,5,0.027,0
+astar,aleatoire,couloir_5x5,B,B,True,9,victoire,victoire B,11,0.561,6,0.47,21
+aleatoire,astar,couloir_5x5,R,R,True,0,victoire,victoire R,11,0.6,6,0.029,0
+astar,aleatoire,couloir_5x5,B,R,False,0,defaite,victoire R,11,0.6,5,0.513,46
+aleatoire,astar,couloir_5x5,R,R,True,1,victoire,victoire R,19,1.01,10,0.039,0
+astar,aleatoire,couloir_5x5,B,R,False,1,defaite,victoire R,19,1.01,9,0.873,64
+aleatoire,astar,couloir_5x5,R,R,True,2,defaite,victoire B,12,0.527,6,0.03,0
+astar,aleatoire,couloir_5x5,B,R,False,2,victoire,victoire B,12,0.527,6,0.431,21
+aleatoire,astar,couloir_5x5,R,R,True,3,defaite,victoire B,12,0.56,6,0.023,0
+astar,aleatoire,couloir_5x5,B,R,False,3,victoire,victoire B,12,0.56,6,0.474,21
+aleatoire,astar,couloir_5x5,R,R,True,4,victoire,victoire R,11,0.786,6,0.025,0
+astar,aleatoire,couloir_5x5,B,R,False,4,defaite,victoire R,11,0.786,5,0.7,20
+aleatoire,astar,couloir_5x5,R,R,True,5,defaite,victoire B,12,1.368,6,0.024,0
+astar,aleatoire,couloir_5x5,B,R,False,5,victoire,victoire B,12,1.368,6,1.275,21
+aleatoire,astar,couloir_5x5,R,R,True,6,defaite,victoire B,12,0.566,6,0.023,0
+astar,aleatoire,couloir_5x5,B,R,False,6,victoire,victoire B,12,0.566,6,0.479,21
+aleatoire,astar,couloir_5x5,R,R,True,7,defaite,victoire B,12,0.505,6,0.022,0
+astar,aleatoire,couloir_5x5,B,R,False,7,victoire,victoire B,12,0.505,6,0.423,21
+aleatoire,astar,couloir_5x5,R,R,True,8,defaite,victoire B,12,0.674,6,0.024,0
+astar,aleatoire,couloir_5x5,B,R,False,8,victoire,victoire B,12,0.674,6,0.5,21
+aleatoire,astar,couloir_5x5,R,R,True,9,defaite,victoire B,12,0.592,6,0.051,0
+astar,aleatoire,couloir_5x5,B,R,False,9,victoire,victoire B,12,0.592,6,0.472,21
+aleatoire,astar,exemple_7x7,B,B,True,0,defaite,victoire R,12,1.541,6,0.031,0
+astar,aleatoire,exemple_7x7,R,B,False,0,victoire,victoire R,12,1.541,6,1.402,21
+aleatoire,astar,exemple_7x7,B,B,True,1,defaite,victoire R,12,1.614,6,0.025,0
+astar,aleatoire,exemple_7x7,R,B,False,1,victoire,victoire R,12,1.614,6,1.517,21
+aleatoire,astar,exemple_7x7,B,B,True,2,defaite,victoire R,12,1.437,6,0.028,0
+astar,aleatoire,exemple_7x7,R,B,False,2,victoire,victoire R,12,1.437,6,1.34,21
+aleatoire,astar,exemple_7x7,B,B,True,3,defaite,victoire R,12,1.432,6,0.027,0
+astar,aleatoire,exemple_7x7,R,B,False,3,victoire,victoire R,12,1.432,6,1.336,21
+aleatoire,astar,exemple_7x7,B,B,True,4,defaite,victoire R,12,1.365,6,0.026,0
+astar,aleatoire,exemple_7x7,R,B,False,4,victoire,victoire R,12,1.365,6,1.273,21
+aleatoire,astar,exemple_7x7,B,B,True,5,defaite,victoire R,12,1.661,6,0.03,0
+astar,aleatoire,exemple_7x7,R,B,False,5,victoire,victoire R,12,1.661,6,1.557,21
+aleatoire,astar,exemple_7x7,B,B,True,6,defaite,victoire R,12,1.69,6,0.025,0
+astar,aleatoire,exemple_7x7,R,B,False,6,victoire,victoire R,12,1.69,6,1.596,21
+aleatoire,astar,exemple_7x7,B,B,True,7,defaite,victoire R,12,1.848,6,0.031,0
+astar,aleatoire,exemple_7x7,R,B,False,7,victoire,victoire R,12,1.848,6,1.714,21
+aleatoire,astar,exemple_7x7,B,B,True,8,defaite,victoire R,12,1.366,6,0.025,0
+astar,aleatoire,exemple_7x7,R,B,False,8,victoire,victoire R,12,1.366,6,1.276,21
+aleatoire,astar,exemple_7x7,B,B,True,9,defaite,victoire R,12,1.678,6,0.04,0
+astar,aleatoire,exemple_7x7,R,B,False,9,victoire,victoire R,12,1.678,6,1.545,21
+aleatoire,astar,exemple_7x7,B,R,False,0,defaite,victoire R,11,1.347,5,0.021,0
+astar,aleatoire,exemple_7x7,R,R,True,0,victoire,victoire R,11,1.347,6,1.265,21
+aleatoire,astar,exemple_7x7,B,R,False,1,defaite,victoire R,11,1.335,5,0.021,0
+astar,aleatoire,exemple_7x7,R,R,True,1,victoire,victoire R,11,1.335,6,1.255,21
+aleatoire,astar,exemple_7x7,B,R,False,2,defaite,victoire R,11,1.44,5,0.02,0
+astar,aleatoire,exemple_7x7,R,R,True,2,victoire,victoire R,11,1.44,6,1.361,21
+aleatoire,astar,exemple_7x7,B,R,False,3,defaite,victoire R,11,1.407,5,0.027,0
+astar,aleatoire,exemple_7x7,R,R,True,3,victoire,victoire R,11,1.407,6,1.32,21
+aleatoire,astar,exemple_7x7,B,R,False,4,defaite,victoire R,11,1.635,5,0.02,0
+astar,aleatoire,exemple_7x7,R,R,True,4,victoire,victoire R,11,1.635,6,1.549,21
+aleatoire,astar,exemple_7x7,B,R,False,5,defaite,victoire R,11,1.424,5,0.023,0
+astar,aleatoire,exemple_7x7,R,R,True,5,victoire,victoire R,11,1.424,6,1.337,21
+aleatoire,astar,exemple_7x7,B,R,False,6,defaite,victoire R,11,1.408,5,0.02,0
+astar,aleatoire,exemple_7x7,R,R,True,6,victoire,victoire R,11,1.408,6,1.326,21
+aleatoire,astar,exemple_7x7,B,R,False,7,defaite,victoire R,11,1.38,5,0.021,0
+astar,aleatoire,exemple_7x7,R,R,True,7,victoire,victoire R,11,1.38,6,1.298,21
+aleatoire,astar,exemple_7x7,B,R,False,8,defaite,victoire R,11,1.456,5,0.02,0
+astar,aleatoire,exemple_7x7,R,R,True,8,victoire,victoire R,11,1.456,6,1.374,21
+aleatoire,astar,exemple_7x7,B,R,False,9,defaite,victoire R,11,1.324,5,0.02,0
+astar,aleatoire,exemple_7x7,R,R,True,9,victoire,victoire R,11,1.324,6,1.245,21
+aleatoire,astar,exemple_7x7,R,B,False,0,defaite,victoire B,11,1.379,5,0.021,0
+astar,aleatoire,exemple_7x7,B,B,True,0,victoire,victoire B,11,1.379,6,1.299,21
+aleatoire,astar,exemple_7x7,R,B,False,1,defaite,victoire B,11,1.293,5,0.022,0
+astar,aleatoire,exemple_7x7,B,B,True,1,victoire,victoire B,11,1.293,6,1.211,21
+aleatoire,astar,exemple_7x7,R,B,False,2,defaite,victoire B,11,1.765,5,0.025,0
+astar,aleatoire,exemple_7x7,B,B,True,2,victoire,victoire B,11,1.765,6,1.676,21
+aleatoire,astar,exemple_7x7,R,B,False,3,defaite,victoire B,11,1.894,5,0.023,0
+astar,aleatoire,exemple_7x7,B,B,True,3,victoire,victoire B,11,1.894,6,1.805,21
+aleatoire,astar,exemple_7x7,R,B,False,4,defaite,victoire B,11,1.366,5,0.021,0
+astar,aleatoire,exemple_7x7,B,B,True,4,victoire,victoire B,11,1.366,6,1.254,21
+aleatoire,astar,exemple_7x7,R,B,False,5,defaite,victoire B,11,1.34,5,0.023,0
+astar,aleatoire,exemple_7x7,B,B,True,5,victoire,victoire B,11,1.34,6,1.252,21
+aleatoire,astar,exemple_7x7,R,B,False,6,defaite,victoire B,11,1.304,5,0.022,0
+astar,aleatoire,exemple_7x7,B,B,True,6,victoire,victoire B,11,1.304,6,1.221,21
+aleatoire,astar,exemple_7x7,R,B,False,7,defaite,victoire B,11,1.363,5,0.021,0
+astar,aleatoire,exemple_7x7,B,B,True,7,victoire,victoire B,11,1.363,6,1.284,21
+aleatoire,astar,exemple_7x7,R,B,False,8,defaite,victoire B,11,1.541,5,0.021,0
+astar,aleatoire,exemple_7x7,B,B,True,8,victoire,victoire B,11,1.541,6,1.453,21
+aleatoire,astar,exemple_7x7,R,B,False,9,defaite,victoire B,11,1.472,5,0.023,0
+astar,aleatoire,exemple_7x7,B,B,True,9,victoire,victoire B,11,1.472,6,1.358,21
+aleatoire,astar,exemple_7x7,R,R,True,0,defaite,victoire B,12,1.382,6,0.029,0
+astar,aleatoire,exemple_7x7,B,R,False,0,victoire,victoire B,12,1.382,6,1.282,21
+aleatoire,astar,exemple_7x7,R,R,True,1,defaite,victoire B,12,1.276,6,0.025,0
+astar,aleatoire,exemple_7x7,B,R,False,1,victoire,victoire B,12,1.276,6,1.179,21
+aleatoire,astar,exemple_7x7,R,R,True,2,defaite,victoire B,12,1.384,6,0.025,0
+astar,aleatoire,exemple_7x7,B,R,False,2,victoire,victoire B,12,1.384,6,1.295,21
+aleatoire,astar,exemple_7x7,R,R,True,3,defaite,victoire B,12,1.294,6,0.025,0
+astar,aleatoire,exemple_7x7,B,R,False,3,victoire,victoire B,12,1.294,6,1.206,21
+aleatoire,astar,exemple_7x7,R,R,True,4,defaite,victoire B,12,1.318,6,0.024,0
+astar,aleatoire,exemple_7x7,B,R,False,4,victoire,victoire B,12,1.318,6,1.231,21
+aleatoire,astar,exemple_7x7,R,R,True,5,defaite,victoire B,12,1.346,6,0.047,0
+astar,aleatoire,exemple_7x7,B,R,False,5,victoire,victoire B,12,1.346,6,1.23,21
+aleatoire,astar,exemple_7x7,R,R,True,6,defaite,victoire B,12,1.339,6,0.027,0
+astar,aleatoire,exemple_7x7,B,R,False,6,victoire,victoire B,12,1.339,6,1.245,21
+aleatoire,astar,exemple_7x7,R,R,True,7,defaite,victoire B,12,1.47,6,0.025,0
+astar,aleatoire,exemple_7x7,B,R,False,7,victoire,victoire B,12,1.47,6,1.378,21
+aleatoire,astar,exemple_7x7,R,R,True,8,defaite,victoire B,12,1.499,6,0.024,0
+astar,aleatoire,exemple_7x7,B,R,False,8,victoire,victoire B,12,1.499,6,1.407,21
+aleatoire,astar,exemple_7x7,R,R,True,9,defaite,victoire B,12,1.298,6,0.025,0
+astar,aleatoire,exemple_7x7,B,R,False,9,victoire,victoire B,12,1.298,6,1.209,21
+aleatoire,astar,porte_raccourci,B,B,True,0,defaite,victoire R,14,1.533,7,0.068,0
+astar,aleatoire,porte_raccourci,R,B,False,0,victoire,victoire R,14,1.533,7,1.373,28
+aleatoire,astar,porte_raccourci,B,B,True,1,defaite,victoire R,14,1.413,7,0.027,0
+astar,aleatoire,porte_raccourci,R,B,False,1,victoire,victoire R,14,1.413,7,1.311,28
+aleatoire,astar,porte_raccourci,B,B,True,2,defaite,victoire R,14,1.375,7,0.03,0
+astar,aleatoire,porte_raccourci,R,B,False,2,victoire,victoire R,14,1.375,7,1.251,28
+aleatoire,astar,porte_raccourci,B,B,True,3,defaite,victoire R,14,1.387,7,0.026,0
+astar,aleatoire,porte_raccourci,R,B,False,3,victoire,victoire R,14,1.387,7,1.288,28
+aleatoire,astar,porte_raccourci,B,B,True,4,defaite,victoire R,14,1.372,7,0.03,0
+astar,aleatoire,porte_raccourci,R,B,False,4,victoire,victoire R,14,1.372,7,1.262,28
+aleatoire,astar,porte_raccourci,B,B,True,5,defaite,victoire R,14,1.39,7,0.027,0
+astar,aleatoire,porte_raccourci,R,B,False,5,victoire,victoire R,14,1.39,7,1.287,28
+aleatoire,astar,porte_raccourci,B,B,True,6,defaite,victoire R,14,1.491,7,0.03,0
+astar,aleatoire,porte_raccourci,R,B,False,6,victoire,victoire R,14,1.491,7,1.382,28
+aleatoire,astar,porte_raccourci,B,B,True,7,defaite,victoire R,14,1.342,7,0.028,0
+astar,aleatoire,porte_raccourci,R,B,False,7,victoire,victoire R,14,1.342,7,1.24,28
+aleatoire,astar,porte_raccourci,B,B,True,8,defaite,victoire R,14,1.388,7,0.032,0
+astar,aleatoire,porte_raccourci,R,B,False,8,victoire,victoire R,14,1.388,7,1.274,28
+aleatoire,astar,porte_raccourci,B,B,True,9,defaite,victoire R,14,1.763,7,0.028,0
+astar,aleatoire,porte_raccourci,R,B,False,9,victoire,victoire R,14,1.763,7,1.33,28
+aleatoire,astar,porte_raccourci,B,R,False,0,defaite,victoire R,13,1.5,6,0.024,0
+astar,aleatoire,porte_raccourci,R,R,True,0,victoire,victoire R,13,1.5,7,1.401,28
+aleatoire,astar,porte_raccourci,B,R,False,1,defaite,victoire R,13,1.453,6,0.023,0
+astar,aleatoire,porte_raccourci,R,R,True,1,victoire,victoire R,13,1.453,7,1.36,28
+aleatoire,astar,porte_raccourci,B,R,False,2,defaite,victoire R,13,1.43,6,0.022,0
+astar,aleatoire,porte_raccourci,R,R,True,2,victoire,victoire R,13,1.43,7,1.336,28
+aleatoire,astar,porte_raccourci,B,R,False,3,defaite,victoire R,13,4.224,6,0.033,0
+astar,aleatoire,porte_raccourci,R,R,True,3,victoire,victoire R,13,4.224,7,3.966,28
+aleatoire,astar,porte_raccourci,B,R,False,4,defaite,victoire R,13,3.447,6,0.025,0
+astar,aleatoire,porte_raccourci,R,R,True,4,victoire,victoire R,13,3.447,7,3.331,28
+aleatoire,astar,porte_raccourci,B,R,False,5,defaite,victoire R,13,1.837,6,0.027,0
+astar,aleatoire,porte_raccourci,R,R,True,5,victoire,victoire R,13,1.837,7,1.72,28
+aleatoire,astar,porte_raccourci,B,R,False,6,defaite,victoire R,13,1.679,6,0.027,0
+astar,aleatoire,porte_raccourci,R,R,True,6,victoire,victoire R,13,1.679,7,1.573,28
+aleatoire,astar,porte_raccourci,B,R,False,7,defaite,victoire R,13,1.431,6,0.025,0
+astar,aleatoire,porte_raccourci,R,R,True,7,victoire,victoire R,13,1.431,7,1.334,28
+aleatoire,astar,porte_raccourci,B,R,False,8,defaite,victoire R,13,1.41,6,0.043,0
+astar,aleatoire,porte_raccourci,R,R,True,8,victoire,victoire R,13,1.41,7,1.268,28
+aleatoire,astar,porte_raccourci,B,R,False,9,defaite,victoire R,13,1.443,6,0.044,0
+astar,aleatoire,porte_raccourci,R,R,True,9,victoire,victoire R,13,1.443,7,1.32,28
+aleatoire,astar,porte_raccourci,R,B,False,0,defaite,victoire B,13,1.739,6,0.026,0
+astar,aleatoire,porte_raccourci,B,B,True,0,victoire,victoire B,13,1.739,7,1.637,28
+aleatoire,astar,porte_raccourci,R,B,False,1,defaite,victoire B,13,1.976,6,0.026,0
+astar,aleatoire,porte_raccourci,B,B,True,1,victoire,victoire B,13,1.976,7,1.867,28
+aleatoire,astar,porte_raccourci,R,B,False,2,defaite,victoire B,13,1.608,6,0.026,0
+astar,aleatoire,porte_raccourci,B,B,True,2,victoire,victoire B,13,1.608,7,1.51,28
+aleatoire,astar,porte_raccourci,R,B,False,3,defaite,victoire B,13,1.663,6,0.024,0
+astar,aleatoire,porte_raccourci,B,B,True,3,victoire,victoire B,13,1.663,7,1.564,28
+aleatoire,astar,porte_raccourci,R,B,False,4,defaite,victoire B,13,9.929,6,0.027,0
+astar,aleatoire,porte_raccourci,B,B,True,4,victoire,victoire B,13,9.929,7,9.78,28
+aleatoire,astar,porte_raccourci,R,B,False,5,defaite,victoire B,13,3.027,6,0.035,0
+astar,aleatoire,porte_raccourci,B,B,True,5,victoire,victoire B,13,3.027,7,2.833,28
+aleatoire,astar,porte_raccourci,R,B,False,6,defaite,victoire B,13,2.2,6,0.034,0
+astar,aleatoire,porte_raccourci,B,B,True,6,victoire,victoire B,13,2.2,7,2.061,28
+aleatoire,astar,porte_raccourci,R,B,False,7,defaite,victoire B,13,2.326,6,0.034,0
+astar,aleatoire,porte_raccourci,B,B,True,7,victoire,victoire B,13,2.326,7,2.188,28
+aleatoire,astar,porte_raccourci,R,B,False,8,defaite,victoire B,13,2.214,6,0.032,0
+astar,aleatoire,porte_raccourci,B,B,True,8,victoire,victoire B,13,2.214,7,2.084,28
+aleatoire,astar,porte_raccourci,R,B,False,9,defaite,victoire B,13,2.317,6,0.034,0
+astar,aleatoire,porte_raccourci,B,B,True,9,victoire,victoire B,13,2.317,7,2.163,28
+aleatoire,astar,porte_raccourci,R,R,True,0,defaite,victoire B,14,2.243,7,0.039,0
+astar,aleatoire,porte_raccourci,B,R,False,0,victoire,victoire B,14,2.243,7,2.093,28
+aleatoire,astar,porte_raccourci,R,R,True,1,defaite,victoire B,14,2.224,7,0.056,0
+astar,aleatoire,porte_raccourci,B,R,False,1,victoire,victoire B,14,2.224,7,2.061,28
+aleatoire,astar,porte_raccourci,R,R,True,2,defaite,victoire B,14,2.292,7,0.042,0
+astar,aleatoire,porte_raccourci,B,R,False,2,victoire,victoire B,14,2.292,7,2.136,28
+aleatoire,astar,porte_raccourci,R,R,True,3,defaite,victoire B,14,2.254,7,0.041,0
+astar,aleatoire,porte_raccourci,B,R,False,3,victoire,victoire B,14,2.254,7,2.105,28
+aleatoire,astar,porte_raccourci,R,R,True,4,defaite,victoire B,14,2.231,7,0.04,0
+astar,aleatoire,porte_raccourci,B,R,False,4,victoire,victoire B,14,2.231,7,2.074,28
+aleatoire,astar,porte_raccourci,R,R,True,5,defaite,victoire B,14,2.311,7,0.042,0
+astar,aleatoire,porte_raccourci,B,R,False,5,victoire,victoire B,14,2.311,7,2.154,28
+aleatoire,astar,porte_raccourci,R,R,True,6,defaite,victoire B,14,2.326,7,0.044,0
+astar,aleatoire,porte_raccourci,B,R,False,6,victoire,victoire B,14,2.326,7,2.156,28
+aleatoire,astar,porte_raccourci,R,R,True,7,defaite,victoire B,14,2.192,7,0.039,0
+astar,aleatoire,porte_raccourci,B,R,False,7,victoire,victoire B,14,2.192,7,2.045,28
+aleatoire,astar,porte_raccourci,R,R,True,8,defaite,victoire B,14,2.19,7,0.035,0
+astar,aleatoire,porte_raccourci,B,R,False,8,victoire,victoire B,14,2.19,7,2.052,28
+aleatoire,astar,porte_raccourci,R,R,True,9,defaite,victoire B,14,2.153,7,0.039,0
+astar,aleatoire,porte_raccourci,B,R,False,9,victoire,victoire B,14,2.153,7,2.012,28
+aleatoire,astar,salle_fermee,B,B,True,0,defaite,victoire R,42,6.822,21,0.105,0
+astar,aleatoire,salle_fermee,R,B,False,0,victoire,victoire R,42,6.822,21,6.406,237
+aleatoire,astar,salle_fermee,B,B,True,1,defaite,victoire R,42,5.323,21,0.081,0
+astar,aleatoire,salle_fermee,R,B,False,1,victoire,victoire R,42,5.323,21,4.99,251
+aleatoire,astar,salle_fermee,B,B,True,2,defaite,victoire R,42,5.682,21,0.082,0
+astar,aleatoire,salle_fermee,R,B,False,2,victoire,victoire R,42,5.682,21,5.366,255
+aleatoire,astar,salle_fermee,B,B,True,3,defaite,victoire R,42,5.346,21,0.082,0
+astar,aleatoire,salle_fermee,R,B,False,3,victoire,victoire R,42,5.346,21,5.037,255
+aleatoire,astar,salle_fermee,B,B,True,4,defaite,victoire R,42,5.232,21,0.081,0
+astar,aleatoire,salle_fermee,R,B,False,4,victoire,victoire R,42,5.232,21,4.926,255
+aleatoire,astar,salle_fermee,B,B,True,5,defaite,victoire R,42,5.149,21,0.081,0
+astar,aleatoire,salle_fermee,R,B,False,5,victoire,victoire R,42,5.149,21,4.822,255
+aleatoire,astar,salle_fermee,B,B,True,6,defaite,victoire R,42,5.257,21,0.083,0
+astar,aleatoire,salle_fermee,R,B,False,6,victoire,victoire R,42,5.257,21,4.944,235
+aleatoire,astar,salle_fermee,B,B,True,7,defaite,victoire R,42,5.986,21,0.108,0
+astar,aleatoire,salle_fermee,R,B,False,7,victoire,victoire R,42,5.986,21,5.61,241
+aleatoire,astar,salle_fermee,B,B,True,8,nul,nul (limite de tours),80,8.284,40,0.166,0
+astar,aleatoire,salle_fermee,R,B,False,8,nul,nul (limite de tours),80,8.284,40,7.55,137
+aleatoire,astar,salle_fermee,B,B,True,9,defaite,victoire R,42,5.319,21,0.08,0
+astar,aleatoire,salle_fermee,R,B,False,9,victoire,victoire R,42,5.319,21,5.01,243
+aleatoire,astar,salle_fermee,B,R,False,0,defaite,victoire R,41,5.262,20,0.078,0
+astar,aleatoire,salle_fermee,R,R,True,0,victoire,victoire R,41,5.262,21,4.956,240
+aleatoire,astar,salle_fermee,B,R,False,1,defaite,victoire R,41,5.317,20,0.08,0
+astar,aleatoire,salle_fermee,R,R,True,1,victoire,victoire R,41,5.317,21,5.012,250
+aleatoire,astar,salle_fermee,B,R,False,2,defaite,victoire R,41,5.3,20,0.077,0
+astar,aleatoire,salle_fermee,R,R,True,2,victoire,victoire R,41,5.3,21,4.985,252
+aleatoire,astar,salle_fermee,B,R,False,3,defaite,victoire R,41,5.517,20,0.082,0
+astar,aleatoire,salle_fermee,R,R,True,3,victoire,victoire R,41,5.517,21,5.191,254
+aleatoire,astar,salle_fermee,B,R,False,4,defaite,victoire R,41,5.15,20,0.076,0
+astar,aleatoire,salle_fermee,R,R,True,4,victoire,victoire R,41,5.15,21,4.852,254
+aleatoire,astar,salle_fermee,B,R,False,5,defaite,victoire R,41,7.164,20,0.082,0
+astar,aleatoire,salle_fermee,R,R,True,5,victoire,victoire R,41,7.164,21,6.828,254
+aleatoire,astar,salle_fermee,B,R,False,6,defaite,victoire R,41,6.68,20,0.103,0
+astar,aleatoire,salle_fermee,R,R,True,6,victoire,victoire R,41,6.68,21,6.254,238
+aleatoire,astar,salle_fermee,B,R,False,7,defaite,victoire R,41,6.404,20,0.096,0
+astar,aleatoire,salle_fermee,R,R,True,7,victoire,victoire R,41,6.404,21,6.0,244
+aleatoire,astar,salle_fermee,B,R,False,8,defaite,victoire R,41,6.052,20,0.086,0
+astar,aleatoire,salle_fermee,R,R,True,8,victoire,victoire R,41,6.052,21,5.709,238
+aleatoire,astar,salle_fermee,B,R,False,9,defaite,victoire R,41,6.673,20,0.094,0
+astar,aleatoire,salle_fermee,R,R,True,9,victoire,victoire R,41,6.673,21,6.319,244
+aleatoire,astar,salle_fermee,R,B,False,0,defaite,victoire B,41,6.78,20,0.098,0
+astar,aleatoire,salle_fermee,B,B,True,0,victoire,victoire B,41,6.78,21,6.375,231
+aleatoire,astar,salle_fermee,R,B,False,1,defaite,victoire B,41,6.284,20,0.092,0
+astar,aleatoire,salle_fermee,B,B,True,1,victoire,victoire B,41,6.284,21,5.91,231
+aleatoire,astar,salle_fermee,R,B,False,2,defaite,victoire B,41,6.781,20,0.1,0
+astar,aleatoire,salle_fermee,B,B,True,2,victoire,victoire B,41,6.781,21,6.378,231
+aleatoire,astar,salle_fermee,R,B,False,3,defaite,victoire B,41,7.467,20,0.137,0
+astar,aleatoire,salle_fermee,B,B,True,3,victoire,victoire B,41,7.467,21,6.993,231
+aleatoire,astar,salle_fermee,R,B,False,4,defaite,victoire B,41,6.52,20,0.096,0
+astar,aleatoire,salle_fermee,B,B,True,4,victoire,victoire B,41,6.52,21,6.122,231
+aleatoire,astar,salle_fermee,R,B,False,5,defaite,victoire B,41,5.131,20,0.083,0
+astar,aleatoire,salle_fermee,B,B,True,5,victoire,victoire B,41,5.131,21,4.824,231
+aleatoire,astar,salle_fermee,R,B,False,6,defaite,victoire B,41,5.114,20,0.076,0
+astar,aleatoire,salle_fermee,B,B,True,6,victoire,victoire B,41,5.114,21,4.822,231
+aleatoire,astar,salle_fermee,R,B,False,7,defaite,victoire B,41,5.0,20,0.076,0
+astar,aleatoire,salle_fermee,B,B,True,7,victoire,victoire B,41,5.0,21,4.708,231
+aleatoire,astar,salle_fermee,R,B,False,8,defaite,victoire B,41,6.045,20,0.094,0
+astar,aleatoire,salle_fermee,B,B,True,8,victoire,victoire B,41,6.045,21,5.666,231
+aleatoire,astar,salle_fermee,R,B,False,9,defaite,victoire B,41,6.614,20,0.108,0
+astar,aleatoire,salle_fermee,B,B,True,9,victoire,victoire B,41,6.614,21,6.205,231
+aleatoire,astar,salle_fermee,R,R,True,0,defaite,victoire B,42,6.403,21,0.105,0
+astar,aleatoire,salle_fermee,B,R,False,0,victoire,victoire B,42,6.403,21,6.035,231
+aleatoire,astar,salle_fermee,R,R,True,1,defaite,victoire B,42,6.733,21,0.105,0
+astar,aleatoire,salle_fermee,B,R,False,1,victoire,victoire B,42,6.733,21,6.33,231
+aleatoire,astar,salle_fermee,R,R,True,2,defaite,victoire B,42,6.342,21,0.106,0
+astar,aleatoire,salle_fermee,B,R,False,2,victoire,victoire B,42,6.342,21,5.902,231
+aleatoire,astar,salle_fermee,R,R,True,3,defaite,victoire B,42,6.149,21,0.094,0
+astar,aleatoire,salle_fermee,B,R,False,3,victoire,victoire B,42,6.149,21,5.742,231
+aleatoire,astar,salle_fermee,R,R,True,4,defaite,victoire B,42,6.181,21,0.14,0
+astar,aleatoire,salle_fermee,B,R,False,4,victoire,victoire B,42,6.181,21,5.682,231
+aleatoire,astar,salle_fermee,R,R,True,5,defaite,victoire B,42,7.221,21,0.126,0
+astar,aleatoire,salle_fermee,B,R,False,5,victoire,victoire B,42,7.221,21,6.767,231
+aleatoire,astar,salle_fermee,R,R,True,6,defaite,victoire B,42,5.795,21,0.088,0
+astar,aleatoire,salle_fermee,B,R,False,6,victoire,victoire B,42,5.795,21,5.457,231
+aleatoire,astar,salle_fermee,R,R,True,7,defaite,victoire B,42,5.621,21,0.091,0
+astar,aleatoire,salle_fermee,B,R,False,7,victoire,victoire B,42,5.621,21,5.243,231
+aleatoire,astar,salle_fermee,R,R,True,8,defaite,victoire B,42,6.221,21,0.097,0
+astar,aleatoire,salle_fermee,B,R,False,8,victoire,victoire B,42,6.221,21,5.816,231
+aleatoire,astar,salle_fermee,R,R,True,9,defaite,victoire B,42,6.133,21,0.119,0
+astar,aleatoire,salle_fermee,B,R,False,9,victoire,victoire B,42,6.133,21,5.747,231
+aleatoire,astar,arene_9x9,B,B,True,0,defaite,victoire R,24,5.965,12,0.064,0
+astar,aleatoire,arene_9x9,R,B,False,0,victoire,victoire R,24,5.965,12,5.743,78
+aleatoire,astar,arene_9x9,B,B,True,1,defaite,victoire R,24,5.763,12,0.058,0
+astar,aleatoire,arene_9x9,R,B,False,1,victoire,victoire R,24,5.763,12,5.552,78
+aleatoire,astar,arene_9x9,B,B,True,2,defaite,victoire R,24,5.838,12,0.061,0
+astar,aleatoire,arene_9x9,R,B,False,2,victoire,victoire R,24,5.838,12,5.622,78
+aleatoire,astar,arene_9x9,B,B,True,3,defaite,victoire R,24,5.391,12,0.058,0
+astar,aleatoire,arene_9x9,R,B,False,3,victoire,victoire R,24,5.391,12,5.191,78
+aleatoire,astar,arene_9x9,B,B,True,4,defaite,victoire R,24,5.857,12,0.057,0
+astar,aleatoire,arene_9x9,R,B,False,4,victoire,victoire R,24,5.857,12,5.651,78
+aleatoire,astar,arene_9x9,B,B,True,5,defaite,victoire R,24,5.774,12,0.057,0
+astar,aleatoire,arene_9x9,R,B,False,5,victoire,victoire R,24,5.774,12,5.565,78
+aleatoire,astar,arene_9x9,B,B,True,6,defaite,victoire R,24,5.638,12,0.055,0
+astar,aleatoire,arene_9x9,R,B,False,6,victoire,victoire R,24,5.638,12,5.437,78
+aleatoire,astar,arene_9x9,B,B,True,7,defaite,victoire R,24,6.832,12,0.071,0
+astar,aleatoire,arene_9x9,R,B,False,7,victoire,victoire R,24,6.832,12,6.588,78
+aleatoire,astar,arene_9x9,B,B,True,8,defaite,victoire R,24,6.241,12,0.055,0
+astar,aleatoire,arene_9x9,R,B,False,8,victoire,victoire R,24,6.241,12,6.032,78
+aleatoire,astar,arene_9x9,B,B,True,9,defaite,victoire R,24,6.319,12,0.058,0
+astar,aleatoire,arene_9x9,R,B,False,9,victoire,victoire R,24,6.319,12,6.103,78
+aleatoire,astar,arene_9x9,B,R,False,0,defaite,victoire R,23,5.742,11,0.055,0
+astar,aleatoire,arene_9x9,R,R,True,0,victoire,victoire R,23,5.742,12,5.537,78
+aleatoire,astar,arene_9x9,B,R,False,1,defaite,victoire R,23,5.467,11,0.049,0
+astar,aleatoire,arene_9x9,R,R,True,1,victoire,victoire R,23,5.467,12,5.283,78
+aleatoire,astar,arene_9x9,B,R,False,2,defaite,victoire R,23,5.433,11,0.051,0
+astar,aleatoire,arene_9x9,R,R,True,2,victoire,victoire R,23,5.433,12,5.245,78
+aleatoire,astar,arene_9x9,B,R,False,3,defaite,victoire R,23,5.344,11,0.048,0
+astar,aleatoire,arene_9x9,R,R,True,3,victoire,victoire R,23,5.344,12,5.16,78
+aleatoire,astar,arene_9x9,B,R,False,4,defaite,victoire R,23,5.373,11,0.051,0
+astar,aleatoire,arene_9x9,R,R,True,4,victoire,victoire R,23,5.373,12,5.179,78
+aleatoire,astar,arene_9x9,B,R,False,5,defaite,victoire R,23,5.24,11,0.049,0
+astar,aleatoire,arene_9x9,R,R,True,5,victoire,victoire R,23,5.24,12,5.059,78
+aleatoire,astar,arene_9x9,B,R,False,6,defaite,victoire R,23,5.068,11,0.047,0
+astar,aleatoire,arene_9x9,R,R,True,6,victoire,victoire R,23,5.068,12,4.895,78
+aleatoire,astar,arene_9x9,B,R,False,7,defaite,victoire R,23,5.17,11,0.047,0
+astar,aleatoire,arene_9x9,R,R,True,7,victoire,victoire R,23,5.17,12,4.995,78
+aleatoire,astar,arene_9x9,B,R,False,8,defaite,victoire R,23,5.093,11,0.045,0
+astar,aleatoire,arene_9x9,R,R,True,8,victoire,victoire R,23,5.093,12,4.917,78
+aleatoire,astar,arene_9x9,B,R,False,9,defaite,victoire R,23,5.139,11,0.046,0
+astar,aleatoire,arene_9x9,R,R,True,9,victoire,victoire R,23,5.139,12,4.964,78
+aleatoire,astar,arene_9x9,R,B,False,0,defaite,victoire B,23,5.307,11,0.077,0
+astar,aleatoire,arene_9x9,B,B,True,0,victoire,victoire B,23,5.307,12,5.071,78
+aleatoire,astar,arene_9x9,R,B,False,1,defaite,victoire B,23,5.078,11,0.047,0
+astar,aleatoire,arene_9x9,B,B,True,1,victoire,victoire B,23,5.078,12,4.902,78
+aleatoire,astar,arene_9x9,R,B,False,2,defaite,victoire B,23,5.167,11,0.05,0
+astar,aleatoire,arene_9x9,B,B,True,2,victoire,victoire B,23,5.167,12,4.99,78
+aleatoire,astar,arene_9x9,R,B,False,3,defaite,victoire B,23,5.303,11,0.048,0
+astar,aleatoire,arene_9x9,B,B,True,3,victoire,victoire B,23,5.303,12,5.126,78
+aleatoire,astar,arene_9x9,R,B,False,4,defaite,victoire B,23,5.213,11,0.049,0
+astar,aleatoire,arene_9x9,B,B,True,4,victoire,victoire B,23,5.213,12,5.033,78
+aleatoire,astar,arene_9x9,R,B,False,5,defaite,victoire B,23,5.755,11,0.051,0
+astar,aleatoire,arene_9x9,B,B,True,5,victoire,victoire B,23,5.755,12,5.551,78
+aleatoire,astar,arene_9x9,R,B,False,6,defaite,victoire B,23,5.478,11,0.05,0
+astar,aleatoire,arene_9x9,B,B,True,6,victoire,victoire B,23,5.478,12,5.273,78
+aleatoire,astar,arene_9x9,R,B,False,7,defaite,victoire B,23,5.474,11,0.052,0
+astar,aleatoire,arene_9x9,B,B,True,7,victoire,victoire B,23,5.474,12,5.176,78
+aleatoire,astar,arene_9x9,R,B,False,8,defaite,victoire B,23,5.211,11,0.049,0
+astar,aleatoire,arene_9x9,B,B,True,8,victoire,victoire B,23,5.211,12,5.025,79
+aleatoire,astar,arene_9x9,R,B,False,9,defaite,victoire B,23,5.091,11,0.065,0
+astar,aleatoire,arene_9x9,B,B,True,9,victoire,victoire B,23,5.091,12,4.893,78
+aleatoire,astar,arene_9x9,R,R,True,0,defaite,victoire B,24,5.215,12,0.054,0
+astar,aleatoire,arene_9x9,B,R,False,0,victoire,victoire B,24,5.215,12,5.026,78
+aleatoire,astar,arene_9x9,R,R,True,1,defaite,victoire B,24,5.413,12,0.077,0
+astar,aleatoire,arene_9x9,B,R,False,1,victoire,victoire B,24,5.413,12,5.185,78
+aleatoire,astar,arene_9x9,R,R,True,2,defaite,victoire B,24,5.223,12,0.052,0
+astar,aleatoire,arene_9x9,B,R,False,2,victoire,victoire B,24,5.223,12,5.034,78
+aleatoire,astar,arene_9x9,R,R,True,3,defaite,victoire B,24,5.133,12,0.053,0
+astar,aleatoire,arene_9x9,B,R,False,3,victoire,victoire B,24,5.133,12,4.941,78
+aleatoire,astar,arene_9x9,R,R,True,4,defaite,victoire B,24,5.112,12,0.068,0
+astar,aleatoire,arene_9x9,B,R,False,4,victoire,victoire B,24,5.112,12,4.899,78
+aleatoire,astar,arene_9x9,R,R,True,5,defaite,victoire B,24,5.088,12,0.049,0
+astar,aleatoire,arene_9x9,B,R,False,5,victoire,victoire B,24,5.088,12,4.906,78
+aleatoire,astar,arene_9x9,R,R,True,6,defaite,victoire B,24,5.071,12,0.049,0
+astar,aleatoire,arene_9x9,B,R,False,6,victoire,victoire B,24,5.071,12,4.887,78
+aleatoire,astar,arene_9x9,R,R,True,7,defaite,victoire B,24,5.01,12,0.05,0
+astar,aleatoire,arene_9x9,B,R,False,7,victoire,victoire B,24,5.01,12,4.829,78
+aleatoire,astar,arene_9x9,R,R,True,8,defaite,victoire B,24,5.008,12,0.055,0
+astar,aleatoire,arene_9x9,B,R,False,8,victoire,victoire B,24,5.008,12,4.81,79
+aleatoire,astar,arene_9x9,R,R,True,9,defaite,victoire B,24,4.947,12,0.052,0
+astar,aleatoire,arene_9x9,B,R,False,9,victoire,victoire B,24,4.947,12,4.764,78
+aleatoire,astar,labyrinthe_11x11,B,B,True,0,defaite,victoire R,44,9.205,22,0.093,0
+astar,aleatoire,labyrinthe_11x11,R,B,False,0,victoire,victoire R,44,9.205,22,8.874,253
+aleatoire,astar,labyrinthe_11x11,B,B,True,1,defaite,victoire R,44,9.087,22,0.086,0
+astar,aleatoire,labyrinthe_11x11,R,B,False,1,victoire,victoire R,44,9.087,22,8.754,253
+aleatoire,astar,labyrinthe_11x11,B,B,True,2,defaite,victoire R,44,9.104,22,0.118,0
+astar,aleatoire,labyrinthe_11x11,R,B,False,2,victoire,victoire R,44,9.104,22,8.745,253
+aleatoire,astar,labyrinthe_11x11,B,B,True,3,defaite,victoire R,44,9.022,22,0.085,0
+astar,aleatoire,labyrinthe_11x11,R,B,False,3,victoire,victoire R,44,9.022,22,8.706,253
+aleatoire,astar,labyrinthe_11x11,B,B,True,4,defaite,victoire R,44,9.041,22,0.086,0
+astar,aleatoire,labyrinthe_11x11,R,B,False,4,victoire,victoire R,44,9.041,22,8.715,253
+aleatoire,astar,labyrinthe_11x11,B,B,True,5,defaite,victoire R,44,9.055,22,0.088,0
+astar,aleatoire,labyrinthe_11x11,R,B,False,5,victoire,victoire R,44,9.055,22,8.729,253
+aleatoire,astar,labyrinthe_11x11,B,B,True,6,defaite,victoire R,44,9.05,22,0.086,0
+astar,aleatoire,labyrinthe_11x11,R,B,False,6,victoire,victoire R,44,9.05,22,8.708,253
+aleatoire,astar,labyrinthe_11x11,B,B,True,7,defaite,victoire R,44,8.979,22,0.095,0
+astar,aleatoire,labyrinthe_11x11,R,B,False,7,victoire,victoire R,44,8.979,22,8.65,253
+aleatoire,astar,labyrinthe_11x11,B,B,True,8,defaite,victoire R,44,9.171,22,0.103,0
+astar,aleatoire,labyrinthe_11x11,R,B,False,8,victoire,victoire R,44,9.171,22,8.821,253
+aleatoire,astar,labyrinthe_11x11,B,B,True,9,defaite,victoire R,44,9.559,22,0.124,0
+astar,aleatoire,labyrinthe_11x11,R,B,False,9,victoire,victoire R,44,9.559,22,9.14,253
+aleatoire,astar,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,8.957,21,0.082,0
+astar,aleatoire,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,8.957,22,8.632,253
+aleatoire,astar,labyrinthe_11x11,B,R,False,1,defaite,victoire R,43,8.846,21,0.076,0
+astar,aleatoire,labyrinthe_11x11,R,R,True,1,victoire,victoire R,43,8.846,22,8.543,253
+aleatoire,astar,labyrinthe_11x11,B,R,False,2,defaite,victoire R,43,8.729,21,0.09,0
+astar,aleatoire,labyrinthe_11x11,R,R,True,2,victoire,victoire R,43,8.729,22,8.422,253
+aleatoire,astar,labyrinthe_11x11,B,R,False,3,defaite,victoire R,43,8.733,21,0.078,0
+astar,aleatoire,labyrinthe_11x11,R,R,True,3,victoire,victoire R,43,8.733,22,8.436,253
+aleatoire,astar,labyrinthe_11x11,B,R,False,4,defaite,victoire R,43,8.998,21,0.079,0
+astar,aleatoire,labyrinthe_11x11,R,R,True,4,victoire,victoire R,43,8.998,22,8.694,253
+aleatoire,astar,labyrinthe_11x11,B,R,False,5,defaite,victoire R,43,9.043,21,0.079,0
+astar,aleatoire,labyrinthe_11x11,R,R,True,5,victoire,victoire R,43,9.043,22,8.734,253
+aleatoire,astar,labyrinthe_11x11,B,R,False,6,defaite,victoire R,43,9.039,21,0.084,0
+astar,aleatoire,labyrinthe_11x11,R,R,True,6,victoire,victoire R,43,9.039,22,8.687,253
+aleatoire,astar,labyrinthe_11x11,B,R,False,7,defaite,victoire R,43,9.003,21,0.08,0
+astar,aleatoire,labyrinthe_11x11,R,R,True,7,victoire,victoire R,43,9.003,22,8.669,253
+aleatoire,astar,labyrinthe_11x11,B,R,False,8,defaite,victoire R,43,8.775,21,0.078,0
+astar,aleatoire,labyrinthe_11x11,R,R,True,8,victoire,victoire R,43,8.775,22,8.479,253
+aleatoire,astar,labyrinthe_11x11,B,R,False,9,defaite,victoire R,43,9.55,21,0.089,0
+astar,aleatoire,labyrinthe_11x11,R,R,True,9,victoire,victoire R,43,9.55,22,9.19,253
+aleatoire,astar,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,10.86,21,0.094,0
+astar,aleatoire,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,10.86,22,10.488,253
+aleatoire,astar,labyrinthe_11x11,R,B,False,1,defaite,victoire B,43,8.955,21,0.078,0
+astar,aleatoire,labyrinthe_11x11,B,B,True,1,victoire,victoire B,43,8.955,22,8.649,253
+aleatoire,astar,labyrinthe_11x11,R,B,False,2,defaite,victoire B,43,8.899,21,0.079,0
+astar,aleatoire,labyrinthe_11x11,B,B,True,2,victoire,victoire B,43,8.899,22,8.599,253
+aleatoire,astar,labyrinthe_11x11,R,B,False,3,defaite,victoire B,43,8.923,21,0.078,0
+astar,aleatoire,labyrinthe_11x11,B,B,True,3,victoire,victoire B,43,8.923,22,8.618,253
+aleatoire,astar,labyrinthe_11x11,R,B,False,4,defaite,victoire B,43,8.774,21,0.083,0
+astar,aleatoire,labyrinthe_11x11,B,B,True,4,victoire,victoire B,43,8.774,22,8.46,253
+aleatoire,astar,labyrinthe_11x11,R,B,False,5,defaite,victoire B,43,9.033,21,0.112,0
+astar,aleatoire,labyrinthe_11x11,B,B,True,5,victoire,victoire B,43,9.033,22,8.674,253
+aleatoire,astar,labyrinthe_11x11,R,B,False,6,defaite,victoire B,43,8.934,21,0.082,0
+astar,aleatoire,labyrinthe_11x11,B,B,True,6,victoire,victoire B,43,8.934,22,8.612,253
+aleatoire,astar,labyrinthe_11x11,R,B,False,7,defaite,victoire B,43,9.142,21,0.087,0
+astar,aleatoire,labyrinthe_11x11,B,B,True,7,victoire,victoire B,43,9.142,22,8.802,253
+aleatoire,astar,labyrinthe_11x11,R,B,False,8,defaite,victoire B,43,9.021,21,0.085,0
+astar,aleatoire,labyrinthe_11x11,B,B,True,8,victoire,victoire B,43,9.021,22,8.689,253
+aleatoire,astar,labyrinthe_11x11,R,B,False,9,defaite,victoire B,43,12.22,21,0.109,0
+astar,aleatoire,labyrinthe_11x11,B,B,True,9,victoire,victoire B,43,12.22,22,11.785,253
+aleatoire,astar,labyrinthe_11x11,R,R,True,0,defaite,victoire B,44,10.269,22,0.096,0
+astar,aleatoire,labyrinthe_11x11,B,R,False,0,victoire,victoire B,44,10.269,22,9.902,253
+aleatoire,astar,labyrinthe_11x11,R,R,True,1,defaite,victoire B,44,8.98,22,0.082,0
+astar,aleatoire,labyrinthe_11x11,B,R,False,1,victoire,victoire B,44,8.98,22,8.665,253
+aleatoire,astar,labyrinthe_11x11,R,R,True,2,defaite,victoire B,44,8.814,22,0.083,0
+astar,aleatoire,labyrinthe_11x11,B,R,False,2,victoire,victoire B,44,8.814,22,8.496,253
+aleatoire,astar,labyrinthe_11x11,R,R,True,3,defaite,victoire B,44,8.969,22,0.086,0
+astar,aleatoire,labyrinthe_11x11,B,R,False,3,victoire,victoire B,44,8.969,22,8.628,253
+aleatoire,astar,labyrinthe_11x11,R,R,True,4,defaite,victoire B,44,9.394,22,0.085,0
+astar,aleatoire,labyrinthe_11x11,B,R,False,4,victoire,victoire B,44,9.394,22,9.054,253
+aleatoire,astar,labyrinthe_11x11,R,R,True,5,defaite,victoire B,44,9.577,22,0.087,0
+astar,aleatoire,labyrinthe_11x11,B,R,False,5,victoire,victoire B,44,9.577,22,9.246,253
+aleatoire,astar,labyrinthe_11x11,R,R,True,6,defaite,victoire B,44,9.786,22,0.09,0
+astar,aleatoire,labyrinthe_11x11,B,R,False,6,victoire,victoire B,44,9.786,22,9.444,253
+aleatoire,astar,labyrinthe_11x11,R,R,True,7,defaite,victoire B,44,8.773,22,0.084,0
+astar,aleatoire,labyrinthe_11x11,B,R,False,7,victoire,victoire B,44,8.773,22,8.45,253
+aleatoire,astar,labyrinthe_11x11,R,R,True,8,defaite,victoire B,44,9.023,22,0.084,0
+astar,aleatoire,labyrinthe_11x11,B,R,False,8,victoire,victoire B,44,9.023,22,8.706,253
+aleatoire,astar,labyrinthe_11x11,R,R,True,9,defaite,victoire B,44,8.783,22,0.085,0
+astar,aleatoire,labyrinthe_11x11,B,R,False,9,victoire,victoire B,44,8.783,22,8.469,253
+aleatoire,minmax-d4,couloir_5x5,B,B,True,0,defaite,victoire R,8,1.371,4,0.016,0
+minmax-d4,aleatoire,couloir_5x5,R,B,False,0,victoire,victoire R,8,1.371,4,1.317,133
+aleatoire,minmax-d4,couloir_5x5,B,B,True,1,defaite,victoire R,8,1.254,4,0.014,0
+minmax-d4,aleatoire,couloir_5x5,R,B,False,1,victoire,victoire R,8,1.254,4,1.205,133
+aleatoire,minmax-d4,couloir_5x5,B,B,True,2,defaite,victoire R,8,1.218,4,0.014,0
+minmax-d4,aleatoire,couloir_5x5,R,B,False,2,victoire,victoire R,8,1.218,4,1.17,133
+aleatoire,minmax-d4,couloir_5x5,B,B,True,3,defaite,victoire R,8,1.218,4,0.017,0
+minmax-d4,aleatoire,couloir_5x5,R,B,False,3,victoire,victoire R,8,1.218,4,1.165,130
+aleatoire,minmax-d4,couloir_5x5,B,B,True,4,defaite,victoire R,8,1.223,4,0.015,0
+minmax-d4,aleatoire,couloir_5x5,R,B,False,4,victoire,victoire R,8,1.223,4,1.169,130
+aleatoire,minmax-d4,couloir_5x5,B,B,True,5,defaite,victoire R,8,1.203,4,0.015,0
+minmax-d4,aleatoire,couloir_5x5,R,B,False,5,victoire,victoire R,8,1.203,4,1.155,130
+aleatoire,minmax-d4,couloir_5x5,B,B,True,6,defaite,victoire R,8,1.297,4,0.014,0
+minmax-d4,aleatoire,couloir_5x5,R,B,False,6,victoire,victoire R,8,1.297,4,1.243,136
+aleatoire,minmax-d4,couloir_5x5,B,B,True,7,defaite,victoire R,8,1.276,4,0.018,0
+minmax-d4,aleatoire,couloir_5x5,R,B,False,7,victoire,victoire R,8,1.276,4,1.21,133
+aleatoire,minmax-d4,couloir_5x5,B,B,True,8,defaite,victoire R,8,1.288,4,0.014,0
+minmax-d4,aleatoire,couloir_5x5,R,B,False,8,victoire,victoire R,8,1.288,4,1.239,133
+aleatoire,minmax-d4,couloir_5x5,B,B,True,9,defaite,victoire R,8,1.277,4,0.036,0
+minmax-d4,aleatoire,couloir_5x5,R,B,False,9,victoire,victoire R,8,1.277,4,1.204,133
+aleatoire,minmax-d4,couloir_5x5,B,R,False,0,defaite,victoire R,7,1.258,3,0.011,0
+minmax-d4,aleatoire,couloir_5x5,R,R,True,0,victoire,victoire R,7,1.258,4,1.217,133
+aleatoire,minmax-d4,couloir_5x5,B,R,False,1,defaite,victoire R,7,1.211,3,0.01,0
+minmax-d4,aleatoire,couloir_5x5,R,R,True,1,victoire,victoire R,7,1.211,4,1.17,133
+aleatoire,minmax-d4,couloir_5x5,B,R,False,2,defaite,victoire R,7,1.256,3,0.01,0
+minmax-d4,aleatoire,couloir_5x5,R,R,True,2,victoire,victoire R,7,1.256,4,1.217,132
+aleatoire,minmax-d4,couloir_5x5,B,R,False,3,defaite,victoire R,7,1.252,3,0.011,0
+minmax-d4,aleatoire,couloir_5x5,R,R,True,3,victoire,victoire R,7,1.252,4,1.211,131
+aleatoire,minmax-d4,couloir_5x5,B,R,False,4,defaite,victoire R,7,1.199,3,0.01,0
+minmax-d4,aleatoire,couloir_5x5,R,R,True,4,victoire,victoire R,7,1.199,4,1.16,131
+aleatoire,minmax-d4,couloir_5x5,B,R,False,5,defaite,victoire R,7,1.342,3,0.011,0
+minmax-d4,aleatoire,couloir_5x5,R,R,True,5,victoire,victoire R,7,1.342,4,1.301,131
+aleatoire,minmax-d4,couloir_5x5,B,R,False,6,defaite,victoire R,7,1.244,3,0.011,0
+minmax-d4,aleatoire,couloir_5x5,R,R,True,6,victoire,victoire R,7,1.244,4,1.203,133
+aleatoire,minmax-d4,couloir_5x5,B,R,False,7,defaite,victoire R,7,1.206,3,0.013,0
+minmax-d4,aleatoire,couloir_5x5,R,R,True,7,victoire,victoire R,7,1.206,4,1.149,133
+aleatoire,minmax-d4,couloir_5x5,B,R,False,8,defaite,victoire R,7,1.262,3,0.01,0
+minmax-d4,aleatoire,couloir_5x5,R,R,True,8,victoire,victoire R,7,1.262,4,1.221,133
+aleatoire,minmax-d4,couloir_5x5,B,R,False,9,defaite,victoire R,7,1.211,3,0.011,0
+minmax-d4,aleatoire,couloir_5x5,R,R,True,9,victoire,victoire R,7,1.211,4,1.17,133
+aleatoire,minmax-d4,couloir_5x5,R,B,False,0,victoire,victoire R,12,1.828,6,0.021,0
+minmax-d4,aleatoire,couloir_5x5,B,B,True,0,defaite,victoire R,12,1.828,6,1.754,195
+aleatoire,minmax-d4,couloir_5x5,R,B,False,1,victoire,victoire R,20,2.94,10,0.035,0
+minmax-d4,aleatoire,couloir_5x5,B,B,True,1,defaite,victoire R,20,2.94,10,2.819,330
+aleatoire,minmax-d4,couloir_5x5,R,B,False,2,defaite,victoire B,11,1.933,5,0.018,0
+minmax-d4,aleatoire,couloir_5x5,B,B,True,2,victoire,victoire B,11,1.933,6,1.863,182
+aleatoire,minmax-d4,couloir_5x5,R,B,False,3,defaite,victoire B,15,2.512,7,0.024,0
+minmax-d4,aleatoire,couloir_5x5,B,B,True,3,victoire,victoire B,15,2.512,8,2.425,273
+aleatoire,minmax-d4,couloir_5x5,R,B,False,4,defaite,victoire B,11,1.839,5,0.017,0
+minmax-d4,aleatoire,couloir_5x5,B,B,True,4,victoire,victoire B,11,1.839,6,1.776,204
+aleatoire,minmax-d4,couloir_5x5,R,B,False,5,defaite,victoire B,11,1.889,5,0.018,0
+minmax-d4,aleatoire,couloir_5x5,B,B,True,5,victoire,victoire B,11,1.889,6,1.824,204
+aleatoire,minmax-d4,couloir_5x5,R,B,False,6,defaite,victoire B,11,1.571,5,0.017,0
+minmax-d4,aleatoire,couloir_5x5,B,B,True,6,victoire,victoire B,11,1.571,6,1.503,175
+aleatoire,minmax-d4,couloir_5x5,R,B,False,7,victoire,victoire R,32,4.306,16,0.055,0
+minmax-d4,aleatoire,couloir_5x5,B,B,True,7,defaite,victoire R,32,4.306,16,4.118,489
+aleatoire,minmax-d4,couloir_5x5,R,B,False,8,defaite,victoire B,11,1.743,5,0.017,0
+minmax-d4,aleatoire,couloir_5x5,B,B,True,8,victoire,victoire B,11,1.743,6,1.678,187
+aleatoire,minmax-d4,couloir_5x5,R,B,False,9,defaite,victoire B,15,2.223,7,0.039,0
+minmax-d4,aleatoire,couloir_5x5,B,B,True,9,victoire,victoire B,15,2.223,8,2.119,248
+aleatoire,minmax-d4,couloir_5x5,R,R,True,0,victoire,victoire R,11,1.476,6,0.022,0
+minmax-d4,aleatoire,couloir_5x5,B,R,False,0,defaite,victoire R,11,1.476,5,1.408,167
+aleatoire,minmax-d4,couloir_5x5,R,R,True,1,victoire,victoire R,19,2.663,10,0.04,0
+minmax-d4,aleatoire,couloir_5x5,B,R,False,1,defaite,victoire R,19,2.663,9,2.542,301
+aleatoire,minmax-d4,couloir_5x5,R,R,True,2,defaite,victoire B,12,1.646,6,0.021,0
+minmax-d4,aleatoire,couloir_5x5,B,R,False,2,victoire,victoire B,12,1.646,6,1.575,173
+aleatoire,minmax-d4,couloir_5x5,R,R,True,3,defaite,victoire B,16,2.471,8,0.029,0
+minmax-d4,aleatoire,couloir_5x5,B,R,False,3,victoire,victoire B,16,2.471,8,2.372,273
+aleatoire,minmax-d4,couloir_5x5,R,R,True,4,victoire,victoire R,11,1.579,6,0.021,0
+minmax-d4,aleatoire,couloir_5x5,B,R,False,4,defaite,victoire R,11,1.579,5,1.51,170
+aleatoire,minmax-d4,couloir_5x5,R,R,True,5,defaite,victoire B,16,2.767,8,0.029,0
+minmax-d4,aleatoire,couloir_5x5,B,R,False,5,victoire,victoire B,16,2.767,8,2.667,298
+aleatoire,minmax-d4,couloir_5x5,R,R,True,6,defaite,victoire B,12,1.667,6,0.022,0
+minmax-d4,aleatoire,couloir_5x5,B,R,False,6,victoire,victoire B,12,1.667,6,1.591,173
+aleatoire,minmax-d4,couloir_5x5,R,R,True,7,defaite,victoire B,52,6.672,26,0.094,0
+minmax-d4,aleatoire,couloir_5x5,B,R,False,7,victoire,victoire B,52,6.672,26,6.325,717
+aleatoire,minmax-d4,couloir_5x5,R,R,True,8,defaite,victoire B,12,1.781,6,0.025,0
+minmax-d4,aleatoire,couloir_5x5,B,R,False,8,victoire,victoire B,12,1.781,6,1.701,191
+aleatoire,minmax-d4,couloir_5x5,R,R,True,9,defaite,victoire B,16,2.375,8,0.028,0
+minmax-d4,aleatoire,couloir_5x5,B,R,False,9,victoire,victoire B,16,2.375,8,2.27,253
+aleatoire,minmax-d4,exemple_7x7,B,B,True,0,defaite,victoire R,16,5.345,8,0.032,0
+minmax-d4,aleatoire,exemple_7x7,R,B,False,0,victoire,victoire R,16,5.345,8,5.236,536
+aleatoire,minmax-d4,exemple_7x7,B,B,True,1,defaite,victoire R,12,3.007,6,0.023,0
+minmax-d4,aleatoire,exemple_7x7,R,B,False,1,victoire,victoire R,12,3.007,6,2.926,272
+aleatoire,minmax-d4,exemple_7x7,B,B,True,2,defaite,victoire R,12,3.935,6,0.023,0
+minmax-d4,aleatoire,exemple_7x7,R,B,False,2,victoire,victoire R,12,3.935,6,3.856,339
+aleatoire,minmax-d4,exemple_7x7,B,B,True,3,victoire,victoire B,15,5.108,8,0.032,0
+minmax-d4,aleatoire,exemple_7x7,R,B,False,3,defaite,victoire B,15,5.108,7,5.006,494
+aleatoire,minmax-d4,exemple_7x7,B,B,True,4,defaite,victoire R,20,7.148,10,0.047,0
+minmax-d4,aleatoire,exemple_7x7,R,B,False,4,victoire,victoire R,20,7.148,10,7.008,704
+aleatoire,minmax-d4,exemple_7x7,B,B,True,5,defaite,victoire R,16,4.874,8,0.031,0
+minmax-d4,aleatoire,exemple_7x7,R,B,False,5,victoire,victoire R,16,4.874,8,4.77,491
+aleatoire,minmax-d4,exemple_7x7,B,B,True,6,defaite,victoire R,12,2.887,6,0.023,0
+minmax-d4,aleatoire,exemple_7x7,R,B,False,6,victoire,victoire R,12,2.887,6,2.81,266
+aleatoire,minmax-d4,exemple_7x7,B,B,True,7,defaite,victoire R,12,2.843,6,0.023,0
+minmax-d4,aleatoire,exemple_7x7,R,B,False,7,victoire,victoire R,12,2.843,6,2.766,268
+aleatoire,minmax-d4,exemple_7x7,B,B,True,8,defaite,victoire R,12,2.965,6,0.023,0
+minmax-d4,aleatoire,exemple_7x7,R,B,False,8,victoire,victoire R,12,2.965,6,2.885,273
+aleatoire,minmax-d4,exemple_7x7,B,B,True,9,defaite,victoire R,12,3.376,6,0.024,0
+minmax-d4,aleatoire,exemple_7x7,R,B,False,9,victoire,victoire R,12,3.376,6,3.297,309
+aleatoire,minmax-d4,exemple_7x7,B,R,False,0,defaite,victoire R,11,3.926,5,0.02,0
+minmax-d4,aleatoire,exemple_7x7,R,R,True,0,victoire,victoire R,11,3.926,6,3.855,372
+aleatoire,minmax-d4,exemple_7x7,B,R,False,1,defaite,victoire R,11,2.921,5,0.019,0
+minmax-d4,aleatoire,exemple_7x7,R,R,True,1,victoire,victoire R,11,2.921,6,2.853,269
+aleatoire,minmax-d4,exemple_7x7,B,R,False,2,defaite,victoire R,11,6.693,5,0.02,0
+minmax-d4,aleatoire,exemple_7x7,R,R,True,2,victoire,victoire R,11,6.693,6,6.605,297
+aleatoire,minmax-d4,exemple_7x7,B,R,False,3,defaite,victoire R,11,3.931,5,0.026,0
+minmax-d4,aleatoire,exemple_7x7,R,R,True,3,victoire,victoire R,11,3.931,6,3.829,371
+aleatoire,minmax-d4,exemple_7x7,B,R,False,4,defaite,victoire R,11,3.906,5,0.019,0
+minmax-d4,aleatoire,exemple_7x7,R,R,True,4,victoire,victoire R,11,3.906,6,3.835,371
+aleatoire,minmax-d4,exemple_7x7,B,R,False,5,defaite,victoire R,11,3.975,5,0.021,0
+minmax-d4,aleatoire,exemple_7x7,R,R,True,5,victoire,victoire R,11,3.975,6,3.899,375
+aleatoire,minmax-d4,exemple_7x7,B,R,False,6,defaite,victoire R,11,2.956,5,0.018,0
+minmax-d4,aleatoire,exemple_7x7,R,R,True,6,victoire,victoire R,11,2.956,6,2.887,268
+aleatoire,minmax-d4,exemple_7x7,B,R,False,7,defaite,victoire R,11,2.982,5,0.018,0
+minmax-d4,aleatoire,exemple_7x7,R,R,True,7,victoire,victoire R,11,2.982,6,2.912,269
+aleatoire,minmax-d4,exemple_7x7,B,R,False,8,defaite,victoire R,11,3.99,5,0.025,0
+minmax-d4,aleatoire,exemple_7x7,R,R,True,8,victoire,victoire R,11,3.99,6,3.901,276
+aleatoire,minmax-d4,exemple_7x7,B,R,False,9,defaite,victoire R,11,5.374,5,0.034,0
+minmax-d4,aleatoire,exemple_7x7,R,R,True,9,victoire,victoire R,11,5.374,6,5.262,286
+aleatoire,minmax-d4,exemple_7x7,R,B,False,0,defaite,victoire B,11,5.326,5,0.033,0
+minmax-d4,aleatoire,exemple_7x7,B,B,True,0,victoire,victoire B,11,5.326,6,5.217,311
+aleatoire,minmax-d4,exemple_7x7,R,B,False,1,defaite,victoire B,11,5.417,5,0.038,0
+minmax-d4,aleatoire,exemple_7x7,B,B,True,1,victoire,victoire B,11,5.417,6,5.297,291
+aleatoire,minmax-d4,exemple_7x7,R,B,False,2,defaite,victoire B,11,5.04,5,0.039,0
+minmax-d4,aleatoire,exemple_7x7,B,B,True,2,victoire,victoire B,11,5.04,6,4.914,279
+aleatoire,minmax-d4,exemple_7x7,R,B,False,3,defaite,victoire B,11,6.729,5,0.034,0
+minmax-d4,aleatoire,exemple_7x7,B,B,True,3,victoire,victoire B,11,6.729,6,6.618,400
+aleatoire,minmax-d4,exemple_7x7,R,B,False,4,defaite,victoire B,11,5.861,5,0.034,0
+minmax-d4,aleatoire,exemple_7x7,B,B,True,4,victoire,victoire B,11,5.861,6,5.745,327
+aleatoire,minmax-d4,exemple_7x7,R,B,False,5,defaite,victoire B,11,5.842,5,0.038,0
+minmax-d4,aleatoire,exemple_7x7,B,B,True,5,victoire,victoire B,11,5.842,6,5.727,327
+aleatoire,minmax-d4,exemple_7x7,R,B,False,6,defaite,victoire B,11,4.588,5,0.032,0
+minmax-d4,aleatoire,exemple_7x7,B,B,True,6,victoire,victoire B,11,4.588,6,4.481,279
+aleatoire,minmax-d4,exemple_7x7,R,B,False,7,defaite,victoire B,11,5.642,5,0.037,0
+minmax-d4,aleatoire,exemple_7x7,B,B,True,7,victoire,victoire B,11,5.642,6,5.522,290
+aleatoire,minmax-d4,exemple_7x7,R,B,False,8,defaite,victoire B,11,4.865,5,0.035,0
+minmax-d4,aleatoire,exemple_7x7,B,B,True,8,victoire,victoire B,11,4.865,6,4.753,279
+aleatoire,minmax-d4,exemple_7x7,R,B,False,9,defaite,victoire B,11,4.75,5,0.033,0
+minmax-d4,aleatoire,exemple_7x7,B,B,True,9,victoire,victoire B,11,4.75,6,4.638,284
+aleatoire,minmax-d4,exemple_7x7,R,R,True,0,defaite,victoire B,12,5.392,6,0.041,0
+minmax-d4,aleatoire,exemple_7x7,B,R,False,0,victoire,victoire B,12,5.392,6,5.27,307
+aleatoire,minmax-d4,exemple_7x7,R,R,True,1,defaite,victoire B,12,4.996,6,0.039,0
+minmax-d4,aleatoire,exemple_7x7,B,R,False,1,victoire,victoire B,12,4.996,6,4.836,302
+aleatoire,minmax-d4,exemple_7x7,R,R,True,2,defaite,victoire B,12,4.889,6,0.041,0
+minmax-d4,aleatoire,exemple_7x7,B,R,False,2,victoire,victoire B,12,4.889,6,4.764,292
+aleatoire,minmax-d4,exemple_7x7,R,R,True,3,defaite,victoire B,12,7.22,6,0.045,0
+minmax-d4,aleatoire,exemple_7x7,B,R,False,3,victoire,victoire B,12,7.22,6,7.085,405
+aleatoire,minmax-d4,exemple_7x7,R,R,True,4,defaite,victoire B,12,6.371,6,0.043,0
+minmax-d4,aleatoire,exemple_7x7,B,R,False,4,victoire,victoire B,12,6.371,6,6.239,355
+aleatoire,minmax-d4,exemple_7x7,R,R,True,5,defaite,victoire B,12,6.673,6,0.041,0
+minmax-d4,aleatoire,exemple_7x7,B,R,False,5,victoire,victoire B,12,6.673,6,6.535,375
+aleatoire,minmax-d4,exemple_7x7,R,R,True,6,defaite,victoire B,12,4.327,6,0.041,0
+minmax-d4,aleatoire,exemple_7x7,B,R,False,6,victoire,victoire B,12,4.327,6,4.175,283
+aleatoire,minmax-d4,exemple_7x7,R,R,True,7,defaite,victoire B,12,5.561,6,0.045,0
+minmax-d4,aleatoire,exemple_7x7,B,R,False,7,victoire,victoire B,12,5.561,6,5.425,318
+aleatoire,minmax-d4,exemple_7x7,R,R,True,8,defaite,victoire B,12,4.364,6,0.041,0
+minmax-d4,aleatoire,exemple_7x7,B,R,False,8,victoire,victoire B,12,4.364,6,4.239,278
+aleatoire,minmax-d4,exemple_7x7,R,R,True,9,defaite,victoire B,12,4.82,6,0.065,0
+minmax-d4,aleatoire,exemple_7x7,B,R,False,9,victoire,victoire B,12,4.82,6,4.669,290
+aleatoire,minmax-d4,porte_raccourci,B,B,True,0,defaite,victoire R,14,5.305,7,0.051,0
+minmax-d4,aleatoire,porte_raccourci,R,B,False,0,victoire,victoire R,14,5.305,7,5.146,315
+aleatoire,minmax-d4,porte_raccourci,B,B,True,1,defaite,victoire R,14,4.465,7,0.039,0
+minmax-d4,aleatoire,porte_raccourci,R,B,False,1,victoire,victoire R,14,4.465,7,4.33,280
+aleatoire,minmax-d4,porte_raccourci,B,B,True,2,defaite,victoire R,14,4.207,7,0.039,0
+minmax-d4,aleatoire,porte_raccourci,R,B,False,2,victoire,victoire R,14,4.207,7,4.07,280
+aleatoire,minmax-d4,porte_raccourci,B,B,True,3,defaite,victoire R,14,4.112,7,0.038,0
+minmax-d4,aleatoire,porte_raccourci,R,B,False,3,victoire,victoire R,14,4.112,7,3.986,280
+aleatoire,minmax-d4,porte_raccourci,B,B,True,4,defaite,victoire R,14,4.123,7,0.038,0
+minmax-d4,aleatoire,porte_raccourci,R,B,False,4,victoire,victoire R,14,4.123,7,3.996,280
+aleatoire,minmax-d4,porte_raccourci,B,B,True,5,defaite,victoire R,14,4.255,7,0.037,0
+minmax-d4,aleatoire,porte_raccourci,R,B,False,5,victoire,victoire R,14,4.255,7,4.126,280
+aleatoire,minmax-d4,porte_raccourci,B,B,True,6,defaite,victoire R,14,4.797,7,0.04,0
+minmax-d4,aleatoire,porte_raccourci,R,B,False,6,victoire,victoire R,14,4.797,7,4.666,298
+aleatoire,minmax-d4,porte_raccourci,B,B,True,7,defaite,victoire R,14,4.604,7,0.037,0
+minmax-d4,aleatoire,porte_raccourci,R,B,False,7,victoire,victoire R,14,4.604,7,4.476,294
+aleatoire,minmax-d4,porte_raccourci,B,B,True,8,defaite,victoire R,14,4.851,7,0.039,0
+minmax-d4,aleatoire,porte_raccourci,R,B,False,8,victoire,victoire R,14,4.851,7,4.722,315
+aleatoire,minmax-d4,porte_raccourci,B,B,True,9,defaite,victoire R,14,4.079,7,0.036,0
+minmax-d4,aleatoire,porte_raccourci,R,B,False,9,victoire,victoire R,14,4.079,7,3.954,280
+aleatoire,minmax-d4,porte_raccourci,B,R,False,0,defaite,victoire R,13,4.744,6,0.031,0
+minmax-d4,aleatoire,porte_raccourci,R,R,True,0,victoire,victoire R,13,4.744,7,4.63,313
+aleatoire,minmax-d4,porte_raccourci,B,R,False,1,defaite,victoire R,13,4.179,6,0.033,0
+minmax-d4,aleatoire,porte_raccourci,R,R,True,1,victoire,victoire R,13,4.179,7,4.066,280
+aleatoire,minmax-d4,porte_raccourci,B,R,False,2,defaite,victoire R,13,4.41,6,0.033,0
+minmax-d4,aleatoire,porte_raccourci,R,R,True,2,victoire,victoire R,13,4.41,7,4.29,280
+aleatoire,minmax-d4,porte_raccourci,B,R,False,3,defaite,victoire R,13,4.13,6,0.031,0
+minmax-d4,aleatoire,porte_raccourci,R,R,True,3,victoire,victoire R,13,4.13,7,4.02,280
+aleatoire,minmax-d4,porte_raccourci,B,R,False,4,defaite,victoire R,13,4.378,6,0.036,0
+minmax-d4,aleatoire,porte_raccourci,R,R,True,4,victoire,victoire R,13,4.378,7,4.248,280
+aleatoire,minmax-d4,porte_raccourci,B,R,False,5,defaite,victoire R,13,4.473,6,0.034,0
+minmax-d4,aleatoire,porte_raccourci,R,R,True,5,victoire,victoire R,13,4.473,7,4.346,280
+aleatoire,minmax-d4,porte_raccourci,B,R,False,6,defaite,victoire R,13,4.548,6,0.032,0
+minmax-d4,aleatoire,porte_raccourci,R,R,True,6,victoire,victoire R,13,4.548,7,4.432,291
+aleatoire,minmax-d4,porte_raccourci,B,R,False,7,defaite,victoire R,13,4.503,6,0.035,0
+minmax-d4,aleatoire,porte_raccourci,R,R,True,7,victoire,victoire R,13,4.503,7,4.38,286
+aleatoire,minmax-d4,porte_raccourci,B,R,False,8,defaite,victoire R,13,4.88,6,0.034,0
+minmax-d4,aleatoire,porte_raccourci,R,R,True,8,victoire,victoire R,13,4.88,7,4.741,312
+aleatoire,minmax-d4,porte_raccourci,B,R,False,9,defaite,victoire R,13,4.086,6,0.03,0
+minmax-d4,aleatoire,porte_raccourci,R,R,True,9,victoire,victoire R,13,4.086,7,3.973,280
+aleatoire,minmax-d4,porte_raccourci,R,B,False,0,defaite,victoire B,13,4.239,6,0.032,0
+minmax-d4,aleatoire,porte_raccourci,B,B,True,0,victoire,victoire B,13,4.239,7,4.122,280
+aleatoire,minmax-d4,porte_raccourci,R,B,False,1,defaite,victoire B,13,4.219,6,0.034,0
+minmax-d4,aleatoire,porte_raccourci,B,B,True,1,victoire,victoire B,13,4.219,7,4.099,280
+aleatoire,minmax-d4,porte_raccourci,R,B,False,2,defaite,victoire B,13,4.237,6,0.035,0
+minmax-d4,aleatoire,porte_raccourci,B,B,True,2,victoire,victoire B,13,4.237,7,4.116,280
+aleatoire,minmax-d4,porte_raccourci,R,B,False,3,defaite,victoire B,13,4.561,6,0.035,0
+minmax-d4,aleatoire,porte_raccourci,B,B,True,3,victoire,victoire B,13,4.561,7,4.443,313
+aleatoire,minmax-d4,porte_raccourci,R,B,False,4,defaite,victoire B,13,5.036,6,0.032,0
+minmax-d4,aleatoire,porte_raccourci,B,B,True,4,victoire,victoire B,13,5.036,7,4.923,313
+aleatoire,minmax-d4,porte_raccourci,R,B,False,5,defaite,victoire B,13,4.464,6,0.034,0
+minmax-d4,aleatoire,porte_raccourci,B,B,True,5,victoire,victoire B,13,4.464,7,4.343,286
+aleatoire,minmax-d4,porte_raccourci,R,B,False,6,defaite,victoire B,13,4.427,6,0.033,0
+minmax-d4,aleatoire,porte_raccourci,B,B,True,6,victoire,victoire B,13,4.427,7,4.306,280
+aleatoire,minmax-d4,porte_raccourci,R,B,False,7,defaite,victoire B,61,16.015,30,0.152,0
+minmax-d4,aleatoire,porte_raccourci,B,B,True,7,victoire,victoire B,61,16.015,31,15.467,1107
+aleatoire,minmax-d4,porte_raccourci,R,B,False,8,defaite,victoire B,13,4.28,6,0.032,0
+minmax-d4,aleatoire,porte_raccourci,B,B,True,8,victoire,victoire B,13,4.28,7,4.166,280
+aleatoire,minmax-d4,porte_raccourci,R,B,False,9,defaite,victoire B,13,4.188,6,0.034,0
+minmax-d4,aleatoire,porte_raccourci,B,B,True,9,victoire,victoire B,13,4.188,7,4.071,280
+aleatoire,minmax-d4,porte_raccourci,R,R,True,0,defaite,victoire B,14,4.238,7,0.038,0
+minmax-d4,aleatoire,porte_raccourci,B,R,False,0,victoire,victoire B,14,4.238,7,4.108,280
+aleatoire,minmax-d4,porte_raccourci,R,R,True,1,defaite,victoire B,14,4.38,7,0.039,0
+minmax-d4,aleatoire,porte_raccourci,B,R,False,1,victoire,victoire B,14,4.38,7,4.246,280
+aleatoire,minmax-d4,porte_raccourci,R,R,True,2,defaite,victoire B,14,5.118,7,0.046,0
+minmax-d4,aleatoire,porte_raccourci,B,R,False,2,victoire,victoire B,14,5.118,7,4.962,280
+aleatoire,minmax-d4,porte_raccourci,R,R,True,3,defaite,victoire B,14,5.308,7,0.042,0
+minmax-d4,aleatoire,porte_raccourci,B,R,False,3,victoire,victoire B,14,5.308,7,5.165,315
+aleatoire,minmax-d4,porte_raccourci,R,R,True,4,defaite,victoire B,14,5.269,7,0.043,0
+minmax-d4,aleatoire,porte_raccourci,B,R,False,4,victoire,victoire B,14,5.269,7,5.125,315
+aleatoire,minmax-d4,porte_raccourci,R,R,True,5,defaite,victoire B,14,4.897,7,0.041,0
+minmax-d4,aleatoire,porte_raccourci,B,R,False,5,victoire,victoire B,14,4.897,7,4.739,294
+aleatoire,minmax-d4,porte_raccourci,R,R,True,6,defaite,victoire B,14,4.731,7,0.042,0
+minmax-d4,aleatoire,porte_raccourci,B,R,False,6,victoire,victoire B,14,4.731,7,4.588,280
+aleatoire,minmax-d4,porte_raccourci,R,R,True,7,defaite,victoire B,54,14.571,27,0.143,0
+minmax-d4,aleatoire,porte_raccourci,B,R,False,7,victoire,victoire B,54,14.571,27,14.066,966
+aleatoire,minmax-d4,porte_raccourci,R,R,True,8,defaite,victoire B,14,4.437,7,0.042,0
+minmax-d4,aleatoire,porte_raccourci,B,R,False,8,victoire,victoire B,14,4.437,7,4.261,280
+aleatoire,minmax-d4,porte_raccourci,R,R,True,9,defaite,victoire B,14,4.866,7,0.044,0
+minmax-d4,aleatoire,porte_raccourci,B,R,False,9,victoire,victoire B,14,4.866,7,4.724,280
+aleatoire,minmax-d4,salle_fermee,B,B,True,0,nul,nul (limite de tours),80,17.821,40,0.217,0
+minmax-d4,aleatoire,salle_fermee,R,B,False,0,nul,nul (limite de tours),80,17.821,40,17.047,1181
+aleatoire,minmax-d4,salle_fermee,B,B,True,1,nul,nul (limite de tours),80,17.217,40,0.231,0
+minmax-d4,aleatoire,salle_fermee,R,B,False,1,nul,nul (limite de tours),80,17.217,40,16.37,1121
+aleatoire,minmax-d4,salle_fermee,B,B,True,2,nul,nul (limite de tours),80,15.833,40,0.281,0
+minmax-d4,aleatoire,salle_fermee,R,B,False,2,nul,nul (limite de tours),80,15.833,40,15.003,1037
+aleatoire,minmax-d4,salle_fermee,B,B,True,3,nul,nul (limite de tours),80,18.401,40,0.235,0
+minmax-d4,aleatoire,salle_fermee,R,B,False,3,nul,nul (limite de tours),80,18.401,40,17.61,1199
+aleatoire,minmax-d4,salle_fermee,B,B,True,4,nul,nul (limite de tours),80,17.056,40,0.221,0
+minmax-d4,aleatoire,salle_fermee,R,B,False,4,nul,nul (limite de tours),80,17.056,40,16.291,1085
+aleatoire,minmax-d4,salle_fermee,B,B,True,5,nul,nul (limite de tours),80,16.578,40,0.22,0
+minmax-d4,aleatoire,salle_fermee,R,B,False,5,nul,nul (limite de tours),80,16.578,40,15.783,1076
+aleatoire,minmax-d4,salle_fermee,B,B,True,6,nul,nul (limite de tours),80,18.752,40,0.221,0
+minmax-d4,aleatoire,salle_fermee,R,B,False,6,nul,nul (limite de tours),80,18.752,40,17.937,1238
+aleatoire,minmax-d4,salle_fermee,B,B,True,7,nul,nul (limite de tours),80,19.163,40,0.231,0
+minmax-d4,aleatoire,salle_fermee,R,B,False,7,nul,nul (limite de tours),80,19.163,40,18.393,1238
+aleatoire,minmax-d4,salle_fermee,B,B,True,8,nul,nul (limite de tours),80,13.993,40,0.287,0
+minmax-d4,aleatoire,salle_fermee,R,B,False,8,nul,nul (limite de tours),80,13.993,40,13.117,936
+aleatoire,minmax-d4,salle_fermee,B,B,True,9,nul,nul (limite de tours),80,19.177,40,0.226,0
+minmax-d4,aleatoire,salle_fermee,R,B,False,9,nul,nul (limite de tours),80,19.177,40,18.422,1271
+aleatoire,minmax-d4,salle_fermee,B,R,False,0,nul,nul (limite de tours),80,15.491,40,0.2,0
+minmax-d4,aleatoire,salle_fermee,R,R,True,0,nul,nul (limite de tours),80,15.491,40,14.756,1053
+aleatoire,minmax-d4,salle_fermee,B,R,False,1,nul,nul (limite de tours),80,18.21,40,0.286,0
+minmax-d4,aleatoire,salle_fermee,R,R,True,1,nul,nul (limite de tours),80,18.21,40,17.338,1183
+aleatoire,minmax-d4,salle_fermee,B,R,False,2,nul,nul (limite de tours),80,16.317,40,0.21,0
+minmax-d4,aleatoire,salle_fermee,R,R,True,2,nul,nul (limite de tours),80,16.317,40,15.556,1107
+aleatoire,minmax-d4,salle_fermee,B,R,False,3,nul,nul (limite de tours),80,15.199,40,0.208,0
+minmax-d4,aleatoire,salle_fermee,R,R,True,3,nul,nul (limite de tours),80,15.199,40,14.446,1057
+aleatoire,minmax-d4,salle_fermee,B,R,False,4,nul,nul (limite de tours),80,15.718,40,0.239,0
+minmax-d4,aleatoire,salle_fermee,R,R,True,4,nul,nul (limite de tours),80,15.718,40,14.914,1052
+aleatoire,minmax-d4,salle_fermee,B,R,False,5,nul,nul (limite de tours),80,16.871,40,0.236,0
+minmax-d4,aleatoire,salle_fermee,R,R,True,5,nul,nul (limite de tours),80,16.871,40,16.078,1165
+aleatoire,minmax-d4,salle_fermee,B,R,False,6,nul,nul (limite de tours),80,13.928,40,0.198,0
+minmax-d4,aleatoire,salle_fermee,R,R,True,6,nul,nul (limite de tours),80,13.928,40,13.22,975
+aleatoire,minmax-d4,salle_fermee,B,R,False,7,nul,nul (limite de tours),80,14.538,40,0.198,0
+minmax-d4,aleatoire,salle_fermee,R,R,True,7,nul,nul (limite de tours),80,14.538,40,13.8,984
+aleatoire,minmax-d4,salle_fermee,B,R,False,8,nul,nul (limite de tours),80,15.337,40,0.206,0
+minmax-d4,aleatoire,salle_fermee,R,R,True,8,nul,nul (limite de tours),80,15.337,40,14.6,1061
+aleatoire,minmax-d4,salle_fermee,B,R,False,9,nul,nul (limite de tours),80,14.788,40,0.207,0
+minmax-d4,aleatoire,salle_fermee,R,R,True,9,nul,nul (limite de tours),80,14.788,40,14.014,1027
+aleatoire,minmax-d4,salle_fermee,R,B,False,0,nul,nul (limite de tours),80,18.314,40,0.215,0
+minmax-d4,aleatoire,salle_fermee,B,B,True,0,nul,nul (limite de tours),80,18.314,40,17.579,1271
+aleatoire,minmax-d4,salle_fermee,R,B,False,1,nul,nul (limite de tours),80,18.583,40,0.212,0
+minmax-d4,aleatoire,salle_fermee,B,B,True,1,nul,nul (limite de tours),80,18.583,40,17.854,1280
+aleatoire,minmax-d4,salle_fermee,R,B,False,2,nul,nul (limite de tours),80,18.37,40,0.21,0
+minmax-d4,aleatoire,salle_fermee,B,B,True,2,nul,nul (limite de tours),80,18.37,40,17.66,1282
+aleatoire,minmax-d4,salle_fermee,R,B,False,3,nul,nul (limite de tours),80,18.251,40,0.217,0
+minmax-d4,aleatoire,salle_fermee,B,B,True,3,nul,nul (limite de tours),80,18.251,40,17.512,1248
+aleatoire,minmax-d4,salle_fermee,R,B,False,4,nul,nul (limite de tours),80,18.145,40,0.22,0
+minmax-d4,aleatoire,salle_fermee,B,B,True,4,nul,nul (limite de tours),80,18.145,40,17.365,1252
+aleatoire,minmax-d4,salle_fermee,R,B,False,5,nul,nul (limite de tours),80,18.643,40,0.231,0
+minmax-d4,aleatoire,salle_fermee,B,B,True,5,nul,nul (limite de tours),80,18.643,40,17.86,1244
+aleatoire,minmax-d4,salle_fermee,R,B,False,6,nul,nul (limite de tours),80,13.851,40,0.16,0
+minmax-d4,aleatoire,salle_fermee,B,B,True,6,nul,nul (limite de tours),80,13.851,40,13.296,1278
+aleatoire,minmax-d4,salle_fermee,R,B,False,7,nul,nul (limite de tours),80,12.128,40,0.143,0
+minmax-d4,aleatoire,salle_fermee,B,B,True,7,nul,nul (limite de tours),80,12.128,40,11.624,1279
+aleatoire,minmax-d4,salle_fermee,R,B,False,8,nul,nul (limite de tours),80,12.23,40,0.144,0
+minmax-d4,aleatoire,salle_fermee,B,B,True,8,nul,nul (limite de tours),80,12.23,40,11.721,1280
+aleatoire,minmax-d4,salle_fermee,R,B,False,9,nul,nul (limite de tours),80,13.944,40,0.155,0
+minmax-d4,aleatoire,salle_fermee,B,B,True,9,nul,nul (limite de tours),80,13.944,40,13.381,1282
+aleatoire,minmax-d4,salle_fermee,R,R,True,0,nul,nul (limite de tours),80,12.118,40,0.142,0
+minmax-d4,aleatoire,salle_fermee,B,R,False,0,nul,nul (limite de tours),80,12.118,40,11.611,1256
+aleatoire,minmax-d4,salle_fermee,R,R,True,1,nul,nul (limite de tours),80,12.08,40,0.167,0
+minmax-d4,aleatoire,salle_fermee,B,R,False,1,nul,nul (limite de tours),80,12.08,40,11.517,1262
+aleatoire,minmax-d4,salle_fermee,R,R,True,2,nul,nul (limite de tours),80,12.085,40,0.143,0
+minmax-d4,aleatoire,salle_fermee,B,R,False,2,nul,nul (limite de tours),80,12.085,40,11.578,1262
+aleatoire,minmax-d4,salle_fermee,R,R,True,3,nul,nul (limite de tours),80,8.582,40,0.148,0
+minmax-d4,aleatoire,salle_fermee,B,R,False,3,nul,nul (limite de tours),80,8.582,40,8.05,887
+aleatoire,minmax-d4,salle_fermee,R,R,True,4,nul,nul (limite de tours),80,11.924,40,0.146,0
+minmax-d4,aleatoire,salle_fermee,B,R,False,4,nul,nul (limite de tours),80,11.924,40,11.406,1220
+aleatoire,minmax-d4,salle_fermee,R,R,True,5,nul,nul (limite de tours),80,12.225,40,0.154,0
+minmax-d4,aleatoire,salle_fermee,B,R,False,5,nul,nul (limite de tours),80,12.225,40,11.705,1221
+aleatoire,minmax-d4,salle_fermee,R,R,True,6,nul,nul (limite de tours),80,12.435,40,0.145,0
+minmax-d4,aleatoire,salle_fermee,B,R,False,6,nul,nul (limite de tours),80,12.435,40,11.936,1259
+aleatoire,minmax-d4,salle_fermee,R,R,True,7,nul,nul (limite de tours),80,12.065,40,0.149,0
+minmax-d4,aleatoire,salle_fermee,B,R,False,7,nul,nul (limite de tours),80,12.065,40,11.54,1262
+aleatoire,minmax-d4,salle_fermee,R,R,True,8,nul,nul (limite de tours),80,11.989,40,0.14,0
+minmax-d4,aleatoire,salle_fermee,B,R,False,8,nul,nul (limite de tours),80,11.989,40,11.463,1262
+aleatoire,minmax-d4,salle_fermee,R,R,True,9,nul,nul (limite de tours),80,12.092,40,0.152,0
+minmax-d4,aleatoire,salle_fermee,B,R,False,9,nul,nul (limite de tours),80,12.092,40,11.511,1262
+aleatoire,minmax-d4,arene_9x9,B,B,True,0,defaite,victoire R,28,28.51,14,0.084,0
+minmax-d4,aleatoire,arene_9x9,R,B,False,0,victoire,victoire R,28,28.51,14,28.248,2550
+aleatoire,minmax-d4,arene_9x9,B,B,True,1,defaite,victoire R,36,34.452,18,0.08,0
+minmax-d4,aleatoire,arene_9x9,R,B,False,1,victoire,victoire R,36,34.452,18,34.206,3203
+aleatoire,minmax-d4,arene_9x9,B,B,True,2,nul,nul (limite de tours),80,81.014,40,0.171,0
+minmax-d4,aleatoire,arene_9x9,R,B,False,2,nul,nul (limite de tours),80,81.014,40,80.453,7821
+aleatoire,minmax-d4,arene_9x9,B,B,True,3,nul,nul (limite de tours),80,78.206,40,0.178,0
+minmax-d4,aleatoire,arene_9x9,R,B,False,3,nul,nul (limite de tours),80,78.206,40,77.656,7645
+aleatoire,minmax-d4,arene_9x9,B,B,True,4,defaite,victoire R,44,46.458,22,0.094,0
+minmax-d4,aleatoire,arene_9x9,R,B,False,4,victoire,victoire R,44,46.458,22,46.167,4470
+aleatoire,minmax-d4,arene_9x9,B,B,True,5,defaite,victoire R,80,83.584,40,0.16,0
+minmax-d4,aleatoire,arene_9x9,R,B,False,5,victoire,victoire R,80,83.584,40,83.071,8117
+aleatoire,minmax-d4,arene_9x9,B,B,True,6,defaite,victoire R,40,36.373,20,0.093,0
+minmax-d4,aleatoire,arene_9x9,R,B,False,6,victoire,victoire R,40,36.373,20,36.079,3422
+aleatoire,minmax-d4,arene_9x9,B,B,True,7,defaite,victoire R,44,48.333,22,0.104,0
+minmax-d4,aleatoire,arene_9x9,R,B,False,7,victoire,victoire R,44,48.333,22,48.023,4383
+aleatoire,minmax-d4,arene_9x9,B,B,True,8,nul,nul (limite de tours),80,116.982,40,0.302,0
+minmax-d4,aleatoire,arene_9x9,R,B,False,8,nul,nul (limite de tours),80,116.982,40,116.156,7556
+aleatoire,minmax-d4,arene_9x9,B,B,True,9,defaite,victoire R,44,72.008,22,0.16,0
+minmax-d4,aleatoire,arene_9x9,R,B,False,9,victoire,victoire R,44,72.008,22,71.475,4392
+aleatoire,minmax-d4,arene_9x9,B,R,False,0,defaite,victoire R,31,48.744,15,0.153,0
+minmax-d4,aleatoire,arene_9x9,R,R,True,0,victoire,victoire R,31,48.744,16,48.371,2936
+aleatoire,minmax-d4,arene_9x9,B,R,False,1,defaite,victoire R,31,45.462,15,0.125,0
+minmax-d4,aleatoire,arene_9x9,R,R,True,1,victoire,victoire R,31,45.462,16,45.104,2711
+aleatoire,minmax-d4,arene_9x9,B,R,False,2,nul,nul (limite de tours),80,126.629,40,0.326,0
+minmax-d4,aleatoire,arene_9x9,R,R,True,2,nul,nul (limite de tours),80,126.629,40,125.737,7868
+aleatoire,minmax-d4,arene_9x9,B,R,False,3,nul,nul (limite de tours),80,117.015,40,0.336,0
+minmax-d4,aleatoire,arene_9x9,R,R,True,3,nul,nul (limite de tours),80,117.015,40,116.117,7760
+aleatoire,minmax-d4,arene_9x9,B,R,False,4,defaite,victoire R,75,91.478,37,0.212,0
+minmax-d4,aleatoire,arene_9x9,R,R,True,4,victoire,victoire R,75,91.478,38,90.863,7924
+aleatoire,minmax-d4,arene_9x9,B,R,False,5,defaite,victoire R,59,80.71,29,0.169,0
+minmax-d4,aleatoire,arene_9x9,R,R,True,5,victoire,victoire R,59,80.71,30,80.176,6018
+aleatoire,minmax-d4,arene_9x9,B,R,False,6,defaite,victoire R,31,47.625,15,0.123,0
+minmax-d4,aleatoire,arene_9x9,R,R,True,6,victoire,victoire R,31,47.625,16,47.239,2531
+aleatoire,minmax-d4,arene_9x9,B,R,False,7,defaite,victoire R,43,81.406,21,0.198,0
+minmax-d4,aleatoire,arene_9x9,R,R,True,7,victoire,victoire R,43,81.406,22,80.759,4326
+aleatoire,minmax-d4,arene_9x9,B,R,False,8,defaite,victoire R,27,38.533,13,0.108,0
+minmax-d4,aleatoire,arene_9x9,R,R,True,8,victoire,victoire R,27,38.533,14,38.163,2156
+aleatoire,minmax-d4,arene_9x9,B,R,False,9,defaite,victoire R,47,89.563,23,0.215,0
+minmax-d4,aleatoire,arene_9x9,R,R,True,9,victoire,victoire R,47,89.563,24,88.939,4796
+aleatoire,minmax-d4,arene_9x9,R,B,False,0,defaite,victoire B,23,36.061,11,0.101,0
+minmax-d4,aleatoire,arene_9x9,B,B,True,0,victoire,victoire B,23,36.061,12,35.787,1878
+aleatoire,minmax-d4,arene_9x9,R,B,False,1,defaite,victoire B,23,33.219,11,0.094,0
+minmax-d4,aleatoire,arene_9x9,B,B,True,1,victoire,victoire B,23,33.219,12,32.895,1752
+aleatoire,minmax-d4,arene_9x9,R,B,False,2,defaite,victoire B,23,33.287,11,0.086,0
+minmax-d4,aleatoire,arene_9x9,B,B,True,2,victoire,victoire B,23,33.287,12,33.031,1806
+aleatoire,minmax-d4,arene_9x9,R,B,False,3,defaite,victoire B,23,42.416,11,0.09,0
+minmax-d4,aleatoire,arene_9x9,B,B,True,3,victoire,victoire B,23,42.416,12,42.161,2231
+aleatoire,minmax-d4,arene_9x9,R,B,False,4,defaite,victoire B,23,29.405,11,0.076,0
+minmax-d4,aleatoire,arene_9x9,B,B,True,4,victoire,victoire B,23,29.405,12,29.177,1838
+aleatoire,minmax-d4,arene_9x9,R,B,False,5,defaite,victoire B,23,25.239,11,0.069,0
+minmax-d4,aleatoire,arene_9x9,B,B,True,5,victoire,victoire B,23,25.239,12,25.026,1710
+aleatoire,minmax-d4,arene_9x9,R,B,False,6,defaite,victoire B,23,18.666,11,0.049,0
+minmax-d4,aleatoire,arene_9x9,B,B,True,6,victoire,victoire B,23,18.666,12,18.512,1665
+aleatoire,minmax-d4,arene_9x9,R,B,False,7,defaite,victoire B,23,22.951,11,0.054,0
+minmax-d4,aleatoire,arene_9x9,B,B,True,7,victoire,victoire B,23,22.951,12,22.787,1928
+aleatoire,minmax-d4,arene_9x9,R,B,False,8,defaite,victoire B,23,28.139,11,0.066,0
+minmax-d4,aleatoire,arene_9x9,B,B,True,8,victoire,victoire B,23,28.139,12,27.945,1921
+aleatoire,minmax-d4,arene_9x9,R,B,False,9,defaite,victoire B,23,25.243,11,0.069,0
+minmax-d4,aleatoire,arene_9x9,B,B,True,9,victoire,victoire B,23,25.243,12,25.053,1926
+aleatoire,minmax-d4,arene_9x9,R,R,True,0,defaite,victoire B,24,29.34,12,0.102,0
+minmax-d4,aleatoire,arene_9x9,B,R,False,0,victoire,victoire B,24,29.34,12,29.079,1968
+aleatoire,minmax-d4,arene_9x9,R,R,True,1,defaite,victoire B,24,27.041,12,0.078,0
+minmax-d4,aleatoire,arene_9x9,B,R,False,1,victoire,victoire B,24,27.041,12,26.8,1844
+aleatoire,minmax-d4,arene_9x9,R,R,True,2,defaite,victoire B,24,29.147,12,0.083,0
+minmax-d4,aleatoire,arene_9x9,B,R,False,2,victoire,victoire B,24,29.147,12,28.9,1876
+aleatoire,minmax-d4,arene_9x9,R,R,True,3,defaite,victoire B,24,31.026,12,0.071,0
+minmax-d4,aleatoire,arene_9x9,B,R,False,3,victoire,victoire B,24,31.026,12,30.817,2340
+aleatoire,minmax-d4,arene_9x9,R,R,True,4,defaite,victoire B,24,22.232,12,0.061,0
+minmax-d4,aleatoire,arene_9x9,B,R,False,4,victoire,victoire B,24,22.232,12,22.052,1924
+aleatoire,minmax-d4,arene_9x9,R,R,True,5,defaite,victoire B,24,22.711,12,0.064,0
+minmax-d4,aleatoire,arene_9x9,B,R,False,5,victoire,victoire B,24,22.711,12,22.53,1797
+aleatoire,minmax-d4,arene_9x9,R,R,True,6,defaite,victoire B,24,20.74,12,0.056,0
+minmax-d4,aleatoire,arene_9x9,B,R,False,6,victoire,victoire B,24,20.74,12,20.57,1698
+aleatoire,minmax-d4,arene_9x9,R,R,True,7,defaite,victoire B,24,25.186,12,0.089,0
+minmax-d4,aleatoire,arene_9x9,B,R,False,7,victoire,victoire B,24,25.186,12,24.969,2061
+aleatoire,minmax-d4,arene_9x9,R,R,True,8,defaite,victoire B,36,38.486,18,0.389,0
+minmax-d4,aleatoire,arene_9x9,B,R,False,8,victoire,victoire B,36,38.486,18,37.914,3153
+aleatoire,minmax-d4,arene_9x9,R,R,True,9,defaite,victoire B,24,27.488,12,0.066,0
+minmax-d4,aleatoire,arene_9x9,B,R,False,9,victoire,victoire B,24,27.488,12,27.294,1924
+aleatoire,minmax-d4,labyrinthe_11x11,B,B,True,0,defaite,victoire R,44,9.332,22,0.092,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,B,False,0,victoire,victoire R,44,9.332,22,9.016,789
+aleatoire,minmax-d4,labyrinthe_11x11,B,B,True,1,defaite,victoire R,44,9.374,22,0.093,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,B,False,1,victoire,victoire R,44,9.374,22,9.053,787
+aleatoire,minmax-d4,labyrinthe_11x11,B,B,True,2,defaite,victoire R,44,10.216,22,0.102,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,B,False,2,victoire,victoire R,44,10.216,22,9.879,798
+aleatoire,minmax-d4,labyrinthe_11x11,B,B,True,3,defaite,victoire R,44,10.123,22,0.095,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,B,False,3,victoire,victoire R,44,10.123,22,9.795,885
+aleatoire,minmax-d4,labyrinthe_11x11,B,B,True,4,defaite,victoire R,44,9.433,22,0.097,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,B,False,4,victoire,victoire R,44,9.433,22,9.103,787
+aleatoire,minmax-d4,labyrinthe_11x11,B,B,True,5,defaite,victoire R,44,10.271,22,0.088,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,B,False,5,victoire,victoire R,44,10.271,22,9.973,939
+aleatoire,minmax-d4,labyrinthe_11x11,B,B,True,6,defaite,victoire R,44,10.288,22,0.087,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,B,False,6,victoire,victoire R,44,10.288,22,9.995,874
+aleatoire,minmax-d4,labyrinthe_11x11,B,B,True,7,defaite,victoire R,44,8.997,22,0.082,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,B,False,7,victoire,victoire R,44,8.997,22,8.711,788
+aleatoire,minmax-d4,labyrinthe_11x11,B,B,True,8,defaite,victoire R,44,9.853,22,0.089,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,B,False,8,victoire,victoire R,44,9.853,22,9.554,860
+aleatoire,minmax-d4,labyrinthe_11x11,B,B,True,9,defaite,victoire R,44,8.495,22,0.086,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,B,False,9,victoire,victoire R,44,8.495,22,8.16,783
+aleatoire,minmax-d4,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,8.136,21,0.083,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,8.136,22,7.823,788
+aleatoire,minmax-d4,labyrinthe_11x11,B,R,False,1,defaite,victoire R,43,8.139,21,0.078,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,R,True,1,victoire,victoire R,43,8.139,22,7.878,787
+aleatoire,minmax-d4,labyrinthe_11x11,B,R,False,2,defaite,victoire R,43,8.159,21,0.075,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,R,True,2,victoire,victoire R,43,8.159,22,7.893,797
+aleatoire,minmax-d4,labyrinthe_11x11,B,R,False,3,defaite,victoire R,43,9.268,21,0.08,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,R,True,3,victoire,victoire R,43,9.268,22,8.99,891
+aleatoire,minmax-d4,labyrinthe_11x11,B,R,False,4,defaite,victoire R,43,8.842,21,0.113,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,R,True,4,victoire,victoire R,43,8.842,22,8.529,788
+aleatoire,minmax-d4,labyrinthe_11x11,B,R,False,5,defaite,victoire R,43,9.737,21,0.074,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,R,True,5,victoire,victoire R,43,9.737,22,9.471,946
+aleatoire,minmax-d4,labyrinthe_11x11,B,R,False,6,defaite,victoire R,43,10.512,21,0.118,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,R,True,6,victoire,victoire R,43,10.512,22,10.171,858
+aleatoire,minmax-d4,labyrinthe_11x11,B,R,False,7,defaite,victoire R,43,8.549,21,0.078,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,R,True,7,victoire,victoire R,43,8.549,22,8.256,789
+aleatoire,minmax-d4,labyrinthe_11x11,B,R,False,8,defaite,victoire R,43,9.364,21,0.08,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,R,True,8,victoire,victoire R,43,9.364,22,9.08,845
+aleatoire,minmax-d4,labyrinthe_11x11,B,R,False,9,defaite,victoire R,43,10.55,21,0.088,0
+minmax-d4,aleatoire,labyrinthe_11x11,R,R,True,9,victoire,victoire R,43,10.55,22,10.215,783
+aleatoire,minmax-d4,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,9.247,21,0.1,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,9.247,22,8.919,783
+aleatoire,minmax-d4,labyrinthe_11x11,R,B,False,1,defaite,victoire B,43,9.125,21,0.091,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,B,True,1,victoire,victoire B,43,9.125,22,8.807,783
+aleatoire,minmax-d4,labyrinthe_11x11,R,B,False,2,defaite,victoire B,43,11.003,21,0.099,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,B,True,2,victoire,victoire B,43,11.003,22,10.68,889
+aleatoire,minmax-d4,labyrinthe_11x11,R,B,False,3,defaite,victoire B,43,9.662,21,0.105,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,B,True,3,victoire,victoire B,43,9.662,22,9.295,783
+aleatoire,minmax-d4,labyrinthe_11x11,R,B,False,4,defaite,victoire B,43,8.881,21,0.084,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,B,True,4,victoire,victoire B,43,8.881,22,8.555,783
+aleatoire,minmax-d4,labyrinthe_11x11,R,B,False,5,defaite,victoire B,43,8.583,21,0.081,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,B,True,5,victoire,victoire B,43,8.583,22,8.299,783
+aleatoire,minmax-d4,labyrinthe_11x11,R,B,False,6,defaite,victoire B,43,8.032,21,0.089,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,B,True,6,victoire,victoire B,43,8.032,22,7.73,743
+aleatoire,minmax-d4,labyrinthe_11x11,R,B,False,7,defaite,victoire B,43,9.278,21,0.077,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,B,True,7,victoire,victoire B,43,9.278,22,9.007,900
+aleatoire,minmax-d4,labyrinthe_11x11,R,B,False,8,defaite,victoire B,43,8.725,21,0.076,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,B,True,8,victoire,victoire B,43,8.725,22,8.448,821
+aleatoire,minmax-d4,labyrinthe_11x11,R,B,False,9,defaite,victoire B,43,8.715,21,0.263,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,B,True,9,victoire,victoire B,43,8.715,22,8.242,822
+aleatoire,minmax-d4,labyrinthe_11x11,R,R,True,0,defaite,victoire B,44,8.377,22,0.078,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,R,False,0,victoire,victoire B,44,8.377,22,8.098,783
+aleatoire,minmax-d4,labyrinthe_11x11,R,R,True,1,defaite,victoire B,44,8.547,22,0.082,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,R,False,1,victoire,victoire B,44,8.547,22,8.266,783
+aleatoire,minmax-d4,labyrinthe_11x11,R,R,True,2,defaite,victoire B,44,9.978,22,0.084,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,R,False,2,victoire,victoire B,44,9.978,22,9.691,885
+aleatoire,minmax-d4,labyrinthe_11x11,R,R,True,3,defaite,victoire B,44,8.147,22,0.079,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,R,False,3,victoire,victoire B,44,8.147,22,7.877,783
+aleatoire,minmax-d4,labyrinthe_11x11,R,R,True,4,defaite,victoire B,44,8.074,22,0.081,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,R,False,4,victoire,victoire B,44,8.074,22,7.794,783
+aleatoire,minmax-d4,labyrinthe_11x11,R,R,True,5,defaite,victoire B,44,8.579,22,0.08,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,R,False,5,victoire,victoire B,44,8.579,22,8.278,783
+aleatoire,minmax-d4,labyrinthe_11x11,R,R,True,6,defaite,victoire B,44,8.908,22,0.09,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,R,False,6,victoire,victoire B,44,8.908,22,8.603,765
+aleatoire,minmax-d4,labyrinthe_11x11,R,R,True,7,defaite,victoire B,44,9.604,22,0.09,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,R,False,7,victoire,victoire B,44,9.604,22,9.295,903
+aleatoire,minmax-d4,labyrinthe_11x11,R,R,True,8,defaite,victoire B,44,8.635,22,0.084,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,R,False,8,victoire,victoire B,44,8.635,22,8.323,819
+aleatoire,minmax-d4,labyrinthe_11x11,R,R,True,9,defaite,victoire B,44,10.163,22,0.098,0
+minmax-d4,aleatoire,labyrinthe_11x11,B,R,False,9,victoire,victoire B,44,10.163,22,9.86,835
+aleatoire,alphabeta-d4,couloir_5x5,B,B,True,0,defaite,victoire R,8,1.869,4,0.034,0
+alphabeta-d4,aleatoire,couloir_5x5,R,B,False,0,victoire,victoire R,8,1.869,4,1.794,73
+aleatoire,alphabeta-d4,couloir_5x5,B,B,True,1,defaite,victoire R,8,1.733,4,0.016,0
+alphabeta-d4,aleatoire,couloir_5x5,R,B,False,1,victoire,victoire R,8,1.733,4,1.682,73
+aleatoire,alphabeta-d4,couloir_5x5,B,B,True,2,defaite,victoire R,8,2.173,4,0.018,0
+alphabeta-d4,aleatoire,couloir_5x5,R,B,False,2,victoire,victoire R,8,2.173,4,2.116,73
+aleatoire,alphabeta-d4,couloir_5x5,B,B,True,3,defaite,victoire R,8,1.918,4,0.022,0
+alphabeta-d4,aleatoire,couloir_5x5,R,B,False,3,victoire,victoire R,8,1.918,4,1.854,71
+aleatoire,alphabeta-d4,couloir_5x5,B,B,True,4,defaite,victoire R,8,1.804,4,0.017,0
+alphabeta-d4,aleatoire,couloir_5x5,R,B,False,4,victoire,victoire R,8,1.804,4,1.75,71
+aleatoire,alphabeta-d4,couloir_5x5,B,B,True,5,defaite,victoire R,8,2.46,4,0.023,0
+alphabeta-d4,aleatoire,couloir_5x5,R,B,False,5,victoire,victoire R,8,2.46,4,2.389,71
+aleatoire,alphabeta-d4,couloir_5x5,B,B,True,6,defaite,victoire R,8,2.074,4,0.019,0
+alphabeta-d4,aleatoire,couloir_5x5,R,B,False,6,victoire,victoire R,8,2.074,4,2.017,73
+aleatoire,alphabeta-d4,couloir_5x5,B,B,True,7,defaite,victoire R,8,2.065,4,0.018,0
+alphabeta-d4,aleatoire,couloir_5x5,R,B,False,7,victoire,victoire R,8,2.065,4,2.004,73
+aleatoire,alphabeta-d4,couloir_5x5,B,B,True,8,defaite,victoire R,8,2.097,4,0.023,0
+alphabeta-d4,aleatoire,couloir_5x5,R,B,False,8,victoire,victoire R,8,2.097,4,2.027,73
+aleatoire,alphabeta-d4,couloir_5x5,B,B,True,9,defaite,victoire R,8,1.919,4,0.019,0
+alphabeta-d4,aleatoire,couloir_5x5,R,B,False,9,victoire,victoire R,8,1.919,4,1.859,73
+aleatoire,alphabeta-d4,couloir_5x5,B,R,False,0,defaite,victoire R,7,1.922,3,0.014,0
+alphabeta-d4,aleatoire,couloir_5x5,R,R,True,0,victoire,victoire R,7,1.922,4,1.874,73
+aleatoire,alphabeta-d4,couloir_5x5,B,R,False,1,defaite,victoire R,7,1.915,3,0.013,0
+alphabeta-d4,aleatoire,couloir_5x5,R,R,True,1,victoire,victoire R,7,1.915,4,1.865,73
+aleatoire,alphabeta-d4,couloir_5x5,B,R,False,2,defaite,victoire R,7,1.885,3,0.012,0
+alphabeta-d4,aleatoire,couloir_5x5,R,R,True,2,victoire,victoire R,7,1.885,4,1.836,73
+aleatoire,alphabeta-d4,couloir_5x5,B,R,False,3,defaite,victoire R,7,1.85,3,0.013,0
+alphabeta-d4,aleatoire,couloir_5x5,R,R,True,3,victoire,victoire R,7,1.85,4,1.805,73
+aleatoire,alphabeta-d4,couloir_5x5,B,R,False,4,defaite,victoire R,7,1.855,3,0.012,0
+alphabeta-d4,aleatoire,couloir_5x5,R,R,True,4,victoire,victoire R,7,1.855,4,1.81,73
+aleatoire,alphabeta-d4,couloir_5x5,B,R,False,5,defaite,victoire R,7,1.794,3,0.013,0
+alphabeta-d4,aleatoire,couloir_5x5,R,R,True,5,victoire,victoire R,7,1.794,4,1.742,73
+aleatoire,alphabeta-d4,couloir_5x5,B,R,False,6,defaite,victoire R,7,1.832,3,0.013,0
+alphabeta-d4,aleatoire,couloir_5x5,R,R,True,6,victoire,victoire R,7,1.832,4,1.787,73
+aleatoire,alphabeta-d4,couloir_5x5,B,R,False,7,defaite,victoire R,7,1.883,3,0.013,0
+alphabeta-d4,aleatoire,couloir_5x5,R,R,True,7,victoire,victoire R,7,1.883,4,1.839,73
+aleatoire,alphabeta-d4,couloir_5x5,B,R,False,8,defaite,victoire R,7,2.044,3,0.014,0
+alphabeta-d4,aleatoire,couloir_5x5,R,R,True,8,victoire,victoire R,7,2.044,4,1.996,73
+aleatoire,alphabeta-d4,couloir_5x5,B,R,False,9,defaite,victoire R,7,2.035,3,0.014,0
+alphabeta-d4,aleatoire,couloir_5x5,R,R,True,9,victoire,victoire R,7,2.035,4,1.979,73
+aleatoire,alphabeta-d4,couloir_5x5,R,B,False,0,victoire,victoire R,8,1.848,4,0.019,0
+alphabeta-d4,aleatoire,couloir_5x5,B,B,True,0,defaite,victoire R,8,1.848,4,1.785,64
+aleatoire,alphabeta-d4,couloir_5x5,R,B,False,1,defaite,victoire B,11,2.377,5,0.018,0
+alphabeta-d4,aleatoire,couloir_5x5,B,B,True,1,victoire,victoire B,11,2.377,6,2.31,92
+aleatoire,alphabeta-d4,couloir_5x5,R,B,False,2,defaite,victoire B,11,2.485,5,0.02,0
+alphabeta-d4,aleatoire,couloir_5x5,B,B,True,2,victoire,victoire B,11,2.485,6,2.415,106
+aleatoire,alphabeta-d4,couloir_5x5,R,B,False,3,defaite,victoire B,11,2.684,5,0.02,0
+alphabeta-d4,aleatoire,couloir_5x5,B,B,True,3,victoire,victoire B,11,2.684,6,2.615,110
+aleatoire,alphabeta-d4,couloir_5x5,R,B,False,4,defaite,victoire B,11,2.41,5,0.019,0
+alphabeta-d4,aleatoire,couloir_5x5,B,B,True,4,victoire,victoire B,11,2.41,6,2.34,102
+aleatoire,alphabeta-d4,couloir_5x5,R,B,False,5,defaite,victoire B,11,2.704,5,0.02,0
+alphabeta-d4,aleatoire,couloir_5x5,B,B,True,5,victoire,victoire B,11,2.704,6,2.632,102
+aleatoire,alphabeta-d4,couloir_5x5,R,B,False,6,defaite,victoire B,11,2.53,5,0.023,0
+alphabeta-d4,aleatoire,couloir_5x5,B,B,True,6,victoire,victoire B,11,2.53,6,2.426,104
+aleatoire,alphabeta-d4,couloir_5x5,R,B,False,7,defaite,victoire B,11,2.35,5,0.019,0
+alphabeta-d4,aleatoire,couloir_5x5,B,B,True,7,victoire,victoire B,11,2.35,6,2.282,101
+aleatoire,alphabeta-d4,couloir_5x5,R,B,False,8,defaite,victoire B,11,2.863,5,0.021,0
+alphabeta-d4,aleatoire,couloir_5x5,B,B,True,8,victoire,victoire B,11,2.863,6,2.789,108
+aleatoire,alphabeta-d4,couloir_5x5,R,B,False,9,defaite,victoire B,11,2.581,5,0.062,0
+alphabeta-d4,aleatoire,couloir_5x5,B,B,True,9,victoire,victoire B,11,2.581,6,2.461,103
+aleatoire,alphabeta-d4,couloir_5x5,R,R,True,0,victoire,victoire R,11,1.896,6,0.026,0
+alphabeta-d4,aleatoire,couloir_5x5,B,R,False,0,defaite,victoire R,11,1.896,5,1.813,76
+aleatoire,alphabeta-d4,couloir_5x5,R,R,True,1,defaite,victoire B,16,5.07,8,0.042,0
+alphabeta-d4,aleatoire,couloir_5x5,B,R,False,1,victoire,victoire B,16,5.07,8,4.943,115
+aleatoire,alphabeta-d4,couloir_5x5,R,R,True,2,defaite,victoire B,12,2.693,6,0.029,0
+alphabeta-d4,aleatoire,couloir_5x5,B,R,False,2,victoire,victoire B,12,2.693,6,2.524,97
+aleatoire,alphabeta-d4,couloir_5x5,R,R,True,3,defaite,victoire B,12,2.767,6,0.06,0
+alphabeta-d4,aleatoire,couloir_5x5,B,R,False,3,victoire,victoire B,12,2.767,6,2.627,108
+aleatoire,alphabeta-d4,couloir_5x5,R,R,True,4,victoire,victoire R,11,2.269,6,0.027,0
+alphabeta-d4,aleatoire,couloir_5x5,B,R,False,4,defaite,victoire R,11,2.269,5,2.191,87
+aleatoire,alphabeta-d4,couloir_5x5,R,R,True,5,defaite,victoire B,12,2.424,6,0.023,0
+alphabeta-d4,aleatoire,couloir_5x5,B,R,False,5,victoire,victoire B,12,2.424,6,2.346,101
+aleatoire,alphabeta-d4,couloir_5x5,R,R,True,6,defaite,victoire B,12,2.555,6,0.027,0
+alphabeta-d4,aleatoire,couloir_5x5,B,R,False,6,victoire,victoire B,12,2.555,6,2.359,94
+aleatoire,alphabeta-d4,couloir_5x5,R,R,True,7,defaite,victoire B,12,3.308,6,0.033,0
+alphabeta-d4,aleatoire,couloir_5x5,B,R,False,7,victoire,victoire B,12,3.308,6,3.199,92
+aleatoire,alphabeta-d4,couloir_5x5,R,R,True,8,defaite,victoire B,12,3.741,6,0.039,0
+alphabeta-d4,aleatoire,couloir_5x5,B,R,False,8,victoire,victoire B,12,3.741,6,3.631,104
+aleatoire,alphabeta-d4,couloir_5x5,R,R,True,9,defaite,victoire B,12,2.461,6,0.023,0
+alphabeta-d4,aleatoire,couloir_5x5,B,R,False,9,victoire,victoire B,12,2.461,6,2.384,103
+aleatoire,alphabeta-d4,exemple_7x7,B,B,True,0,defaite,victoire R,12,5.103,6,0.027,0
+alphabeta-d4,aleatoire,exemple_7x7,R,B,False,0,victoire,victoire R,12,5.103,6,5.018,151
+aleatoire,alphabeta-d4,exemple_7x7,B,B,True,1,defaite,victoire R,12,4.131,6,0.023,0
+alphabeta-d4,aleatoire,exemple_7x7,R,B,False,1,victoire,victoire R,12,4.131,6,4.052,137
+aleatoire,alphabeta-d4,exemple_7x7,B,B,True,2,defaite,victoire R,12,4.177,6,0.023,0
+alphabeta-d4,aleatoire,exemple_7x7,R,B,False,2,victoire,victoire R,12,4.177,6,4.1,140
+aleatoire,alphabeta-d4,exemple_7x7,B,B,True,3,defaite,victoire R,12,4.635,6,0.028,0
+alphabeta-d4,aleatoire,exemple_7x7,R,B,False,3,victoire,victoire R,12,4.635,6,4.524,151
+aleatoire,alphabeta-d4,exemple_7x7,B,B,True,4,defaite,victoire R,12,4.572,6,0.027,0
+alphabeta-d4,aleatoire,exemple_7x7,R,B,False,4,victoire,victoire R,12,4.572,6,4.485,151
+aleatoire,alphabeta-d4,exemple_7x7,B,B,True,5,defaite,victoire R,12,4.711,6,0.029,0
+alphabeta-d4,aleatoire,exemple_7x7,R,B,False,5,victoire,victoire R,12,4.711,6,4.622,152
+aleatoire,alphabeta-d4,exemple_7x7,B,B,True,6,defaite,victoire R,12,4.041,6,0.024,0
+alphabeta-d4,aleatoire,exemple_7x7,R,B,False,6,victoire,victoire R,12,4.041,6,3.963,137
+aleatoire,alphabeta-d4,exemple_7x7,B,B,True,7,defaite,victoire R,12,4.318,6,0.025,0
+alphabeta-d4,aleatoire,exemple_7x7,R,B,False,7,victoire,victoire R,12,4.318,6,4.238,137
+aleatoire,alphabeta-d4,exemple_7x7,B,B,True,8,defaite,victoire R,12,4.18,6,0.032,0
+alphabeta-d4,aleatoire,exemple_7x7,R,B,False,8,victoire,victoire R,12,4.18,6,4.088,138
+aleatoire,alphabeta-d4,exemple_7x7,B,B,True,9,defaite,victoire R,12,4.297,6,0.025,0
+alphabeta-d4,aleatoire,exemple_7x7,R,B,False,9,victoire,victoire R,12,4.297,6,4.215,139
+aleatoire,alphabeta-d4,exemple_7x7,B,R,False,0,defaite,victoire R,11,4.389,5,0.036,0
+alphabeta-d4,aleatoire,exemple_7x7,R,R,True,0,victoire,victoire R,11,4.389,6,4.297,144
+aleatoire,alphabeta-d4,exemple_7x7,B,R,False,1,defaite,victoire R,11,3.858,5,0.019,0
+alphabeta-d4,aleatoire,exemple_7x7,R,R,True,1,victoire,victoire R,11,3.858,6,3.79,136
+aleatoire,alphabeta-d4,exemple_7x7,B,R,False,2,defaite,victoire R,11,4.295,5,0.019,0
+alphabeta-d4,aleatoire,exemple_7x7,R,R,True,2,victoire,victoire R,11,4.295,6,4.227,137
+aleatoire,alphabeta-d4,exemple_7x7,B,R,False,3,defaite,victoire R,11,4.55,5,0.022,0
+alphabeta-d4,aleatoire,exemple_7x7,R,R,True,3,victoire,victoire R,11,4.55,6,4.47,145
+aleatoire,alphabeta-d4,exemple_7x7,B,R,False,4,defaite,victoire R,11,4.33,5,0.021,0
+alphabeta-d4,aleatoire,exemple_7x7,R,R,True,4,victoire,victoire R,11,4.33,6,4.258,145
+aleatoire,alphabeta-d4,exemple_7x7,B,R,False,5,defaite,victoire R,11,4.294,5,0.019,0
+alphabeta-d4,aleatoire,exemple_7x7,R,R,True,5,victoire,victoire R,11,4.294,6,4.226,145
+aleatoire,alphabeta-d4,exemple_7x7,B,R,False,6,defaite,victoire R,11,3.901,5,0.019,0
+alphabeta-d4,aleatoire,exemple_7x7,R,R,True,6,victoire,victoire R,11,3.901,6,3.833,137
+aleatoire,alphabeta-d4,exemple_7x7,B,R,False,7,defaite,victoire R,11,3.98,5,0.019,0
+alphabeta-d4,aleatoire,exemple_7x7,R,R,True,7,victoire,victoire R,11,3.98,6,3.895,136
+aleatoire,alphabeta-d4,exemple_7x7,B,R,False,8,defaite,victoire R,11,4.319,5,0.021,0
+alphabeta-d4,aleatoire,exemple_7x7,R,R,True,8,victoire,victoire R,11,4.319,6,4.229,137
+aleatoire,alphabeta-d4,exemple_7x7,B,R,False,9,defaite,victoire R,11,4.022,5,0.024,0
+alphabeta-d4,aleatoire,exemple_7x7,R,R,True,9,victoire,victoire R,11,4.022,6,3.941,136
+aleatoire,alphabeta-d4,exemple_7x7,R,B,False,0,defaite,victoire B,11,4.074,5,0.022,0
+alphabeta-d4,aleatoire,exemple_7x7,B,B,True,0,victoire,victoire B,11,4.074,6,4.0,141
+aleatoire,alphabeta-d4,exemple_7x7,R,B,False,1,defaite,victoire B,11,3.882,5,0.021,0
+alphabeta-d4,aleatoire,exemple_7x7,B,B,True,1,victoire,victoire B,11,3.882,6,3.809,139
+aleatoire,alphabeta-d4,exemple_7x7,R,B,False,2,defaite,victoire B,11,4.067,5,0.021,0
+alphabeta-d4,aleatoire,exemple_7x7,B,B,True,2,victoire,victoire B,11,4.067,6,3.997,130
+aleatoire,alphabeta-d4,exemple_7x7,R,B,False,3,defaite,victoire B,11,4.491,5,0.026,0
+alphabeta-d4,aleatoire,exemple_7x7,B,B,True,3,victoire,victoire B,11,4.491,6,4.413,144
+aleatoire,alphabeta-d4,exemple_7x7,R,B,False,4,defaite,victoire B,11,3.871,5,0.021,0
+alphabeta-d4,aleatoire,exemple_7x7,B,B,True,4,victoire,victoire B,11,3.871,6,3.799,132
+aleatoire,alphabeta-d4,exemple_7x7,R,B,False,5,defaite,victoire B,11,3.83,5,0.02,0
+alphabeta-d4,aleatoire,exemple_7x7,B,B,True,5,victoire,victoire B,11,3.83,6,3.762,132
+aleatoire,alphabeta-d4,exemple_7x7,R,B,False,6,defaite,victoire B,11,3.521,5,0.02,0
+alphabeta-d4,aleatoire,exemple_7x7,B,B,True,6,victoire,victoire B,11,3.521,6,3.452,132
+aleatoire,alphabeta-d4,exemple_7x7,R,B,False,7,defaite,victoire B,11,4.023,5,0.02,0
+alphabeta-d4,aleatoire,exemple_7x7,B,B,True,7,victoire,victoire B,11,4.023,6,3.953,133
+aleatoire,alphabeta-d4,exemple_7x7,R,B,False,8,defaite,victoire B,11,3.746,5,0.021,0
+alphabeta-d4,aleatoire,exemple_7x7,B,B,True,8,victoire,victoire B,11,3.746,6,3.678,130
+aleatoire,alphabeta-d4,exemple_7x7,R,B,False,9,defaite,victoire B,11,4.702,5,0.025,0
+alphabeta-d4,aleatoire,exemple_7x7,B,B,True,9,victoire,victoire B,11,4.702,6,4.62,133
+aleatoire,alphabeta-d4,exemple_7x7,R,R,True,0,defaite,victoire B,12,7.21,6,0.046,0
+alphabeta-d4,aleatoire,exemple_7x7,B,R,False,0,victoire,victoire B,12,7.21,6,7.071,149
+aleatoire,alphabeta-d4,exemple_7x7,R,R,True,1,defaite,victoire B,12,4.082,6,0.026,0
+alphabeta-d4,aleatoire,exemple_7x7,B,R,False,1,victoire,victoire B,12,4.082,6,4.003,146
+aleatoire,alphabeta-d4,exemple_7x7,R,R,True,2,defaite,victoire B,12,3.57,6,0.028,0
+alphabeta-d4,aleatoire,exemple_7x7,B,R,False,2,victoire,victoire B,12,3.57,6,3.487,130
+aleatoire,alphabeta-d4,exemple_7x7,R,R,True,3,defaite,victoire B,12,4.802,6,0.028,0
+alphabeta-d4,aleatoire,exemple_7x7,B,R,False,3,victoire,victoire B,12,4.802,6,4.718,147
+aleatoire,alphabeta-d4,exemple_7x7,R,R,True,4,defaite,victoire B,12,4.012,6,0.025,0
+alphabeta-d4,aleatoire,exemple_7x7,B,R,False,4,victoire,victoire B,12,4.012,6,3.933,135
+aleatoire,alphabeta-d4,exemple_7x7,R,R,True,5,defaite,victoire B,12,3.638,6,0.024,0
+alphabeta-d4,aleatoire,exemple_7x7,B,R,False,5,victoire,victoire B,12,3.638,6,3.563,135
+aleatoire,alphabeta-d4,exemple_7x7,R,R,True,6,defaite,victoire B,12,3.278,6,0.023,0
+alphabeta-d4,aleatoire,exemple_7x7,B,R,False,6,victoire,victoire B,12,3.278,6,3.204,131
+aleatoire,alphabeta-d4,exemple_7x7,R,R,True,7,defaite,victoire B,12,3.763,6,0.025,0
+alphabeta-d4,aleatoire,exemple_7x7,B,R,False,7,victoire,victoire B,12,3.763,6,3.675,141
+aleatoire,alphabeta-d4,exemple_7x7,R,R,True,8,defaite,victoire B,12,3.634,6,0.03,0
+alphabeta-d4,aleatoire,exemple_7x7,B,R,False,8,victoire,victoire B,12,3.634,6,3.55,130
+aleatoire,alphabeta-d4,exemple_7x7,R,R,True,9,defaite,victoire B,12,4.544,6,0.025,0
+alphabeta-d4,aleatoire,exemple_7x7,B,R,False,9,victoire,victoire B,12,4.544,6,4.454,141
+aleatoire,alphabeta-d4,porte_raccourci,B,B,True,0,defaite,victoire R,14,4.633,7,0.029,0
+alphabeta-d4,aleatoire,porte_raccourci,R,B,False,0,victoire,victoire R,14,4.633,7,4.528,145
+aleatoire,alphabeta-d4,porte_raccourci,B,B,True,1,defaite,victoire R,14,3.491,7,0.026,0
+alphabeta-d4,aleatoire,porte_raccourci,R,B,False,1,victoire,victoire R,14,3.491,7,3.407,142
+aleatoire,alphabeta-d4,porte_raccourci,B,B,True,2,defaite,victoire R,14,3.57,7,0.026,0
+alphabeta-d4,aleatoire,porte_raccourci,R,B,False,2,victoire,victoire R,14,3.57,7,3.468,142
+aleatoire,alphabeta-d4,porte_raccourci,B,B,True,3,defaite,victoire R,14,3.943,7,0.03,0
+alphabeta-d4,aleatoire,porte_raccourci,R,B,False,3,victoire,victoire R,14,3.943,7,3.85,142
+aleatoire,alphabeta-d4,porte_raccourci,B,B,True,4,defaite,victoire R,14,3.528,7,0.026,0
+alphabeta-d4,aleatoire,porte_raccourci,R,B,False,4,victoire,victoire R,14,3.528,7,3.437,142
+aleatoire,alphabeta-d4,porte_raccourci,B,B,True,5,defaite,victoire R,14,3.52,7,0.026,0
+alphabeta-d4,aleatoire,porte_raccourci,R,B,False,5,victoire,victoire R,14,3.52,7,3.424,142
+aleatoire,alphabeta-d4,porte_raccourci,B,B,True,6,defaite,victoire R,14,3.969,7,0.026,0
+alphabeta-d4,aleatoire,porte_raccourci,R,B,False,6,victoire,victoire R,14,3.969,7,3.885,144
+aleatoire,alphabeta-d4,porte_raccourci,B,B,True,7,defaite,victoire R,14,4.427,7,0.032,0
+alphabeta-d4,aleatoire,porte_raccourci,R,B,False,7,victoire,victoire R,14,4.427,7,4.326,143
+aleatoire,alphabeta-d4,porte_raccourci,B,B,True,8,defaite,victoire R,14,4.305,7,0.033,0
+alphabeta-d4,aleatoire,porte_raccourci,R,B,False,8,victoire,victoire R,14,4.305,7,4.197,148
+aleatoire,alphabeta-d4,porte_raccourci,B,B,True,9,defaite,victoire R,14,3.807,7,0.028,0
+alphabeta-d4,aleatoire,porte_raccourci,R,B,False,9,victoire,victoire R,14,3.807,7,3.712,142
+aleatoire,alphabeta-d4,porte_raccourci,B,R,False,0,defaite,victoire R,13,3.991,6,0.023,0
+alphabeta-d4,aleatoire,porte_raccourci,R,R,True,0,victoire,victoire R,13,3.991,7,3.907,142
+aleatoire,alphabeta-d4,porte_raccourci,B,R,False,1,defaite,victoire R,13,3.707,6,0.023,0
+alphabeta-d4,aleatoire,porte_raccourci,R,R,True,1,victoire,victoire R,13,3.707,7,3.627,142
+aleatoire,alphabeta-d4,porte_raccourci,B,R,False,2,defaite,victoire R,13,4.484,6,0.026,0
+alphabeta-d4,aleatoire,porte_raccourci,R,R,True,2,victoire,victoire R,13,4.484,7,4.398,142
+aleatoire,alphabeta-d4,porte_raccourci,B,R,False,3,defaite,victoire R,13,3.719,6,0.022,0
+alphabeta-d4,aleatoire,porte_raccourci,R,R,True,3,victoire,victoire R,13,3.719,7,3.641,142
+aleatoire,alphabeta-d4,porte_raccourci,B,R,False,4,defaite,victoire R,13,4.042,6,0.026,0
+alphabeta-d4,aleatoire,porte_raccourci,R,R,True,4,victoire,victoire R,13,4.042,7,3.953,142
+aleatoire,alphabeta-d4,porte_raccourci,B,R,False,5,defaite,victoire R,13,3.804,6,0.025,0
+alphabeta-d4,aleatoire,porte_raccourci,R,R,True,5,victoire,victoire R,13,3.804,7,3.714,142
+aleatoire,alphabeta-d4,porte_raccourci,B,R,False,6,defaite,victoire R,13,5.303,6,0.036,0
+alphabeta-d4,aleatoire,porte_raccourci,R,R,True,6,victoire,victoire R,13,5.303,7,5.189,143
+aleatoire,alphabeta-d4,porte_raccourci,B,R,False,7,defaite,victoire R,13,4.001,6,0.025,0
+alphabeta-d4,aleatoire,porte_raccourci,R,R,True,7,victoire,victoire R,13,4.001,7,3.919,142
+aleatoire,alphabeta-d4,porte_raccourci,B,R,False,8,defaite,victoire R,13,4.36,6,0.025,0
+alphabeta-d4,aleatoire,porte_raccourci,R,R,True,8,victoire,victoire R,13,4.36,7,4.273,147
+aleatoire,alphabeta-d4,porte_raccourci,B,R,False,9,defaite,victoire R,13,4.072,6,0.034,0
+alphabeta-d4,aleatoire,porte_raccourci,R,R,True,9,victoire,victoire R,13,4.072,7,3.968,142
+aleatoire,alphabeta-d4,porte_raccourci,R,B,False,0,defaite,victoire B,13,5.53,6,0.04,0
+alphabeta-d4,aleatoire,porte_raccourci,B,B,True,0,victoire,victoire B,13,5.53,7,5.402,142
+aleatoire,alphabeta-d4,porte_raccourci,R,B,False,1,defaite,victoire B,13,5.746,6,0.04,0
+alphabeta-d4,aleatoire,porte_raccourci,B,B,True,1,victoire,victoire B,13,5.746,7,5.619,142
+aleatoire,alphabeta-d4,porte_raccourci,R,B,False,2,defaite,victoire B,13,4.877,6,0.034,0
+alphabeta-d4,aleatoire,porte_raccourci,B,B,True,2,victoire,victoire B,13,4.877,7,4.769,142
+aleatoire,alphabeta-d4,porte_raccourci,R,B,False,3,defaite,victoire B,13,5.176,6,0.037,0
+alphabeta-d4,aleatoire,porte_raccourci,B,B,True,3,victoire,victoire B,13,5.176,7,5.062,142
+aleatoire,alphabeta-d4,porte_raccourci,R,B,False,4,defaite,victoire B,13,5.366,6,0.038,0
+alphabeta-d4,aleatoire,porte_raccourci,B,B,True,4,victoire,victoire B,13,5.366,7,5.248,142
+aleatoire,alphabeta-d4,porte_raccourci,R,B,False,5,defaite,victoire B,13,5.175,6,0.032,0
+alphabeta-d4,aleatoire,porte_raccourci,B,B,True,5,victoire,victoire B,13,5.175,7,5.063,142
+aleatoire,alphabeta-d4,porte_raccourci,R,B,False,6,defaite,victoire B,13,4.911,6,0.032,0
+alphabeta-d4,aleatoire,porte_raccourci,B,B,True,6,victoire,victoire B,13,4.911,7,4.783,142
+aleatoire,alphabeta-d4,porte_raccourci,R,B,False,7,defaite,victoire B,61,22.153,30,0.156,0
+alphabeta-d4,aleatoire,porte_raccourci,B,B,True,7,victoire,victoire B,61,22.153,31,21.612,664
+aleatoire,alphabeta-d4,porte_raccourci,R,B,False,8,defaite,victoire B,13,5.351,6,0.035,0
+alphabeta-d4,aleatoire,porte_raccourci,B,B,True,8,victoire,victoire B,13,5.351,7,5.234,142
+aleatoire,alphabeta-d4,porte_raccourci,R,B,False,9,defaite,victoire B,13,5.275,6,0.035,0
+alphabeta-d4,aleatoire,porte_raccourci,B,B,True,9,victoire,victoire B,13,5.275,7,5.159,142
+aleatoire,alphabeta-d4,porte_raccourci,R,R,True,0,defaite,victoire B,14,4.244,7,0.061,0
+alphabeta-d4,aleatoire,porte_raccourci,B,R,False,0,victoire,victoire B,14,4.244,7,4.083,142
+aleatoire,alphabeta-d4,porte_raccourci,R,R,True,1,defaite,victoire B,14,3.752,7,0.029,0
+alphabeta-d4,aleatoire,porte_raccourci,B,R,False,1,victoire,victoire B,14,3.752,7,3.657,142
+aleatoire,alphabeta-d4,porte_raccourci,R,R,True,2,defaite,victoire B,14,3.942,7,0.028,0
+alphabeta-d4,aleatoire,porte_raccourci,B,R,False,2,victoire,victoire B,14,3.942,7,3.845,142
+aleatoire,alphabeta-d4,porte_raccourci,R,R,True,3,defaite,victoire B,14,5.062,7,0.041,0
+alphabeta-d4,aleatoire,porte_raccourci,B,R,False,3,victoire,victoire B,14,5.062,7,4.943,145
+aleatoire,alphabeta-d4,porte_raccourci,R,R,True,4,defaite,victoire B,14,6.069,7,0.041,0
+alphabeta-d4,aleatoire,porte_raccourci,B,R,False,4,victoire,victoire B,14,6.069,7,5.935,145
+aleatoire,alphabeta-d4,porte_raccourci,R,R,True,5,defaite,victoire B,14,5.954,7,0.048,0
+alphabeta-d4,aleatoire,porte_raccourci,B,R,False,5,victoire,victoire B,14,5.954,7,5.809,143
+aleatoire,alphabeta-d4,porte_raccourci,R,R,True,6,defaite,victoire B,14,5.389,7,0.046,0
+alphabeta-d4,aleatoire,porte_raccourci,B,R,False,6,victoire,victoire B,14,5.389,7,5.217,142
+aleatoire,alphabeta-d4,porte_raccourci,R,R,True,7,defaite,victoire B,54,19.634,27,0.138,0
+alphabeta-d4,aleatoire,porte_raccourci,B,R,False,7,victoire,victoire B,54,19.634,27,19.154,574
+aleatoire,alphabeta-d4,porte_raccourci,R,R,True,8,defaite,victoire B,14,5.496,7,0.042,0
+alphabeta-d4,aleatoire,porte_raccourci,B,R,False,8,victoire,victoire B,14,5.496,7,5.327,142
+aleatoire,alphabeta-d4,porte_raccourci,R,R,True,9,defaite,victoire B,14,5.539,7,0.04,0
+alphabeta-d4,aleatoire,porte_raccourci,B,R,False,9,victoire,victoire B,14,5.539,7,5.4,142
+aleatoire,alphabeta-d4,salle_fermee,B,B,True,0,nul,nul (limite de tours),80,25.711,40,0.236,0
+alphabeta-d4,aleatoire,salle_fermee,R,B,False,0,nul,nul (limite de tours),80,25.711,40,24.954,754
+aleatoire,alphabeta-d4,salle_fermee,B,B,True,1,nul,nul (limite de tours),80,23.99,40,0.266,0
+alphabeta-d4,aleatoire,salle_fermee,R,B,False,1,nul,nul (limite de tours),80,23.99,40,23.105,706
+aleatoire,alphabeta-d4,salle_fermee,B,B,True,2,nul,nul (limite de tours),80,21.33,40,0.212,0
+alphabeta-d4,aleatoire,salle_fermee,R,B,False,2,nul,nul (limite de tours),80,21.33,40,20.616,639
+aleatoire,alphabeta-d4,salle_fermee,B,B,True,3,nul,nul (limite de tours),80,25.7,40,0.233,0
+alphabeta-d4,aleatoire,salle_fermee,R,B,False,3,nul,nul (limite de tours),80,25.7,40,24.944,750
+aleatoire,alphabeta-d4,salle_fermee,B,B,True,4,nul,nul (limite de tours),80,23.245,40,0.245,0
+alphabeta-d4,aleatoire,salle_fermee,R,B,False,4,nul,nul (limite de tours),80,23.245,40,22.469,692
+aleatoire,alphabeta-d4,salle_fermee,B,B,True,5,nul,nul (limite de tours),80,15.253,40,0.193,0
+alphabeta-d4,aleatoire,salle_fermee,R,B,False,5,nul,nul (limite de tours),80,15.253,40,14.61,558
+aleatoire,alphabeta-d4,salle_fermee,B,B,True,6,nul,nul (limite de tours),80,25.557,40,0.254,0
+alphabeta-d4,aleatoire,salle_fermee,R,B,False,6,nul,nul (limite de tours),80,25.557,40,24.809,776
+aleatoire,alphabeta-d4,salle_fermee,B,B,True,7,nul,nul (limite de tours),80,24.641,40,0.225,0
+alphabeta-d4,aleatoire,salle_fermee,R,B,False,7,nul,nul (limite de tours),80,24.641,40,23.914,778
+aleatoire,alphabeta-d4,salle_fermee,B,B,True,8,nul,nul (limite de tours),80,12.393,40,0.147,0
+alphabeta-d4,aleatoire,salle_fermee,R,B,False,8,nul,nul (limite de tours),80,12.393,40,11.891,578
+aleatoire,alphabeta-d4,salle_fermee,B,B,True,9,nul,nul (limite de tours),80,22.449,40,0.288,0
+alphabeta-d4,aleatoire,salle_fermee,R,B,False,9,nul,nul (limite de tours),80,22.449,40,21.713,789
+aleatoire,alphabeta-d4,salle_fermee,B,R,False,0,nul,nul (limite de tours),80,22.275,40,0.218,0
+alphabeta-d4,aleatoire,salle_fermee,R,R,True,0,nul,nul (limite de tours),80,22.275,40,21.568,710
+aleatoire,alphabeta-d4,salle_fermee,B,R,False,1,nul,nul (limite de tours),80,26.084,40,0.234,0
+alphabeta-d4,aleatoire,salle_fermee,R,R,True,1,nul,nul (limite de tours),80,26.084,40,25.306,743
+aleatoire,alphabeta-d4,salle_fermee,B,R,False,2,nul,nul (limite de tours),80,25.106,40,0.213,0
+alphabeta-d4,aleatoire,salle_fermee,R,R,True,2,nul,nul (limite de tours),80,25.106,40,24.325,734
+aleatoire,alphabeta-d4,salle_fermee,B,R,False,3,nul,nul (limite de tours),80,24.492,40,0.239,0
+alphabeta-d4,aleatoire,salle_fermee,R,R,True,3,nul,nul (limite de tours),80,24.492,40,23.646,708
+aleatoire,alphabeta-d4,salle_fermee,B,R,False,4,nul,nul (limite de tours),80,24.903,40,0.264,0
+alphabeta-d4,aleatoire,salle_fermee,R,R,True,4,nul,nul (limite de tours),80,24.903,40,24.075,710
+aleatoire,alphabeta-d4,salle_fermee,B,R,False,5,nul,nul (limite de tours),80,26.927,40,0.223,0
+alphabeta-d4,aleatoire,salle_fermee,R,R,True,5,nul,nul (limite de tours),80,26.927,40,26.153,745
+aleatoire,alphabeta-d4,salle_fermee,B,R,False,6,nul,nul (limite de tours),80,23.197,40,0.228,0
+alphabeta-d4,aleatoire,salle_fermee,R,R,True,6,nul,nul (limite de tours),80,23.197,40,22.331,699
+aleatoire,alphabeta-d4,salle_fermee,B,R,False,7,nul,nul (limite de tours),80,21.622,40,0.209,0
+alphabeta-d4,aleatoire,salle_fermee,R,R,True,7,nul,nul (limite de tours),80,21.622,40,20.84,692
+aleatoire,alphabeta-d4,salle_fermee,B,R,False,8,nul,nul (limite de tours),80,24.829,40,0.23,0
+alphabeta-d4,aleatoire,salle_fermee,R,R,True,8,nul,nul (limite de tours),80,24.829,40,24.028,708
+aleatoire,alphabeta-d4,salle_fermee,B,R,False,9,nul,nul (limite de tours),80,24.213,40,0.227,0
+alphabeta-d4,aleatoire,salle_fermee,R,R,True,9,nul,nul (limite de tours),80,24.213,40,23.422,711
+aleatoire,alphabeta-d4,salle_fermee,R,B,False,0,nul,nul (limite de tours),80,28.89,40,0.26,0
+alphabeta-d4,aleatoire,salle_fermee,B,B,True,0,nul,nul (limite de tours),80,28.89,40,28.089,796
+aleatoire,alphabeta-d4,salle_fermee,R,B,False,1,nul,nul (limite de tours),80,28.721,40,0.509,0
+alphabeta-d4,aleatoire,salle_fermee,B,B,True,1,nul,nul (limite de tours),80,28.721,40,27.603,796
+aleatoire,alphabeta-d4,salle_fermee,R,B,False,2,nul,nul (limite de tours),80,23.05,40,0.205,0
+alphabeta-d4,aleatoire,salle_fermee,B,B,True,2,nul,nul (limite de tours),80,23.05,40,22.384,796
+aleatoire,alphabeta-d4,salle_fermee,R,B,False,3,nul,nul (limite de tours),80,18.326,40,0.144,0
+alphabeta-d4,aleatoire,salle_fermee,B,B,True,3,nul,nul (limite de tours),80,18.326,40,17.827,795
+aleatoire,alphabeta-d4,salle_fermee,R,B,False,4,nul,nul (limite de tours),80,18.038,40,0.166,0
+alphabeta-d4,aleatoire,salle_fermee,B,B,True,4,nul,nul (limite de tours),80,18.038,40,17.477,796
+aleatoire,alphabeta-d4,salle_fermee,R,B,False,5,nul,nul (limite de tours),80,18.098,40,0.143,0
+alphabeta-d4,aleatoire,salle_fermee,B,B,True,5,nul,nul (limite de tours),80,18.098,40,17.595,796
+aleatoire,alphabeta-d4,salle_fermee,R,B,False,6,nul,nul (limite de tours),80,18.563,40,0.155,0
+alphabeta-d4,aleatoire,salle_fermee,B,B,True,6,nul,nul (limite de tours),80,18.563,40,18.046,795
+aleatoire,alphabeta-d4,salle_fermee,R,B,False,7,nul,nul (limite de tours),80,18.646,40,0.171,0
+alphabeta-d4,aleatoire,salle_fermee,B,B,True,7,nul,nul (limite de tours),80,18.646,40,18.11,796
+aleatoire,alphabeta-d4,salle_fermee,R,B,False,8,nul,nul (limite de tours),80,18.647,40,0.144,0
+alphabeta-d4,aleatoire,salle_fermee,B,B,True,8,nul,nul (limite de tours),80,18.647,40,18.145,796
+aleatoire,alphabeta-d4,salle_fermee,R,B,False,9,nul,nul (limite de tours),80,18.594,40,0.182,0
+alphabeta-d4,aleatoire,salle_fermee,B,B,True,9,nul,nul (limite de tours),80,18.594,40,18.053,796
+aleatoire,alphabeta-d4,salle_fermee,R,R,True,0,nul,nul (limite de tours),80,18.227,40,0.147,0
+alphabeta-d4,aleatoire,salle_fermee,B,R,False,0,nul,nul (limite de tours),80,18.227,40,17.699,780
+aleatoire,alphabeta-d4,salle_fermee,R,R,True,1,nul,nul (limite de tours),80,18.277,40,0.146,0
+alphabeta-d4,aleatoire,salle_fermee,B,R,False,1,nul,nul (limite de tours),80,18.277,40,17.766,784
+aleatoire,alphabeta-d4,salle_fermee,R,R,True,2,nul,nul (limite de tours),80,18.383,40,0.185,0
+alphabeta-d4,aleatoire,salle_fermee,B,R,False,2,nul,nul (limite de tours),80,18.383,40,17.795,784
+aleatoire,alphabeta-d4,salle_fermee,R,R,True,3,nul,nul (limite de tours),80,17.851,40,0.15,0
+alphabeta-d4,aleatoire,salle_fermee,B,R,False,3,nul,nul (limite de tours),80,17.851,40,17.324,756
+aleatoire,alphabeta-d4,salle_fermee,R,R,True,4,nul,nul (limite de tours),80,17.473,40,0.148,0
+alphabeta-d4,aleatoire,salle_fermee,B,R,False,4,nul,nul (limite de tours),80,17.473,40,16.949,764
+aleatoire,alphabeta-d4,salle_fermee,R,R,True,5,nul,nul (limite de tours),80,20.072,40,0.223,0
+alphabeta-d4,aleatoire,salle_fermee,B,R,False,5,nul,nul (limite de tours),80,20.072,40,19.373,768
+aleatoire,alphabeta-d4,salle_fermee,R,R,True,6,nul,nul (limite de tours),80,26.189,40,0.218,0
+alphabeta-d4,aleatoire,salle_fermee,B,R,False,6,nul,nul (limite de tours),80,26.189,40,25.273,777
+aleatoire,alphabeta-d4,salle_fermee,R,R,True,7,nul,nul (limite de tours),80,18.588,40,0.15,0
+alphabeta-d4,aleatoire,salle_fermee,B,R,False,7,nul,nul (limite de tours),80,18.588,40,17.957,780
+aleatoire,alphabeta-d4,salle_fermee,R,R,True,8,nul,nul (limite de tours),80,21.312,40,0.154,0
+alphabeta-d4,aleatoire,salle_fermee,B,R,False,8,nul,nul (limite de tours),80,21.312,40,20.794,784
+aleatoire,alphabeta-d4,salle_fermee,R,R,True,9,nul,nul (limite de tours),80,20.783,40,0.149,0
+alphabeta-d4,aleatoire,salle_fermee,B,R,False,9,nul,nul (limite de tours),80,20.783,40,20.272,784
+aleatoire,alphabeta-d4,arene_9x9,B,B,True,0,defaite,victoire R,24,21.858,12,0.055,0
+alphabeta-d4,aleatoire,arene_9x9,R,B,False,0,victoire,victoire R,24,21.858,12,21.692,572
+aleatoire,alphabeta-d4,arene_9x9,B,B,True,1,defaite,victoire R,24,21.557,12,0.057,0
+alphabeta-d4,aleatoire,arene_9x9,R,B,False,1,victoire,victoire R,24,21.557,12,21.391,557
+aleatoire,alphabeta-d4,arene_9x9,B,B,True,2,defaite,victoire R,24,19.542,12,0.054,0
+alphabeta-d4,aleatoire,arene_9x9,R,B,False,2,victoire,victoire R,24,19.542,12,19.361,572
+aleatoire,alphabeta-d4,arene_9x9,B,B,True,3,defaite,victoire R,24,19.656,12,0.055,0
+alphabeta-d4,aleatoire,arene_9x9,R,B,False,3,victoire,victoire R,24,19.656,12,19.479,539
+aleatoire,alphabeta-d4,arene_9x9,B,B,True,4,defaite,victoire R,24,21.151,12,0.066,0
+alphabeta-d4,aleatoire,arene_9x9,R,B,False,4,victoire,victoire R,24,21.151,12,20.943,568
+aleatoire,alphabeta-d4,arene_9x9,B,B,True,5,defaite,victoire R,24,22.282,12,0.053,0
+alphabeta-d4,aleatoire,arene_9x9,R,B,False,5,victoire,victoire R,24,22.282,12,22.121,576
+aleatoire,alphabeta-d4,arene_9x9,B,B,True,6,defaite,victoire R,24,20.366,12,0.051,0
+alphabeta-d4,aleatoire,arene_9x9,R,B,False,6,victoire,victoire R,24,20.366,12,20.208,545
+aleatoire,alphabeta-d4,arene_9x9,B,B,True,7,defaite,victoire R,24,22.171,12,0.06,0
+alphabeta-d4,aleatoire,arene_9x9,R,B,False,7,victoire,victoire R,24,22.171,12,21.999,568
+aleatoire,alphabeta-d4,arene_9x9,B,B,True,8,defaite,victoire R,24,18.443,12,0.051,0
+alphabeta-d4,aleatoire,arene_9x9,R,B,False,8,victoire,victoire R,24,18.443,12,18.279,542
+aleatoire,alphabeta-d4,arene_9x9,B,B,True,9,defaite,victoire R,24,21.542,12,0.059,0
+alphabeta-d4,aleatoire,arene_9x9,R,B,False,9,victoire,victoire R,24,21.542,12,21.368,540
+aleatoire,alphabeta-d4,arene_9x9,B,R,False,0,defaite,victoire R,23,20.046,11,0.051,0
+alphabeta-d4,aleatoire,arene_9x9,R,R,True,0,victoire,victoire R,23,20.046,12,19.871,566
+aleatoire,alphabeta-d4,arene_9x9,B,R,False,1,defaite,victoire R,23,24.089,11,0.054,0
+alphabeta-d4,aleatoire,arene_9x9,R,R,True,1,victoire,victoire R,23,24.089,12,23.921,552
+aleatoire,alphabeta-d4,arene_9x9,B,R,False,2,defaite,victoire R,23,19.221,11,0.047,0
+alphabeta-d4,aleatoire,arene_9x9,R,R,True,2,victoire,victoire R,23,19.221,12,19.07,574
+aleatoire,alphabeta-d4,arene_9x9,B,R,False,3,defaite,victoire R,23,18.29,11,0.045,0
+alphabeta-d4,aleatoire,arene_9x9,R,R,True,3,victoire,victoire R,23,18.29,12,18.138,532
+aleatoire,alphabeta-d4,arene_9x9,B,R,False,4,defaite,victoire R,23,19.588,11,0.047,0
+alphabeta-d4,aleatoire,arene_9x9,R,R,True,4,victoire,victoire R,23,19.588,12,19.439,568
+aleatoire,alphabeta-d4,arene_9x9,B,R,False,5,defaite,victoire R,23,25.765,11,0.052,0
+alphabeta-d4,aleatoire,arene_9x9,R,R,True,5,victoire,victoire R,23,25.765,12,25.606,576
+aleatoire,alphabeta-d4,arene_9x9,B,R,False,6,defaite,victoire R,23,20.65,11,0.051,0
+alphabeta-d4,aleatoire,arene_9x9,R,R,True,6,victoire,victoire R,23,20.65,12,20.487,535
+aleatoire,alphabeta-d4,arene_9x9,B,R,False,7,defaite,victoire R,23,21.296,11,0.068,0
+alphabeta-d4,aleatoire,arene_9x9,R,R,True,7,victoire,victoire R,23,21.296,12,21.108,585
+aleatoire,alphabeta-d4,arene_9x9,B,R,False,8,defaite,victoire R,23,19.55,11,0.045,0
+alphabeta-d4,aleatoire,arene_9x9,R,R,True,8,victoire,victoire R,23,19.55,12,19.405,540
+aleatoire,alphabeta-d4,arene_9x9,B,R,False,9,defaite,victoire R,23,18.439,11,0.047,0
+alphabeta-d4,aleatoire,arene_9x9,R,R,True,9,victoire,victoire R,23,18.439,12,18.291,535
+aleatoire,alphabeta-d4,arene_9x9,R,B,False,0,defaite,victoire B,23,19.301,11,0.048,0
+alphabeta-d4,aleatoire,arene_9x9,B,B,True,0,victoire,victoire B,23,19.301,12,19.147,559
+aleatoire,alphabeta-d4,arene_9x9,R,B,False,1,defaite,victoire B,23,18.335,11,0.046,0
+alphabeta-d4,aleatoire,arene_9x9,B,B,True,1,victoire,victoire B,23,18.335,12,18.185,545
+aleatoire,alphabeta-d4,arene_9x9,R,B,False,2,defaite,victoire B,23,19.065,11,0.045,0
+alphabeta-d4,aleatoire,arene_9x9,B,B,True,2,victoire,victoire B,23,19.065,12,18.92,548
+aleatoire,alphabeta-d4,arene_9x9,R,B,False,3,defaite,victoire B,23,20.934,11,0.048,0
+alphabeta-d4,aleatoire,arene_9x9,B,B,True,3,victoire,victoire B,23,20.934,12,20.786,585
+aleatoire,alphabeta-d4,arene_9x9,R,B,False,4,defaite,victoire B,23,18.802,11,0.044,0
+alphabeta-d4,aleatoire,arene_9x9,B,B,True,4,victoire,victoire B,23,18.802,12,18.658,566
+aleatoire,alphabeta-d4,arene_9x9,R,B,False,5,defaite,victoire B,23,18.201,11,0.043,0
+alphabeta-d4,aleatoire,arene_9x9,B,B,True,5,victoire,victoire B,23,18.201,12,18.055,542
+aleatoire,alphabeta-d4,arene_9x9,R,B,False,6,defaite,victoire B,23,17.72,11,0.044,0
+alphabeta-d4,aleatoire,arene_9x9,B,B,True,6,victoire,victoire B,23,17.72,12,17.566,533
+aleatoire,alphabeta-d4,arene_9x9,R,B,False,7,defaite,victoire B,23,18.87,11,0.047,0
+alphabeta-d4,aleatoire,arene_9x9,B,B,True,7,victoire,victoire B,23,18.87,12,18.702,540
+aleatoire,alphabeta-d4,arene_9x9,R,B,False,8,defaite,victoire B,23,19.104,11,0.046,0
+alphabeta-d4,aleatoire,arene_9x9,B,B,True,8,victoire,victoire B,23,19.104,12,18.956,575
+aleatoire,alphabeta-d4,arene_9x9,R,B,False,9,defaite,victoire B,23,28.351,11,0.077,0
+alphabeta-d4,aleatoire,arene_9x9,B,B,True,9,victoire,victoire B,23,28.351,12,28.126,577
+aleatoire,alphabeta-d4,arene_9x9,R,R,True,0,defaite,victoire B,24,21.824,12,0.068,0
+alphabeta-d4,aleatoire,arene_9x9,B,R,False,0,victoire,victoire B,24,21.824,12,21.626,569
+aleatoire,alphabeta-d4,arene_9x9,R,R,True,1,defaite,victoire B,24,20.226,12,0.06,0
+alphabeta-d4,aleatoire,arene_9x9,B,R,False,1,victoire,victoire B,24,20.226,12,20.049,555
+aleatoire,alphabeta-d4,arene_9x9,R,R,True,2,defaite,victoire B,24,19.55,12,0.055,0
+alphabeta-d4,aleatoire,arene_9x9,B,R,False,2,victoire,victoire B,24,19.55,12,19.364,555
+aleatoire,alphabeta-d4,arene_9x9,R,R,True,3,defaite,victoire B,24,23.133,12,0.064,0
+alphabeta-d4,aleatoire,arene_9x9,B,R,False,3,victoire,victoire B,24,23.133,12,22.953,606
+aleatoire,alphabeta-d4,arene_9x9,R,R,True,4,defaite,victoire B,24,26.709,12,0.067,0
+alphabeta-d4,aleatoire,arene_9x9,B,R,False,4,victoire,victoire B,24,26.709,12,26.477,559
+aleatoire,alphabeta-d4,arene_9x9,R,R,True,5,defaite,victoire B,24,20.926,12,0.074,0
+alphabeta-d4,aleatoire,arene_9x9,B,R,False,5,victoire,victoire B,24,20.926,12,20.721,547
+aleatoire,alphabeta-d4,arene_9x9,R,R,True,6,defaite,victoire B,24,20.726,12,0.066,0
+alphabeta-d4,aleatoire,arene_9x9,B,R,False,6,victoire,victoire B,24,20.726,12,20.534,545
+aleatoire,alphabeta-d4,arene_9x9,R,R,True,7,defaite,victoire B,24,20.34,12,0.061,0
+alphabeta-d4,aleatoire,arene_9x9,B,R,False,7,victoire,victoire B,24,20.34,12,20.157,551
+aleatoire,alphabeta-d4,arene_9x9,R,R,True,8,defaite,victoire B,32,30.463,16,0.107,0
+alphabeta-d4,aleatoire,arene_9x9,B,R,False,8,victoire,victoire B,32,30.463,16,30.188,807
+aleatoire,alphabeta-d4,arene_9x9,R,R,True,9,defaite,victoire B,24,24.03,12,0.065,0
+alphabeta-d4,aleatoire,arene_9x9,B,R,False,9,victoire,victoire B,24,24.03,12,23.837,570
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,B,True,0,defaite,victoire R,44,11.782,22,0.091,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,B,False,0,victoire,victoire R,44,11.782,22,11.467,427
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,B,True,1,defaite,victoire R,44,12.381,22,0.098,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,B,False,1,victoire,victoire R,44,12.381,22,12.033,428
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,B,True,2,defaite,victoire R,44,14.587,22,0.118,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,B,False,2,victoire,victoire R,44,14.587,22,14.201,430
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,B,True,3,defaite,victoire R,44,13.024,22,0.091,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,B,False,3,victoire,victoire R,44,13.024,22,12.715,450
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,B,True,4,defaite,victoire R,44,12.296,22,0.084,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,B,False,4,victoire,victoire R,44,12.296,22,12.006,428
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,B,True,5,defaite,victoire R,44,14.399,22,0.101,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,B,False,5,victoire,victoire R,44,14.399,22,14.064,464
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,B,True,6,defaite,victoire R,44,14.542,22,0.104,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,B,False,6,victoire,victoire R,44,14.542,22,14.2,444
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,B,True,7,defaite,victoire R,44,12.488,22,0.108,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,B,False,7,victoire,victoire R,44,12.488,22,12.14,428
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,B,True,8,defaite,victoire R,44,12.789,22,0.104,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,B,False,8,victoire,victoire R,44,12.789,22,12.459,438
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,B,True,9,defaite,victoire R,44,12.374,22,0.09,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,B,False,9,victoire,victoire R,44,12.374,22,12.062,427
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,15.071,21,0.091,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,15.071,22,14.759,427
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,R,False,1,defaite,victoire R,43,11.93,21,0.09,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,R,True,1,victoire,victoire R,43,11.93,22,11.623,428
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,R,False,2,defaite,victoire R,43,12.508,21,0.086,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,R,True,2,victoire,victoire R,43,12.508,22,12.179,430
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,R,False,3,defaite,victoire R,43,12.903,21,0.09,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,R,True,3,victoire,victoire R,43,12.903,22,12.584,448
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,R,False,4,defaite,victoire R,43,11.599,21,0.077,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,R,True,4,victoire,victoire R,43,11.599,22,11.329,428
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,R,False,5,defaite,victoire R,43,13.397,21,0.097,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,R,True,5,victoire,victoire R,43,13.397,22,13.072,462
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,R,False,6,defaite,victoire R,43,12.674,21,0.091,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,R,True,6,victoire,victoire R,43,12.674,22,12.375,444
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,R,False,7,defaite,victoire R,43,16.548,21,0.14,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,R,True,7,victoire,victoire R,43,16.548,22,16.122,428
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,R,False,8,defaite,victoire R,43,14.64,21,0.104,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,R,True,8,victoire,victoire R,43,14.64,22,14.307,436
+aleatoire,alphabeta-d4,labyrinthe_11x11,B,R,False,9,defaite,victoire R,43,11.917,21,0.085,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,R,R,True,9,victoire,victoire R,43,11.917,22,11.622,427
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,11.583,21,0.082,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,11.583,22,11.224,427
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,B,False,1,defaite,victoire B,43,15.873,21,0.172,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,B,True,1,victoire,victoire B,43,15.873,22,15.42,427
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,B,False,2,defaite,victoire B,43,17.492,21,0.13,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,B,True,2,victoire,victoire B,43,17.492,22,17.041,448
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,B,False,3,defaite,victoire B,43,15.65,21,0.123,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,B,True,3,victoire,victoire B,43,15.65,22,15.259,427
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,B,False,4,defaite,victoire B,43,15.765,21,0.148,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,B,True,4,victoire,victoire B,43,15.765,22,15.341,427
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,B,False,5,defaite,victoire B,43,11.679,21,0.084,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,B,True,5,victoire,victoire B,43,11.679,22,11.399,427
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,B,False,6,defaite,victoire B,43,11.103,21,0.077,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,B,True,6,victoire,victoire B,43,11.103,22,10.831,419
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,B,False,7,defaite,victoire B,43,12.754,21,0.134,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,B,True,7,victoire,victoire B,43,12.754,22,12.397,449
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,B,False,8,defaite,victoire B,43,13.126,21,0.118,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,B,True,8,victoire,victoire B,43,13.126,22,12.728,434
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,B,False,9,defaite,victoire B,43,12.485,21,0.087,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,B,True,9,victoire,victoire B,43,12.485,22,12.173,431
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,R,True,0,defaite,victoire B,44,11.664,22,0.081,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,R,False,0,victoire,victoire B,44,11.664,22,11.384,427
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,R,True,1,defaite,victoire B,44,11.035,22,0.086,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,R,False,1,victoire,victoire B,44,11.035,22,10.749,427
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,R,True,2,defaite,victoire B,44,11.716,22,0.083,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,R,False,2,victoire,victoire B,44,11.716,22,11.416,450
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,R,True,3,defaite,victoire B,44,11.037,22,0.082,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,R,False,3,victoire,victoire B,44,11.037,22,10.755,427
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,R,True,4,defaite,victoire B,44,10.967,22,0.082,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,R,False,4,victoire,victoire B,44,10.967,22,10.679,427
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,R,True,5,defaite,victoire B,44,14.153,22,0.115,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,R,False,5,victoire,victoire B,44,14.153,22,13.788,427
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,R,True,6,defaite,victoire B,44,10.945,22,0.101,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,R,False,6,victoire,victoire B,44,10.945,22,10.648,418
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,R,True,7,defaite,victoire B,44,11.698,22,0.102,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,R,False,7,victoire,victoire B,44,11.698,22,11.394,452
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,R,True,8,defaite,victoire B,44,11.795,22,0.081,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,R,False,8,victoire,victoire B,44,11.795,22,11.511,434
+aleatoire,alphabeta-d4,labyrinthe_11x11,R,R,True,9,defaite,victoire B,44,11.366,22,0.085,0
+alphabeta-d4,aleatoire,labyrinthe_11x11,B,R,False,9,victoire,victoire B,44,11.366,22,11.075,433
+aleatoire,alphabeta+-d4,couloir_5x5,B,B,True,0,defaite,victoire R,8,1.813,4,0.018,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,B,False,0,victoire,victoire R,8,1.813,4,1.757,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,B,True,1,defaite,victoire R,8,1.714,4,0.019,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,B,False,1,victoire,victoire R,8,1.714,4,1.659,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,B,True,2,defaite,victoire R,8,1.908,4,0.016,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,B,False,2,victoire,victoire R,8,1.908,4,1.857,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,B,True,3,defaite,victoire R,8,1.82,4,0.016,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,B,False,3,victoire,victoire R,8,1.82,4,1.767,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,B,True,4,defaite,victoire R,8,1.752,4,0.015,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,B,False,4,victoire,victoire R,8,1.752,4,1.7,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,B,True,5,defaite,victoire R,8,1.786,4,0.015,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,B,False,5,victoire,victoire R,8,1.786,4,1.733,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,B,True,6,defaite,victoire R,8,1.797,4,0.016,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,B,False,6,victoire,victoire R,8,1.797,4,1.744,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,B,True,7,defaite,victoire R,8,1.781,4,0.015,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,B,False,7,victoire,victoire R,8,1.781,4,1.731,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,B,True,8,defaite,victoire R,8,1.797,4,0.015,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,B,False,8,victoire,victoire R,8,1.797,4,1.745,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,B,True,9,defaite,victoire R,8,1.747,4,0.015,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,B,False,9,victoire,victoire R,8,1.747,4,1.695,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,R,False,0,defaite,victoire R,7,1.748,3,0.014,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,R,True,0,victoire,victoire R,7,1.748,4,1.685,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,R,False,1,defaite,victoire R,7,1.918,3,0.012,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,R,True,1,victoire,victoire R,7,1.918,4,1.875,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,R,False,2,defaite,victoire R,7,1.769,3,0.011,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,R,True,2,victoire,victoire R,7,1.769,4,1.727,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,R,False,3,defaite,victoire R,7,1.817,3,0.012,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,R,True,3,victoire,victoire R,7,1.817,4,1.773,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,R,False,4,defaite,victoire R,7,1.73,3,0.012,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,R,True,4,victoire,victoire R,7,1.73,4,1.686,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,R,False,5,defaite,victoire R,7,1.802,3,0.011,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,R,True,5,victoire,victoire R,7,1.802,4,1.76,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,R,False,6,defaite,victoire R,7,1.803,3,0.012,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,R,True,6,victoire,victoire R,7,1.803,4,1.76,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,R,False,7,defaite,victoire R,7,1.718,3,0.011,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,R,True,7,victoire,victoire R,7,1.718,4,1.675,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,R,False,8,defaite,victoire R,7,1.792,3,0.034,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,R,True,8,victoire,victoire R,7,1.792,4,1.727,73
+aleatoire,alphabeta+-d4,couloir_5x5,B,R,False,9,defaite,victoire R,7,1.776,3,0.012,0
+alphabeta+-d4,aleatoire,couloir_5x5,R,R,True,9,victoire,victoire R,7,1.776,4,1.732,73
+aleatoire,alphabeta+-d4,couloir_5x5,R,B,False,0,victoire,victoire R,12,2.589,6,0.023,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,B,True,0,defaite,victoire R,12,2.589,6,2.513,108
+aleatoire,alphabeta+-d4,couloir_5x5,R,B,False,1,victoire,victoire R,20,4.142,10,0.038,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,B,True,1,defaite,victoire R,20,4.142,10,4.017,177
+aleatoire,alphabeta+-d4,couloir_5x5,R,B,False,2,victoire,victoire R,20,4.662,10,0.036,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,B,True,2,defaite,victoire R,20,4.662,10,4.538,202
+aleatoire,alphabeta+-d4,couloir_5x5,R,B,False,3,defaite,victoire B,23,5.115,11,0.04,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,B,True,3,victoire,victoire B,23,5.115,12,4.963,224
+aleatoire,alphabeta+-d4,couloir_5x5,R,B,False,4,victoire,victoire R,12,2.885,6,0.022,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,B,True,4,defaite,victoire R,12,2.885,6,2.809,122
+aleatoire,alphabeta+-d4,couloir_5x5,R,B,False,5,defaite,victoire B,39,8.722,19,0.07,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,B,True,5,victoire,victoire B,39,8.722,20,8.478,376
+aleatoire,alphabeta+-d4,couloir_5x5,R,B,False,6,victoire,victoire R,48,10.313,24,0.087,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,B,True,6,defaite,victoire R,48,10.313,24,10.017,434
+aleatoire,alphabeta+-d4,couloir_5x5,R,B,False,7,victoire,victoire R,56,11.027,28,0.1,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,B,True,7,defaite,victoire R,56,11.027,28,10.674,493
+aleatoire,alphabeta+-d4,couloir_5x5,R,B,False,8,victoire,victoire R,52,12.311,26,0.094,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,B,True,8,defaite,victoire R,52,12.311,26,11.984,524
+aleatoire,alphabeta+-d4,couloir_5x5,R,B,False,9,victoire,victoire R,36,9.032,18,0.067,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,B,True,9,defaite,victoire R,36,9.032,18,8.799,377
+aleatoire,alphabeta+-d4,couloir_5x5,R,R,True,0,victoire,victoire R,11,1.959,6,0.024,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,R,False,0,defaite,victoire R,11,1.959,5,1.888,82
+aleatoire,alphabeta+-d4,couloir_5x5,R,R,True,1,victoire,victoire R,19,3.59,10,0.039,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,R,False,1,defaite,victoire R,19,3.59,9,3.47,151
+aleatoire,alphabeta+-d4,couloir_5x5,R,R,True,2,victoire,victoire R,19,4.172,10,0.037,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,R,False,2,defaite,victoire R,19,4.172,9,4.051,176
+aleatoire,alphabeta+-d4,couloir_5x5,R,R,True,3,defaite,victoire B,28,4.978,14,0.051,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,R,False,3,victoire,victoire B,28,4.978,14,4.801,224
+aleatoire,alphabeta+-d4,couloir_5x5,R,R,True,4,victoire,victoire R,11,2.343,6,0.023,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,R,False,4,defaite,victoire R,11,2.343,5,2.27,96
+aleatoire,alphabeta+-d4,couloir_5x5,R,R,True,5,defaite,victoire B,48,9.256,24,0.09,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,R,False,5,victoire,victoire B,48,9.256,24,8.939,410
+aleatoire,alphabeta+-d4,couloir_5x5,R,R,True,6,victoire,victoire R,47,9.483,24,0.094,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,R,False,6,defaite,victoire R,47,9.483,23,9.174,403
+aleatoire,alphabeta+-d4,couloir_5x5,R,R,True,7,victoire,victoire R,55,11.61,28,0.121,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,R,False,7,defaite,victoire R,55,11.61,27,11.205,464
+aleatoire,alphabeta+-d4,couloir_5x5,R,R,True,8,victoire,victoire R,51,12.391,26,0.104,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,R,False,8,defaite,victoire R,51,12.391,25,12.007,498
+aleatoire,alphabeta+-d4,couloir_5x5,R,R,True,9,victoire,victoire R,35,9.825,18,0.082,0
+alphabeta+-d4,aleatoire,couloir_5x5,B,R,False,9,defaite,victoire R,35,9.825,17,9.558,351
+aleatoire,alphabeta+-d4,exemple_7x7,B,B,True,0,defaite,victoire R,12,4.977,6,0.03,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,B,False,0,victoire,victoire R,12,4.977,6,4.884,151
+aleatoire,alphabeta+-d4,exemple_7x7,B,B,True,1,defaite,victoire R,12,4.895,6,0.027,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,B,False,1,victoire,victoire R,12,4.895,6,4.808,147
+aleatoire,alphabeta+-d4,exemple_7x7,B,B,True,2,defaite,victoire R,12,4.596,6,0.024,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,B,False,2,victoire,victoire R,12,4.596,6,4.516,150
+aleatoire,alphabeta+-d4,exemple_7x7,B,B,True,3,defaite,victoire R,12,4.88,6,0.027,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,B,False,3,victoire,victoire R,12,4.88,6,4.796,151
+aleatoire,alphabeta+-d4,exemple_7x7,B,B,True,4,defaite,victoire R,12,4.791,6,0.026,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,B,False,4,victoire,victoire R,12,4.791,6,4.707,151
+aleatoire,alphabeta+-d4,exemple_7x7,B,B,True,5,defaite,victoire R,12,5.034,6,0.028,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,B,False,5,victoire,victoire R,12,5.034,6,4.952,152
+aleatoire,alphabeta+-d4,exemple_7x7,B,B,True,6,defaite,victoire R,12,4.599,6,0.026,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,B,False,6,victoire,victoire R,12,4.599,6,4.517,147
+aleatoire,alphabeta+-d4,exemple_7x7,B,B,True,7,defaite,victoire R,12,4.706,6,0.027,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,B,False,7,victoire,victoire R,12,4.706,6,4.626,147
+aleatoire,alphabeta+-d4,exemple_7x7,B,B,True,8,defaite,victoire R,12,4.588,6,0.031,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,B,False,8,victoire,victoire R,12,4.588,6,4.49,148
+aleatoire,alphabeta+-d4,exemple_7x7,B,B,True,9,defaite,victoire R,12,4.782,6,0.03,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,B,False,9,victoire,victoire R,12,4.782,6,4.689,149
+aleatoire,alphabeta+-d4,exemple_7x7,B,R,False,0,defaite,victoire R,11,5.076,5,0.027,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,R,True,0,victoire,victoire R,11,5.076,6,4.961,148
+aleatoire,alphabeta+-d4,exemple_7x7,B,R,False,1,defaite,victoire R,11,4.55,5,0.025,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,R,True,1,victoire,victoire R,11,4.55,6,4.472,146
+aleatoire,alphabeta+-d4,exemple_7x7,B,R,False,2,defaite,victoire R,11,4.774,5,0.029,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,R,True,2,victoire,victoire R,11,4.774,6,4.665,147
+aleatoire,alphabeta+-d4,exemple_7x7,B,R,False,3,defaite,victoire R,11,5.14,5,0.024,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,R,True,3,victoire,victoire R,11,5.14,6,5.057,149
+aleatoire,alphabeta+-d4,exemple_7x7,B,R,False,4,defaite,victoire R,11,5.498,5,0.027,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,R,True,4,victoire,victoire R,11,5.498,6,5.408,149
+aleatoire,alphabeta+-d4,exemple_7x7,B,R,False,5,defaite,victoire R,11,6.16,5,0.023,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,R,True,5,victoire,victoire R,11,6.16,6,6.05,149
+aleatoire,alphabeta+-d4,exemple_7x7,B,R,False,6,defaite,victoire R,11,4.502,5,0.021,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,R,True,6,victoire,victoire R,11,4.502,6,4.407,147
+aleatoire,alphabeta+-d4,exemple_7x7,B,R,False,7,defaite,victoire R,11,3.933,5,0.019,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,R,True,7,victoire,victoire R,11,3.933,6,3.859,146
+aleatoire,alphabeta+-d4,exemple_7x7,B,R,False,8,defaite,victoire R,11,4.241,5,0.02,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,R,True,8,victoire,victoire R,11,4.241,6,4.174,147
+aleatoire,alphabeta+-d4,exemple_7x7,B,R,False,9,defaite,victoire R,11,3.957,5,0.018,0
+alphabeta+-d4,aleatoire,exemple_7x7,R,R,True,9,victoire,victoire R,11,3.957,6,3.877,146
+aleatoire,alphabeta+-d4,exemple_7x7,R,B,False,0,defaite,victoire B,11,4.308,5,0.026,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,B,True,0,victoire,victoire B,11,4.308,6,4.221,141
+aleatoire,alphabeta+-d4,exemple_7x7,R,B,False,1,defaite,victoire B,11,3.957,5,0.019,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,B,True,1,victoire,victoire B,11,3.957,6,3.889,139
+aleatoire,alphabeta+-d4,exemple_7x7,R,B,False,2,defaite,victoire B,11,3.625,5,0.02,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,B,True,2,victoire,victoire B,11,3.625,6,3.552,130
+aleatoire,alphabeta+-d4,exemple_7x7,R,B,False,3,defaite,victoire B,11,4.523,5,0.021,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,B,True,3,victoire,victoire B,11,4.523,6,4.447,144
+aleatoire,alphabeta+-d4,exemple_7x7,R,B,False,4,defaite,victoire B,11,4.402,5,0.026,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,B,True,4,victoire,victoire B,11,4.402,6,4.301,132
+aleatoire,alphabeta+-d4,exemple_7x7,R,B,False,5,defaite,victoire B,11,4.324,5,0.045,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,B,True,5,victoire,victoire B,11,4.324,6,4.219,132
+aleatoire,alphabeta+-d4,exemple_7x7,R,B,False,6,defaite,victoire B,11,5.891,5,0.057,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,B,True,6,victoire,victoire B,11,5.891,6,5.753,132
+aleatoire,alphabeta+-d4,exemple_7x7,R,B,False,7,defaite,victoire B,11,6.171,5,0.042,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,B,True,7,victoire,victoire B,11,6.171,6,6.046,133
+aleatoire,alphabeta+-d4,exemple_7x7,R,B,False,8,defaite,victoire B,11,3.677,5,0.022,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,B,True,8,victoire,victoire B,11,3.677,6,3.601,130
+aleatoire,alphabeta+-d4,exemple_7x7,R,B,False,9,defaite,victoire B,11,4.353,5,0.023,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,B,True,9,victoire,victoire B,11,4.353,6,4.278,133
+aleatoire,alphabeta+-d4,exemple_7x7,R,R,True,0,defaite,victoire B,12,4.184,6,0.025,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,R,False,0,victoire,victoire B,12,4.184,6,4.104,149
+aleatoire,alphabeta+-d4,exemple_7x7,R,R,True,1,defaite,victoire B,12,4.128,6,0.03,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,R,False,1,victoire,victoire B,12,4.128,6,4.042,146
+aleatoire,alphabeta+-d4,exemple_7x7,R,R,True,2,defaite,victoire B,12,3.833,6,0.027,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,R,False,2,victoire,victoire B,12,3.833,6,3.747,130
+aleatoire,alphabeta+-d4,exemple_7x7,R,R,True,3,defaite,victoire B,12,5.384,6,0.028,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,R,False,3,victoire,victoire B,12,5.384,6,5.297,157
+aleatoire,alphabeta+-d4,exemple_7x7,R,R,True,4,defaite,victoire B,12,8.222,6,0.093,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,R,False,4,victoire,victoire B,12,8.222,6,7.825,135
+aleatoire,alphabeta+-d4,exemple_7x7,R,R,True,5,defaite,victoire B,12,3.949,6,0.025,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,R,False,5,victoire,victoire B,12,3.949,6,3.869,135
+aleatoire,alphabeta+-d4,exemple_7x7,R,R,True,6,defaite,victoire B,12,3.528,6,0.024,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,R,False,6,victoire,victoire B,12,3.528,6,3.45,131
+aleatoire,alphabeta+-d4,exemple_7x7,R,R,True,7,defaite,victoire B,12,4.171,6,0.025,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,R,False,7,victoire,victoire B,12,4.171,6,4.091,141
+aleatoire,alphabeta+-d4,exemple_7x7,R,R,True,8,defaite,victoire B,12,4.454,6,0.034,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,R,False,8,victoire,victoire B,12,4.454,6,4.353,130
+aleatoire,alphabeta+-d4,exemple_7x7,R,R,True,9,defaite,victoire B,12,4.456,6,0.03,0
+alphabeta+-d4,aleatoire,exemple_7x7,B,R,False,9,victoire,victoire B,12,4.456,6,4.353,141
+aleatoire,alphabeta+-d4,porte_raccourci,B,B,True,0,nul,nul (limite de tours),80,20.862,40,0.197,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,B,False,0,nul,nul (limite de tours),80,20.862,40,20.168,709
+aleatoire,alphabeta+-d4,porte_raccourci,B,B,True,1,defaite,victoire R,14,4.46,7,0.038,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,B,False,1,victoire,victoire R,14,4.46,7,4.346,144
+aleatoire,alphabeta+-d4,porte_raccourci,B,B,True,2,defaite,victoire R,14,3.8,7,0.027,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,B,False,2,victoire,victoire R,14,3.8,7,3.709,142
+aleatoire,alphabeta+-d4,porte_raccourci,B,B,True,3,defaite,victoire R,14,4.687,7,0.032,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,B,False,3,victoire,victoire R,14,4.687,7,4.58,142
+aleatoire,alphabeta+-d4,porte_raccourci,B,B,True,4,defaite,victoire R,14,4.064,7,0.03,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,B,False,4,victoire,victoire R,14,4.064,7,3.968,142
+aleatoire,alphabeta+-d4,porte_raccourci,B,B,True,5,defaite,victoire R,14,3.837,7,0.025,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,B,False,5,victoire,victoire R,14,3.837,7,3.751,142
+aleatoire,alphabeta+-d4,porte_raccourci,B,B,True,6,victoire,victoire B,41,13.021,21,0.106,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,B,False,6,defaite,victoire B,41,13.021,20,12.69,396
+aleatoire,alphabeta+-d4,porte_raccourci,B,B,True,7,defaite,victoire R,14,4.244,7,0.026,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,B,False,7,victoire,victoire R,14,4.244,7,4.154,149
+aleatoire,alphabeta+-d4,porte_raccourci,B,B,True,8,nul,nul (limite de tours),80,22.693,40,0.172,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,B,False,8,nul,nul (limite de tours),80,22.693,40,22.133,828
+aleatoire,alphabeta+-d4,porte_raccourci,B,B,True,9,defaite,victoire R,14,4.903,7,0.043,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,B,False,9,victoire,victoire R,14,4.903,7,4.773,148
+aleatoire,alphabeta+-d4,porte_raccourci,B,R,False,0,defaite,victoire R,13,4.235,6,0.025,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,R,True,0,victoire,victoire R,13,4.235,7,4.15,148
+aleatoire,alphabeta+-d4,porte_raccourci,B,R,False,1,defaite,victoire R,13,3.849,6,0.024,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,R,True,1,victoire,victoire R,13,3.849,7,3.762,146
+aleatoire,alphabeta+-d4,porte_raccourci,B,R,False,2,defaite,victoire R,13,3.78,6,0.022,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,R,True,2,victoire,victoire R,13,3.78,7,3.7,144
+aleatoire,alphabeta+-d4,porte_raccourci,B,R,False,3,defaite,victoire R,13,4.105,6,0.024,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,R,True,3,victoire,victoire R,13,4.105,7,4.019,144
+aleatoire,alphabeta+-d4,porte_raccourci,B,R,False,4,defaite,victoire R,13,3.865,6,0.056,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,R,True,4,victoire,victoire R,13,3.865,7,3.734,144
+aleatoire,alphabeta+-d4,porte_raccourci,B,R,False,5,defaite,victoire R,13,4.054,6,0.024,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,R,True,5,victoire,victoire R,13,4.054,7,3.97,144
+aleatoire,alphabeta+-d4,porte_raccourci,B,R,False,6,defaite,victoire R,13,4.574,6,0.028,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,R,True,6,victoire,victoire R,13,4.574,7,4.474,149
+aleatoire,alphabeta+-d4,porte_raccourci,B,R,False,7,defaite,victoire R,13,4.184,6,0.025,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,R,True,7,victoire,victoire R,13,4.184,7,4.093,148
+aleatoire,alphabeta+-d4,porte_raccourci,B,R,False,8,defaite,victoire R,13,4.758,6,0.03,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,R,True,8,victoire,victoire R,13,4.758,7,4.659,151
+aleatoire,alphabeta+-d4,porte_raccourci,B,R,False,9,defaite,victoire R,13,4.243,6,0.024,0
+alphabeta+-d4,aleatoire,porte_raccourci,R,R,True,9,victoire,victoire R,13,4.243,7,4.16,148
+aleatoire,alphabeta+-d4,porte_raccourci,R,B,False,0,defaite,victoire B,13,3.748,6,0.023,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,B,True,0,victoire,victoire B,13,3.748,7,3.667,142
+aleatoire,alphabeta+-d4,porte_raccourci,R,B,False,1,defaite,victoire B,13,3.732,6,0.023,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,B,True,1,victoire,victoire B,13,3.732,7,3.652,142
+aleatoire,alphabeta+-d4,porte_raccourci,R,B,False,2,defaite,victoire B,13,4.001,6,0.024,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,B,True,2,victoire,victoire B,13,4.001,7,3.916,142
+aleatoire,alphabeta+-d4,porte_raccourci,R,B,False,3,defaite,victoire B,13,4.186,6,0.039,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,B,True,3,victoire,victoire B,13,4.186,7,4.08,142
+aleatoire,alphabeta+-d4,porte_raccourci,R,B,False,4,defaite,victoire B,13,4.042,6,0.024,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,B,True,4,victoire,victoire B,13,4.042,7,3.958,142
+aleatoire,alphabeta+-d4,porte_raccourci,R,B,False,5,defaite,victoire B,13,3.953,6,0.023,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,B,True,5,victoire,victoire B,13,3.953,7,3.87,142
+aleatoire,alphabeta+-d4,porte_raccourci,R,B,False,6,defaite,victoire B,13,3.684,6,0.023,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,B,True,6,victoire,victoire B,13,3.684,7,3.603,142
+aleatoire,alphabeta+-d4,porte_raccourci,R,B,False,7,defaite,victoire B,13,3.603,6,0.023,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,B,True,7,victoire,victoire B,13,3.603,7,3.522,142
+aleatoire,alphabeta+-d4,porte_raccourci,R,B,False,8,defaite,victoire B,13,3.662,6,0.022,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,B,True,8,victoire,victoire B,13,3.662,7,3.582,142
+aleatoire,alphabeta+-d4,porte_raccourci,R,B,False,9,defaite,victoire B,13,3.665,6,0.023,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,B,True,9,victoire,victoire B,13,3.665,7,3.585,142
+aleatoire,alphabeta+-d4,porte_raccourci,R,R,True,0,defaite,victoire B,14,3.856,7,0.027,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,R,False,0,victoire,victoire B,14,3.856,7,3.763,142
+aleatoire,alphabeta+-d4,porte_raccourci,R,R,True,1,defaite,victoire B,14,3.8,7,0.054,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,R,False,1,victoire,victoire B,14,3.8,7,3.665,142
+aleatoire,alphabeta+-d4,porte_raccourci,R,R,True,2,defaite,victoire B,14,4.371,7,0.033,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,R,False,2,victoire,victoire B,14,4.371,7,4.265,147
+aleatoire,alphabeta+-d4,porte_raccourci,R,R,True,3,defaite,victoire B,14,4.469,7,0.029,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,R,False,3,victoire,victoire B,14,4.469,7,4.368,150
+aleatoire,alphabeta+-d4,porte_raccourci,R,R,True,4,defaite,victoire B,14,4.58,7,0.03,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,R,False,4,victoire,victoire B,14,4.58,7,4.48,150
+aleatoire,alphabeta+-d4,porte_raccourci,R,R,True,5,defaite,victoire B,14,4.182,7,0.048,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,R,False,5,victoire,victoire B,14,4.182,7,4.064,148
+aleatoire,alphabeta+-d4,porte_raccourci,R,R,True,6,defaite,victoire B,14,4.002,7,0.03,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,R,False,6,victoire,victoire B,14,4.002,7,3.899,147
+aleatoire,alphabeta+-d4,porte_raccourci,R,R,True,7,defaite,victoire B,14,3.763,7,0.029,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,R,False,7,victoire,victoire B,14,3.763,7,3.665,142
+aleatoire,alphabeta+-d4,porte_raccourci,R,R,True,8,defaite,victoire B,14,4.021,7,0.028,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,R,False,8,victoire,victoire B,14,4.021,7,3.925,147
+aleatoire,alphabeta+-d4,porte_raccourci,R,R,True,9,defaite,victoire B,14,6.072,7,0.052,0
+alphabeta+-d4,aleatoire,porte_raccourci,B,R,False,9,victoire,victoire B,14,6.072,7,5.924,142
+aleatoire,alphabeta+-d4,salle_fermee,B,B,True,0,nul,nul (limite de tours),80,17.733,40,0.236,0
+alphabeta+-d4,aleatoire,salle_fermee,R,B,False,0,nul,nul (limite de tours),80,17.733,40,16.962,625
+aleatoire,alphabeta+-d4,salle_fermee,B,B,True,1,defaite,victoire R,58,12.531,29,0.115,0
+alphabeta+-d4,aleatoire,salle_fermee,R,B,False,1,victoire,victoire R,58,12.531,29,12.119,492
+aleatoire,alphabeta+-d4,salle_fermee,B,B,True,2,defaite,victoire R,78,14.318,39,0.141,0
+alphabeta+-d4,aleatoire,salle_fermee,R,B,False,2,victoire,victoire R,78,14.318,39,13.829,637
+aleatoire,alphabeta+-d4,salle_fermee,B,B,True,3,defaite,victoire R,50,10.403,25,0.092,0
+alphabeta+-d4,aleatoire,salle_fermee,R,B,False,3,victoire,victoire R,50,10.403,25,10.086,448
+aleatoire,alphabeta+-d4,salle_fermee,B,B,True,4,defaite,victoire R,62,16.291,31,0.129,0
+alphabeta+-d4,aleatoire,salle_fermee,R,B,False,4,victoire,victoire R,62,16.291,31,15.85,522
+aleatoire,alphabeta+-d4,salle_fermee,B,B,True,5,nul,nul (limite de tours),80,14.123,40,0.433,0
+alphabeta+-d4,aleatoire,salle_fermee,R,B,False,5,nul,nul (limite de tours),80,14.123,40,13.297,558
+aleatoire,alphabeta+-d4,salle_fermee,B,B,True,6,nul,nul (limite de tours),80,21.264,40,0.199,0
+alphabeta+-d4,aleatoire,salle_fermee,R,B,False,6,nul,nul (limite de tours),80,21.264,40,20.578,688
+aleatoire,alphabeta+-d4,salle_fermee,B,B,True,7,defaite,victoire R,42,13.916,21,0.12,0
+alphabeta+-d4,aleatoire,salle_fermee,R,B,False,7,victoire,victoire R,42,13.916,21,13.522,388
+aleatoire,alphabeta+-d4,salle_fermee,B,B,True,8,nul,nul (limite de tours),80,20.098,40,0.207,0
+alphabeta+-d4,aleatoire,salle_fermee,R,B,False,8,nul,nul (limite de tours),80,20.098,40,19.419,610
+aleatoire,alphabeta+-d4,salle_fermee,B,B,True,9,defaite,victoire R,42,11.158,21,0.084,0
+alphabeta+-d4,aleatoire,salle_fermee,R,B,False,9,victoire,victoire R,42,11.158,21,10.865,399
+aleatoire,alphabeta+-d4,salle_fermee,B,R,False,0,defaite,victoire R,41,10.314,20,0.093,0
+alphabeta+-d4,aleatoire,salle_fermee,R,R,True,0,victoire,victoire R,41,10.314,21,9.925,323
+aleatoire,alphabeta+-d4,salle_fermee,B,R,False,1,defaite,victoire R,41,9.169,20,0.075,0
+alphabeta+-d4,aleatoire,salle_fermee,R,R,True,1,victoire,victoire R,41,9.169,21,8.897,342
+aleatoire,alphabeta+-d4,salle_fermee,B,R,False,2,defaite,victoire R,41,8.697,20,0.074,0
+alphabeta+-d4,aleatoire,salle_fermee,R,R,True,2,victoire,victoire R,41,8.697,21,8.407,339
+aleatoire,alphabeta+-d4,salle_fermee,B,R,False,3,defaite,victoire R,41,17.043,20,0.092,0
+alphabeta+-d4,aleatoire,salle_fermee,R,R,True,3,victoire,victoire R,41,17.043,21,16.706,334
+aleatoire,alphabeta+-d4,salle_fermee,B,R,False,4,defaite,victoire R,41,7.306,20,0.068,0
+alphabeta+-d4,aleatoire,salle_fermee,R,R,True,4,victoire,victoire R,41,7.306,21,7.056,334
+aleatoire,alphabeta+-d4,salle_fermee,B,R,False,5,defaite,victoire R,41,7.498,20,0.066,0
+alphabeta+-d4,aleatoire,salle_fermee,R,R,True,5,victoire,victoire R,41,7.498,21,7.26,346
+aleatoire,alphabeta+-d4,salle_fermee,B,R,False,6,defaite,victoire R,41,6.803,20,0.064,0
+alphabeta+-d4,aleatoire,salle_fermee,R,R,True,6,victoire,victoire R,41,6.803,21,6.542,319
+aleatoire,alphabeta+-d4,salle_fermee,B,R,False,7,defaite,victoire R,41,7.023,20,0.062,0
+alphabeta+-d4,aleatoire,salle_fermee,R,R,True,7,victoire,victoire R,41,7.023,21,6.787,324
+aleatoire,alphabeta+-d4,salle_fermee,B,R,False,8,defaite,victoire R,41,6.656,20,0.062,0
+alphabeta+-d4,aleatoire,salle_fermee,R,R,True,8,victoire,victoire R,41,6.656,21,6.416,319
+aleatoire,alphabeta+-d4,salle_fermee,B,R,False,9,defaite,victoire R,41,7.479,20,0.064,0
+alphabeta+-d4,aleatoire,salle_fermee,R,R,True,9,victoire,victoire R,41,7.479,21,7.173,324
+aleatoire,alphabeta+-d4,salle_fermee,R,B,False,0,defaite,victoire B,41,10.323,20,0.08,0
+alphabeta+-d4,aleatoire,salle_fermee,B,B,True,0,victoire,victoire B,41,10.323,21,10.055,394
+aleatoire,alphabeta+-d4,salle_fermee,R,B,False,1,defaite,victoire B,41,16.365,20,0.088,0
+alphabeta+-d4,aleatoire,salle_fermee,B,B,True,1,victoire,victoire B,41,16.365,21,16.071,394
+aleatoire,alphabeta+-d4,salle_fermee,R,B,False,2,defaite,victoire B,41,22.307,20,0.231,0
+alphabeta+-d4,aleatoire,salle_fermee,B,B,True,2,victoire,victoire B,41,22.307,21,21.63,394
+aleatoire,alphabeta+-d4,salle_fermee,R,B,False,3,defaite,victoire B,41,17.683,20,0.196,0
+alphabeta+-d4,aleatoire,salle_fermee,B,B,True,3,victoire,victoire B,41,17.683,21,17.114,393
+aleatoire,alphabeta+-d4,salle_fermee,R,B,False,4,defaite,victoire B,41,9.663,20,0.085,0
+alphabeta+-d4,aleatoire,salle_fermee,B,B,True,4,victoire,victoire B,41,9.663,21,9.372,394
+aleatoire,alphabeta+-d4,salle_fermee,R,B,False,5,defaite,victoire B,41,9.321,20,0.094,0
+alphabeta+-d4,aleatoire,salle_fermee,B,B,True,5,victoire,victoire B,41,9.321,21,9.041,394
+aleatoire,alphabeta+-d4,salle_fermee,R,B,False,6,defaite,victoire B,41,9.467,20,0.074,0
+alphabeta+-d4,aleatoire,salle_fermee,B,B,True,6,victoire,victoire B,41,9.467,21,9.212,394
+aleatoire,alphabeta+-d4,salle_fermee,R,B,False,7,defaite,victoire B,41,10.067,20,0.072,0
+alphabeta+-d4,aleatoire,salle_fermee,B,B,True,7,victoire,victoire B,41,10.067,21,9.805,394
+aleatoire,alphabeta+-d4,salle_fermee,R,B,False,8,defaite,victoire B,41,11.343,20,0.083,0
+alphabeta+-d4,aleatoire,salle_fermee,B,B,True,8,victoire,victoire B,41,11.343,21,11.016,394
+aleatoire,alphabeta+-d4,salle_fermee,R,B,False,9,defaite,victoire B,41,9.919,20,0.187,0
+alphabeta+-d4,aleatoire,salle_fermee,B,B,True,9,victoire,victoire B,41,9.919,21,9.538,394
+aleatoire,alphabeta+-d4,salle_fermee,R,R,True,0,defaite,victoire B,42,9.436,21,0.08,0
+alphabeta+-d4,aleatoire,salle_fermee,B,R,False,0,victoire,victoire B,42,9.436,21,9.138,390
+aleatoire,alphabeta+-d4,salle_fermee,R,R,True,1,defaite,victoire B,42,9.45,21,0.084,0
+alphabeta+-d4,aleatoire,salle_fermee,B,R,False,1,victoire,victoire B,42,9.45,21,9.159,394
+aleatoire,alphabeta+-d4,salle_fermee,R,R,True,2,defaite,victoire B,46,10.451,23,0.086,0
+alphabeta+-d4,aleatoire,salle_fermee,B,R,False,2,victoire,victoire B,46,10.451,23,10.153,430
+aleatoire,alphabeta+-d4,salle_fermee,R,R,True,3,nul,nul (limite de tours),80,17.657,40,0.178,0
+alphabeta+-d4,aleatoire,salle_fermee,B,R,False,3,nul,nul (limite de tours),80,17.657,40,17.027,548
+aleatoire,alphabeta+-d4,salle_fermee,R,R,True,4,nul,nul (limite de tours),80,13.004,40,0.16,0
+alphabeta+-d4,aleatoire,salle_fermee,B,R,False,4,nul,nul (limite de tours),80,13.004,40,12.46,590
+aleatoire,alphabeta+-d4,salle_fermee,R,R,True,5,nul,nul (limite de tours),80,12.566,40,0.14,0
+alphabeta+-d4,aleatoire,salle_fermee,B,R,False,5,nul,nul (limite de tours),80,12.566,40,12.07,566
+aleatoire,alphabeta+-d4,salle_fermee,R,R,True,6,defaite,victoire B,46,10.503,23,0.085,0
+alphabeta+-d4,aleatoire,salle_fermee,B,R,False,6,victoire,victoire B,46,10.503,23,10.212,430
+aleatoire,alphabeta+-d4,salle_fermee,R,R,True,7,defaite,victoire B,42,9.225,21,0.079,0
+alphabeta+-d4,aleatoire,salle_fermee,B,R,False,7,victoire,victoire B,42,9.225,21,8.96,394
+aleatoire,alphabeta+-d4,salle_fermee,R,R,True,8,defaite,victoire B,50,11.48,25,0.368,0
+alphabeta+-d4,aleatoire,salle_fermee,B,R,False,8,victoire,victoire B,50,11.48,25,10.885,466
+aleatoire,alphabeta+-d4,salle_fermee,R,R,True,9,defaite,victoire B,42,8.746,21,0.072,0
+alphabeta+-d4,aleatoire,salle_fermee,B,R,False,9,victoire,victoire B,42,8.746,21,8.492,394
+aleatoire,alphabeta+-d4,arene_9x9,B,B,True,0,defaite,victoire R,24,20.666,12,0.055,0
+alphabeta+-d4,aleatoire,arene_9x9,R,B,False,0,victoire,victoire R,24,20.666,12,20.496,559
+aleatoire,alphabeta+-d4,arene_9x9,B,B,True,1,defaite,victoire R,24,18.831,12,0.055,0
+alphabeta+-d4,aleatoire,arene_9x9,R,B,False,1,victoire,victoire R,24,18.831,12,18.66,557
+aleatoire,alphabeta+-d4,arene_9x9,B,B,True,2,defaite,victoire R,24,19.744,12,0.055,0
+alphabeta+-d4,aleatoire,arene_9x9,R,B,False,2,victoire,victoire R,24,19.744,12,19.569,582
+aleatoire,alphabeta+-d4,arene_9x9,B,B,True,3,defaite,victoire R,24,18.058,12,0.052,0
+alphabeta+-d4,aleatoire,arene_9x9,R,B,False,3,victoire,victoire R,24,18.058,12,17.882,527
+aleatoire,alphabeta+-d4,arene_9x9,B,B,True,4,defaite,victoire R,24,19.622,12,0.054,0
+alphabeta+-d4,aleatoire,arene_9x9,R,B,False,4,victoire,victoire R,24,19.622,12,19.456,568
+aleatoire,alphabeta+-d4,arene_9x9,B,B,True,5,defaite,victoire R,24,24.312,12,0.058,0
+alphabeta+-d4,aleatoire,arene_9x9,R,B,False,5,victoire,victoire R,24,24.312,12,24.142,586
+aleatoire,alphabeta+-d4,arene_9x9,B,B,True,6,defaite,victoire R,24,20.286,12,0.054,0
+alphabeta+-d4,aleatoire,arene_9x9,R,B,False,6,victoire,victoire R,24,20.286,12,20.115,539
+aleatoire,alphabeta+-d4,arene_9x9,B,B,True,7,defaite,victoire R,24,22.772,12,0.061,0
+alphabeta+-d4,aleatoire,arene_9x9,R,B,False,7,victoire,victoire R,24,22.772,12,22.534,558
+aleatoire,alphabeta+-d4,arene_9x9,B,B,True,8,defaite,victoire R,24,20.446,12,0.056,0
+alphabeta+-d4,aleatoire,arene_9x9,R,B,False,8,victoire,victoire R,24,20.446,12,20.275,547
+aleatoire,alphabeta+-d4,arene_9x9,B,B,True,9,defaite,victoire R,24,19.726,12,0.056,0
+alphabeta+-d4,aleatoire,arene_9x9,R,B,False,9,victoire,victoire R,24,19.726,12,19.551,526
+aleatoire,alphabeta+-d4,arene_9x9,B,R,False,0,defaite,victoire R,23,25.059,11,0.059,0
+alphabeta+-d4,aleatoire,arene_9x9,R,R,True,0,victoire,victoire R,23,25.059,12,24.89,564
+aleatoire,alphabeta+-d4,arene_9x9,B,R,False,1,defaite,victoire R,23,19.746,11,0.05,0
+alphabeta+-d4,aleatoire,arene_9x9,R,R,True,1,victoire,victoire R,23,19.746,12,19.592,551
+aleatoire,alphabeta+-d4,arene_9x9,B,R,False,2,defaite,victoire R,23,22.064,11,0.056,0
+alphabeta+-d4,aleatoire,arene_9x9,R,R,True,2,victoire,victoire R,23,22.064,12,21.898,579
+aleatoire,alphabeta+-d4,arene_9x9,B,R,False,3,defaite,victoire R,23,19.514,11,0.096,0
+alphabeta+-d4,aleatoire,arene_9x9,R,R,True,3,victoire,victoire R,23,19.514,12,19.288,525
+aleatoire,alphabeta+-d4,arene_9x9,B,R,False,4,defaite,victoire R,23,23.332,11,0.065,0
+alphabeta+-d4,aleatoire,arene_9x9,R,R,True,4,victoire,victoire R,23,23.332,12,23.137,567
+aleatoire,alphabeta+-d4,arene_9x9,B,R,False,5,defaite,victoire R,23,21.646,11,0.053,0
+alphabeta+-d4,aleatoire,arene_9x9,R,R,True,5,victoire,victoire R,23,21.646,12,21.462,581
+aleatoire,alphabeta+-d4,arene_9x9,B,R,False,6,defaite,victoire R,23,19.504,11,0.046,0
+alphabeta+-d4,aleatoire,arene_9x9,R,R,True,6,victoire,victoire R,23,19.504,12,19.33,539
+aleatoire,alphabeta+-d4,arene_9x9,B,R,False,7,defaite,victoire R,23,21.77,11,0.052,0
+alphabeta+-d4,aleatoire,arene_9x9,R,R,True,7,victoire,victoire R,23,21.77,12,21.608,573
+aleatoire,alphabeta+-d4,arene_9x9,B,R,False,8,defaite,victoire R,23,21.136,11,0.055,0
+alphabeta+-d4,aleatoire,arene_9x9,R,R,True,8,victoire,victoire R,23,21.136,12,20.935,534
+aleatoire,alphabeta+-d4,arene_9x9,B,R,False,9,defaite,victoire R,23,27.84,11,0.082,0
+alphabeta+-d4,aleatoire,arene_9x9,R,R,True,9,victoire,victoire R,23,27.84,12,27.603,518
+aleatoire,alphabeta+-d4,arene_9x9,R,B,False,0,defaite,victoire B,23,28.031,11,0.088,0
+alphabeta+-d4,aleatoire,arene_9x9,B,B,True,0,victoire,victoire B,23,28.031,12,27.789,542
+aleatoire,alphabeta+-d4,arene_9x9,R,B,False,1,defaite,victoire B,23,17.518,11,0.046,0
+alphabeta+-d4,aleatoire,arene_9x9,B,B,True,1,victoire,victoire B,23,17.518,12,17.372,528
+aleatoire,alphabeta+-d4,arene_9x9,R,B,False,2,defaite,victoire B,23,18.748,11,0.047,0
+alphabeta+-d4,aleatoire,arene_9x9,B,B,True,2,victoire,victoire B,23,18.748,12,18.591,530
+aleatoire,alphabeta+-d4,arene_9x9,R,B,False,3,defaite,victoire B,23,19.546,11,0.047,0
+alphabeta+-d4,aleatoire,arene_9x9,B,B,True,3,victoire,victoire B,23,19.546,12,19.399,569
+aleatoire,alphabeta+-d4,arene_9x9,R,B,False,4,defaite,victoire B,23,18.138,11,0.045,0
+alphabeta+-d4,aleatoire,arene_9x9,B,B,True,4,victoire,victoire B,23,18.138,12,17.996,542
+aleatoire,alphabeta+-d4,arene_9x9,R,B,False,5,defaite,victoire B,23,17.756,11,0.046,0
+alphabeta+-d4,aleatoire,arene_9x9,B,B,True,5,victoire,victoire B,23,17.756,12,17.608,525
+aleatoire,alphabeta+-d4,arene_9x9,R,B,False,6,defaite,victoire B,23,17.776,11,0.045,0
+alphabeta+-d4,aleatoire,arene_9x9,B,B,True,6,victoire,victoire B,23,17.776,12,17.629,521
+aleatoire,alphabeta+-d4,arene_9x9,R,B,False,7,defaite,victoire B,23,24.794,11,0.061,0
+alphabeta+-d4,aleatoire,arene_9x9,B,B,True,7,victoire,victoire B,23,24.794,12,24.615,540
+aleatoire,alphabeta+-d4,arene_9x9,R,B,False,8,defaite,victoire B,23,19.431,11,0.049,0
+alphabeta+-d4,aleatoire,arene_9x9,B,B,True,8,victoire,victoire B,23,19.431,12,19.277,530
+aleatoire,alphabeta+-d4,arene_9x9,R,B,False,9,defaite,victoire B,23,19.684,11,0.07,0
+alphabeta+-d4,aleatoire,arene_9x9,B,B,True,9,victoire,victoire B,23,19.684,12,19.505,553
+aleatoire,alphabeta+-d4,arene_9x9,R,R,True,0,defaite,victoire B,32,25.465,16,0.069,0
+alphabeta+-d4,aleatoire,arene_9x9,B,R,False,0,victoire,victoire B,32,25.465,16,25.249,735
+aleatoire,alphabeta+-d4,arene_9x9,R,R,True,1,defaite,victoire B,24,19.152,12,0.055,0
+alphabeta+-d4,aleatoire,arene_9x9,B,R,False,1,victoire,victoire B,24,19.152,12,18.967,541
+aleatoire,alphabeta+-d4,arene_9x9,R,R,True,2,defaite,victoire B,24,20.096,12,0.055,0
+alphabeta+-d4,aleatoire,arene_9x9,B,R,False,2,victoire,victoire B,24,20.096,12,19.922,538
+aleatoire,alphabeta+-d4,arene_9x9,R,R,True,3,defaite,victoire B,24,21.559,12,0.055,0
+alphabeta+-d4,aleatoire,arene_9x9,B,R,False,3,victoire,victoire B,24,21.559,12,21.39,587
+aleatoire,alphabeta+-d4,arene_9x9,R,R,True,4,defaite,victoire B,24,20.067,12,0.062,0
+alphabeta+-d4,aleatoire,arene_9x9,B,R,False,4,victoire,victoire B,24,20.067,12,19.886,547
+aleatoire,alphabeta+-d4,arene_9x9,R,R,True,5,defaite,victoire B,24,20.62,12,0.055,0
+alphabeta+-d4,aleatoire,arene_9x9,B,R,False,5,victoire,victoire B,24,20.62,12,20.45,535
+aleatoire,alphabeta+-d4,arene_9x9,R,R,True,6,defaite,victoire B,24,22.329,12,0.058,0
+alphabeta+-d4,aleatoire,arene_9x9,B,R,False,6,victoire,victoire B,24,22.329,12,22.152,531
+aleatoire,alphabeta+-d4,arene_9x9,R,R,True,7,nul,nul (limite de tours),80,61.534,40,0.186,0
+alphabeta+-d4,aleatoire,arene_9x9,B,R,False,7,nul,nul (limite de tours),80,61.534,40,60.972,1822
+aleatoire,alphabeta+-d4,arene_9x9,R,R,True,8,defaite,victoire B,64,59.585,32,0.184,0
+alphabeta+-d4,aleatoire,arene_9x9,B,R,False,8,victoire,victoire B,64,59.585,32,59.03,1432
+aleatoire,alphabeta+-d4,arene_9x9,R,R,True,9,defaite,victoire B,32,25.661,16,0.069,0
+alphabeta+-d4,aleatoire,arene_9x9,B,R,False,9,victoire,victoire B,32,25.661,16,25.439,714
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,B,True,0,defaite,victoire R,44,11.424,22,0.088,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,B,False,0,victoire,victoire R,44,11.424,22,11.117,431
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,B,True,1,defaite,victoire R,44,11.535,22,0.083,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,B,False,1,victoire,victoire R,44,11.535,22,11.251,436
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,B,True,2,defaite,victoire R,44,12.023,22,0.112,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,B,False,2,victoire,victoire R,44,12.023,22,11.662,448
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,B,True,3,defaite,victoire R,44,12.915,22,0.084,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,B,False,3,victoire,victoire R,44,12.915,22,12.606,454
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,B,True,4,defaite,victoire R,44,11.127,22,0.078,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,B,False,4,victoire,victoire R,44,11.127,22,10.844,432
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,B,True,5,defaite,victoire R,44,13.484,22,0.124,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,B,False,5,victoire,victoire R,44,13.484,22,13.145,470
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,B,True,6,defaite,victoire R,44,15.102,22,0.145,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,B,False,6,victoire,victoire R,44,15.102,22,14.694,444
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,B,True,7,defaite,victoire R,44,12.801,22,0.11,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,B,False,7,victoire,victoire R,44,12.801,22,12.459,428
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,B,True,8,defaite,victoire R,44,11.672,22,0.1,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,B,False,8,victoire,victoire R,44,11.672,22,11.351,438
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,B,True,9,defaite,victoire R,44,11.275,22,0.082,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,B,False,9,victoire,victoire R,44,11.275,22,10.992,427
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,11.852,21,0.086,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,11.852,22,11.558,427
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,R,False,1,defaite,victoire R,43,12.411,21,0.086,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,R,True,1,victoire,victoire R,43,12.411,22,12.121,434
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,R,False,2,defaite,victoire R,43,12.21,21,0.087,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,R,True,2,victoire,victoire R,43,12.21,22,11.917,448
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,R,False,3,defaite,victoire R,43,13.244,21,0.089,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,R,True,3,victoire,victoire R,43,13.244,22,12.952,452
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,R,False,4,defaite,victoire R,43,15.277,21,0.107,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,R,True,4,victoire,victoire R,43,15.277,22,14.909,432
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,R,False,5,defaite,victoire R,43,20.429,21,0.14,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,R,True,5,victoire,victoire R,43,20.429,22,19.878,468
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,R,False,6,defaite,victoire R,43,19.721,21,0.156,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,R,True,6,victoire,victoire R,43,19.721,22,19.259,444
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,R,False,7,defaite,victoire R,43,11.845,21,0.085,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,R,True,7,victoire,victoire R,43,11.845,22,11.535,428
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,R,False,8,defaite,victoire R,43,13.852,21,0.124,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,R,True,8,victoire,victoire R,43,13.852,22,13.49,436
+aleatoire,alphabeta+-d4,labyrinthe_11x11,B,R,False,9,defaite,victoire R,43,13.194,21,0.091,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,R,R,True,9,victoire,victoire R,43,13.194,22,12.831,427
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,11.383,21,0.098,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,11.383,22,11.084,427
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,B,False,1,defaite,victoire B,43,11.11,21,0.083,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,B,True,1,victoire,victoire B,43,11.11,22,10.803,427
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,B,False,2,defaite,victoire B,43,13.933,21,0.098,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,B,True,2,victoire,victoire B,43,13.933,22,13.557,450
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,B,False,3,defaite,victoire B,43,11.807,21,0.081,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,B,True,3,victoire,victoire B,43,11.807,22,11.529,427
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,B,False,4,defaite,victoire B,43,11.55,21,0.081,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,B,True,4,victoire,victoire B,43,11.55,22,11.263,427
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,B,False,5,defaite,victoire B,43,15.271,21,0.122,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,B,True,5,victoire,victoire B,43,15.271,22,14.894,427
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,B,False,6,defaite,victoire B,43,16.65,21,0.143,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,B,True,6,victoire,victoire B,43,16.65,22,16.175,419
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,B,False,7,defaite,victoire B,43,16.658,21,0.137,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,B,True,7,victoire,victoire B,43,16.658,22,16.247,451
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,B,False,8,defaite,victoire B,43,12.621,21,0.095,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,B,True,8,victoire,victoire B,43,12.621,22,12.27,434
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,B,False,9,defaite,victoire B,43,14.563,21,0.126,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,B,True,9,victoire,victoire B,43,14.563,22,14.183,431
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,R,True,0,defaite,victoire B,52,13.985,26,0.109,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,R,False,0,victoire,victoire B,52,13.985,26,13.623,499
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,R,True,1,defaite,victoire B,48,15.017,24,0.113,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,R,False,1,victoire,victoire B,48,15.017,24,14.624,463
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,R,True,2,defaite,victoire B,44,18.275,22,0.139,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,R,False,2,victoire,victoire B,44,18.275,22,17.842,452
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,R,True,3,defaite,victoire B,44,17.326,22,0.228,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,R,False,3,victoire,victoire B,44,17.326,22,16.743,427
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,R,True,4,defaite,victoire B,44,18.938,22,0.196,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,R,False,4,victoire,victoire B,44,18.938,22,18.355,427
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,R,True,5,defaite,victoire B,44,15.145,22,0.121,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,R,False,5,victoire,victoire B,44,15.145,22,14.763,427
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,R,True,6,defaite,victoire B,44,12.019,22,0.096,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,R,False,6,victoire,victoire B,44,12.019,22,11.665,418
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,R,True,7,nul,nul (limite de tours),80,20.144,40,0.156,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,R,False,7,nul,nul (limite de tours),80,20.144,40,19.615,753
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,R,True,8,defaite,victoire B,44,13.378,22,0.134,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,R,False,8,victoire,victoire B,44,13.378,22,12.982,438
+aleatoire,alphabeta+-d4,labyrinthe_11x11,R,R,True,9,defaite,victoire B,52,14.737,26,0.106,0
+alphabeta+-d4,aleatoire,labyrinthe_11x11,B,R,False,9,victoire,victoire B,52,14.737,26,14.356,515
+astar,minmax-d4,couloir_5x5,B,B,True,0,defaite,victoire R,8,1.852,4,0.493,18
+minmax-d4,astar,couloir_5x5,R,B,False,0,victoire,victoire R,8,1.852,4,1.312,136
+astar,minmax-d4,couloir_5x5,B,R,False,0,defaite,victoire R,7,1.9,3,0.275,15
+minmax-d4,astar,couloir_5x5,R,R,True,0,victoire,victoire R,7,1.9,4,1.589,133
+astar,minmax-d4,couloir_5x5,R,B,False,0,victoire,victoire R,8,1.626,4,0.305,10
+minmax-d4,astar,couloir_5x5,B,B,True,0,defaite,victoire R,8,1.626,4,1.277,128
+astar,minmax-d4,couloir_5x5,R,R,True,0,victoire,victoire R,7,1.228,4,0.286,10
+minmax-d4,astar,couloir_5x5,B,R,False,0,defaite,victoire R,7,1.228,3,0.907,99
+astar,minmax-d4,exemple_7x7,B,B,True,0,victoire,victoire B,11,4.829,6,1.385,21
+minmax-d4,astar,exemple_7x7,R,B,False,0,defaite,victoire B,11,4.829,5,3.384,318
+astar,minmax-d4,exemple_7x7,B,R,False,0,defaite,victoire R,11,5.563,5,1.293,20
+minmax-d4,astar,exemple_7x7,R,R,True,0,victoire,victoire R,11,5.563,6,4.206,359
+astar,minmax-d4,exemple_7x7,R,B,False,0,defaite,victoire B,11,5.623,5,1.208,20
+minmax-d4,astar,exemple_7x7,B,B,True,0,victoire,victoire B,11,5.623,6,4.352,369
+astar,minmax-d4,exemple_7x7,R,R,True,0,victoire,victoire R,11,6.628,6,2.911,21
+minmax-d4,astar,exemple_7x7,B,R,False,0,defaite,victoire R,11,6.628,5,3.622,302
+astar,minmax-d4,porte_raccourci,B,B,True,0,victoire,victoire B,13,4.818,7,1.659,28
+minmax-d4,astar,porte_raccourci,R,B,False,0,defaite,victoire B,13,4.818,6,3.082,295
+astar,minmax-d4,porte_raccourci,B,R,False,0,defaite,victoire R,13,5.133,6,1.279,27
+minmax-d4,astar,porte_raccourci,R,R,True,0,victoire,victoire R,13,5.133,7,3.786,368
+astar,minmax-d4,porte_raccourci,R,B,False,0,defaite,victoire B,13,5.039,6,1.189,27
+minmax-d4,astar,porte_raccourci,B,B,True,0,victoire,victoire B,13,5.039,7,3.783,368
+astar,minmax-d4,porte_raccourci,R,R,True,0,victoire,victoire R,13,4.222,7,1.281,28
+minmax-d4,astar,porte_raccourci,B,R,False,0,defaite,victoire R,13,4.222,6,2.868,295
+astar,minmax-d4,salle_fermee,B,B,True,0,victoire,victoire B,41,13.645,21,5.579,231
+minmax-d4,astar,salle_fermee,R,B,False,0,defaite,victoire B,41,13.645,20,7.83,629
+astar,minmax-d4,salle_fermee,B,R,False,0,nul,nul (limite de tours),80,32.282,40,11.382,134
+minmax-d4,astar,salle_fermee,R,R,True,0,nul,nul (limite de tours),80,32.282,40,20.156,1080
+astar,minmax-d4,salle_fermee,R,B,False,0,nul,nul (limite de tours),80,32.497,40,10.777,137
+minmax-d4,astar,salle_fermee,B,B,True,0,nul,nul (limite de tours),80,32.497,40,20.957,1252
+astar,minmax-d4,salle_fermee,R,R,True,0,victoire,victoire R,41,22.612,21,9.257,246
+minmax-d4,astar,salle_fermee,B,R,False,0,defaite,victoire R,41,22.612,20,12.826,674
+astar,minmax-d4,arene_9x9,B,B,True,0,victoire,victoire B,23,50.938,12,9.677,78
+minmax-d4,astar,arene_9x9,R,B,False,0,defaite,victoire B,23,50.938,11,41.01,2055
+astar,minmax-d4,arene_9x9,B,R,False,0,defaite,victoire R,23,35.161,11,6.11,77
+minmax-d4,astar,arene_9x9,R,R,True,0,victoire,victoire R,23,35.161,12,28.902,2135
+astar,minmax-d4,arene_9x9,R,B,False,0,defaite,victoire B,23,33.1,11,5.727,77
+minmax-d4,astar,arene_9x9,B,B,True,0,victoire,victoire B,23,33.1,12,27.207,2135
+astar,minmax-d4,arene_9x9,R,R,True,0,victoire,victoire R,23,29.158,12,5.858,78
+minmax-d4,astar,arene_9x9,B,R,False,0,defaite,victoire R,23,29.158,11,23.165,2001
+astar,minmax-d4,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,18.506,22,9.288,253
+minmax-d4,astar,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,18.506,21,8.972,849
+astar,minmax-d4,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,18.373,21,8.836,252
+minmax-d4,astar,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,18.373,22,9.285,905
+astar,minmax-d4,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,19.563,21,9.623,252
+minmax-d4,astar,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,19.563,22,9.672,905
+astar,minmax-d4,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,21.869,22,11.604,253
+minmax-d4,astar,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,21.869,21,9.905,857
+astar,alphabeta-d4,couloir_5x5,B,B,True,0,defaite,victoire R,8,2.221,4,0.393,18
+alphabeta-d4,astar,couloir_5x5,R,B,False,0,victoire,victoire R,8,2.221,4,1.781,73
+astar,alphabeta-d4,couloir_5x5,B,R,False,0,defaite,victoire R,7,2.088,3,0.289,15
+alphabeta-d4,astar,couloir_5x5,R,R,True,0,victoire,victoire R,7,2.088,4,1.763,73
+astar,alphabeta-d4,couloir_5x5,R,B,False,0,victoire,victoire R,8,2.029,4,0.325,10
+alphabeta-d4,astar,couloir_5x5,B,B,True,0,defaite,victoire R,8,2.029,4,1.662,64
+astar,alphabeta-d4,couloir_5x5,R,R,True,0,victoire,victoire R,7,2.052,4,0.391,10
+alphabeta-d4,astar,couloir_5x5,B,R,False,0,defaite,victoire R,7,2.052,3,1.614,50
+astar,alphabeta-d4,exemple_7x7,B,B,True,0,victoire,victoire B,11,5.604,6,1.529,21
+alphabeta-d4,astar,exemple_7x7,R,B,False,0,defaite,victoire B,11,5.604,5,3.999,122
+astar,alphabeta-d4,exemple_7x7,B,R,False,0,defaite,victoire R,11,6.465,5,1.793,20
+alphabeta-d4,astar,exemple_7x7,R,R,True,0,victoire,victoire R,11,6.465,6,4.59,137
+astar,alphabeta-d4,exemple_7x7,R,B,False,0,defaite,victoire B,11,5.028,5,1.185,20
+alphabeta-d4,astar,exemple_7x7,B,B,True,0,victoire,victoire B,11,5.028,6,3.784,129
+astar,alphabeta-d4,exemple_7x7,R,R,True,0,victoire,victoire R,11,4.589,6,1.346,21
+alphabeta-d4,astar,exemple_7x7,B,R,False,0,defaite,victoire R,11,4.589,5,3.18,111
+astar,alphabeta-d4,porte_raccourci,B,B,True,0,victoire,victoire B,13,5.88,7,1.787,28
+alphabeta-d4,astar,porte_raccourci,R,B,False,0,defaite,victoire B,13,5.88,6,4.01,117
+astar,alphabeta-d4,porte_raccourci,B,R,False,0,defaite,victoire R,13,5.614,6,1.604,27
+alphabeta-d4,astar,porte_raccourci,R,R,True,0,victoire,victoire R,13,5.614,7,3.937,131
+astar,alphabeta-d4,porte_raccourci,R,B,False,0,defaite,victoire B,13,5.613,6,1.303,27
+alphabeta-d4,astar,porte_raccourci,B,B,True,0,victoire,victoire B,13,5.613,7,4.232,131
+astar,alphabeta-d4,porte_raccourci,R,R,True,0,victoire,victoire R,13,5.789,7,1.969,28
+alphabeta-d4,astar,porte_raccourci,B,R,False,0,defaite,victoire R,13,5.789,6,3.726,117
+astar,alphabeta-d4,salle_fermee,B,B,True,0,victoire,victoire B,41,14.009,21,5.395,231
+alphabeta-d4,astar,salle_fermee,R,B,False,0,defaite,victoire B,41,14.009,20,8.366,361
+astar,alphabeta-d4,salle_fermee,B,R,False,0,nul,nul (limite de tours),80,22.52,40,6.423,134
+alphabeta-d4,astar,salle_fermee,R,R,True,0,nul,nul (limite de tours),80,22.52,40,15.629,710
+astar,alphabeta-d4,salle_fermee,R,B,False,0,nul,nul (limite de tours),80,35.391,40,8.374,137
+alphabeta-d4,astar,salle_fermee,B,B,True,0,nul,nul (limite de tours),80,35.391,40,26.408,791
+astar,alphabeta-d4,salle_fermee,R,R,True,0,victoire,victoire R,41,23.198,21,9.294,238
+alphabeta-d4,astar,salle_fermee,B,R,False,0,defaite,victoire R,41,23.198,20,13.52,359
+astar,alphabeta-d4,arene_9x9,B,B,True,0,victoire,victoire B,23,41.528,12,10.449,78
+alphabeta-d4,astar,arene_9x9,R,B,False,0,defaite,victoire B,23,41.528,11,30.788,525
+astar,alphabeta-d4,arene_9x9,B,R,False,0,defaite,victoire R,23,53.573,11,10.662,77
+alphabeta-d4,astar,arene_9x9,R,R,True,0,victoire,victoire R,23,53.573,12,42.648,560
+astar,alphabeta-d4,arene_9x9,R,B,False,0,defaite,victoire B,23,36.139,11,7.694,77
+alphabeta-d4,astar,arene_9x9,B,B,True,0,victoire,victoire B,23,36.139,12,28.171,560
+astar,alphabeta-d4,arene_9x9,R,R,True,0,victoire,victoire R,23,34.355,12,8.403,78
+alphabeta-d4,astar,arene_9x9,B,R,False,0,defaite,victoire R,23,34.355,11,25.723,525
+astar,alphabeta-d4,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,30.681,22,14.69,253
+alphabeta-d4,astar,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,30.681,21,15.572,422
+astar,alphabeta-d4,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,30.747,21,13.323,252
+alphabeta-d4,astar,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,30.747,22,16.933,436
+astar,alphabeta-d4,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,33.291,21,14.978,252
+alphabeta-d4,astar,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,33.291,22,17.868,436
+astar,alphabeta-d4,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,25.056,22,11.093,253
+alphabeta-d4,astar,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,25.056,21,13.657,422
+astar,alphabeta+-d4,couloir_5x5,B,B,True,0,defaite,victoire R,8,2.319,4,0.377,18
+alphabeta+-d4,astar,couloir_5x5,R,B,False,0,victoire,victoire R,8,2.319,4,1.902,73
+astar,alphabeta+-d4,couloir_5x5,B,R,False,0,defaite,victoire R,7,2.207,3,0.273,15
+alphabeta+-d4,astar,couloir_5x5,R,R,True,0,victoire,victoire R,7,2.207,4,1.9,73
+astar,alphabeta+-d4,couloir_5x5,R,B,False,0,victoire,victoire R,8,2.103,4,0.309,10
+alphabeta+-d4,astar,couloir_5x5,B,B,True,0,defaite,victoire R,8,2.103,4,1.753,76
+astar,alphabeta+-d4,couloir_5x5,R,R,True,0,victoire,victoire R,7,1.552,4,0.352,10
+alphabeta+-d4,astar,couloir_5x5,B,R,False,0,defaite,victoire R,7,1.552,3,1.162,50
+astar,alphabeta+-d4,exemple_7x7,B,B,True,0,victoire,victoire B,11,5.466,6,1.449,21
+alphabeta+-d4,astar,exemple_7x7,R,B,False,0,defaite,victoire B,11,5.466,5,3.952,128
+astar,alphabeta+-d4,exemple_7x7,B,R,False,0,defaite,victoire R,11,8.742,5,1.692,20
+alphabeta+-d4,astar,exemple_7x7,R,R,True,0,victoire,victoire R,11,8.742,6,6.966,141
+astar,alphabeta+-d4,exemple_7x7,R,B,False,0,defaite,victoire B,11,7.445,5,1.908,20
+alphabeta+-d4,astar,exemple_7x7,B,B,True,0,victoire,victoire B,11,7.445,6,5.448,129
+astar,alphabeta+-d4,exemple_7x7,R,R,True,0,victoire,victoire R,11,7.221,6,2.2,21
+alphabeta+-d4,astar,exemple_7x7,B,R,False,0,defaite,victoire R,11,7.221,5,4.914,125
+astar,alphabeta+-d4,porte_raccourci,B,B,True,0,victoire,victoire B,13,6.849,7,2.398,28
+alphabeta+-d4,astar,porte_raccourci,R,B,False,0,defaite,victoire B,13,6.849,6,4.341,117
+astar,alphabeta+-d4,porte_raccourci,B,R,False,0,defaite,victoire R,13,7.675,6,2.039,27
+alphabeta+-d4,astar,porte_raccourci,R,R,True,0,victoire,victoire R,13,7.675,7,5.527,135
+astar,alphabeta+-d4,porte_raccourci,R,B,False,0,defaite,victoire B,13,7.19,6,2.062,27
+alphabeta+-d4,astar,porte_raccourci,B,B,True,0,victoire,victoire B,13,7.19,7,5.025,131
+astar,alphabeta+-d4,porte_raccourci,R,R,True,0,victoire,victoire R,13,7.482,7,2.267,28
+alphabeta+-d4,astar,porte_raccourci,B,R,False,0,defaite,victoire R,13,7.482,6,5.104,136
+astar,alphabeta+-d4,salle_fermee,B,B,True,0,victoire,victoire B,41,20.875,21,7.524,231
+alphabeta+-d4,astar,salle_fermee,R,B,False,0,defaite,victoire B,41,20.875,20,13.011,369
+astar,alphabeta+-d4,salle_fermee,B,R,False,0,defaite,victoire R,41,15.886,20,6.083,156
+alphabeta+-d4,astar,salle_fermee,R,R,True,0,victoire,victoire R,41,15.886,21,9.44,319
+astar,alphabeta+-d4,salle_fermee,R,B,False,0,defaite,victoire B,41,12.872,20,3.952,179
+alphabeta+-d4,astar,salle_fermee,B,B,True,0,victoire,victoire B,41,12.872,21,8.707,389
+astar,alphabeta+-d4,salle_fermee,R,R,True,0,victoire,victoire R,41,13.527,21,4.963,248
+alphabeta+-d4,astar,salle_fermee,B,R,False,0,defaite,victoire R,41,13.527,20,8.352,369
+astar,alphabeta+-d4,arene_9x9,B,B,True,0,victoire,victoire B,23,21.625,12,4.943,78
+alphabeta+-d4,astar,arene_9x9,R,B,False,0,defaite,victoire B,23,21.625,11,16.559,516
+astar,alphabeta+-d4,arene_9x9,B,R,False,0,defaite,victoire R,23,22.748,11,4.639,77
+alphabeta+-d4,astar,arene_9x9,R,R,True,0,victoire,victoire R,23,22.748,12,17.989,548
+astar,alphabeta+-d4,arene_9x9,R,B,False,0,defaite,victoire B,23,22.712,11,4.545,77
+alphabeta+-d4,astar,arene_9x9,B,B,True,0,victoire,victoire B,23,22.712,12,18.053,548
+astar,alphabeta+-d4,arene_9x9,R,R,True,0,victoire,victoire R,23,20.236,12,4.919,78
+alphabeta+-d4,astar,arene_9x9,B,R,False,0,defaite,victoire R,23,20.236,11,15.189,474
+astar,alphabeta+-d4,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,20.946,22,8.876,253
+alphabeta+-d4,astar,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,20.946,21,11.836,465
+astar,alphabeta+-d4,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,24.84,21,10.862,252
+alphabeta+-d4,astar,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,24.84,22,13.659,438
+astar,alphabeta+-d4,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,25.336,21,11.049,252
+alphabeta+-d4,astar,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,25.336,22,13.987,446
+astar,alphabeta+-d4,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,18.563,22,8.622,253
+alphabeta+-d4,astar,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,18.563,21,9.711,397
+minmax-d4,alphabeta-d4,couloir_5x5,B,B,True,0,defaite,victoire R,8,3.071,4,1.285,134
+alphabeta-d4,minmax-d4,couloir_5x5,R,B,False,0,victoire,victoire R,8,3.071,4,1.751,73
+minmax-d4,alphabeta-d4,couloir_5x5,B,R,False,0,defaite,victoire R,7,2.598,3,0.987,103
+alphabeta-d4,minmax-d4,couloir_5x5,R,R,True,0,victoire,victoire R,7,2.598,4,1.579,73
+minmax-d4,alphabeta-d4,couloir_5x5,R,B,False,0,victoire,victoire R,8,2.883,4,1.201,136
+alphabeta-d4,minmax-d4,couloir_5x5,B,B,True,0,defaite,victoire R,8,2.883,4,1.646,71
+minmax-d4,alphabeta-d4,couloir_5x5,R,R,True,0,victoire,victoire R,7,2.395,4,1.228,133
+alphabeta-d4,minmax-d4,couloir_5x5,B,R,False,0,defaite,victoire R,7,2.395,3,1.133,51
+minmax-d4,alphabeta-d4,exemple_7x7,B,B,True,0,victoire,victoire B,11,7.831,6,4.314,404
+alphabeta-d4,minmax-d4,exemple_7x7,R,B,False,0,defaite,victoire B,11,7.831,5,3.464,123
+minmax-d4,alphabeta-d4,exemple_7x7,B,R,False,0,defaite,victoire R,11,7.485,5,3.239,324
+alphabeta-d4,minmax-d4,exemple_7x7,R,R,True,0,victoire,victoire R,11,7.485,6,4.195,145
+minmax-d4,alphabeta-d4,exemple_7x7,R,B,False,0,defaite,victoire B,11,7.264,5,3.306,325
+alphabeta-d4,minmax-d4,exemple_7x7,B,B,True,0,victoire,victoire B,11,7.264,6,3.909,139
+minmax-d4,alphabeta-d4,exemple_7x7,R,R,True,0,victoire,victoire R,11,7.287,6,3.685,367
+alphabeta-d4,minmax-d4,exemple_7x7,B,R,False,0,defaite,victoire R,11,7.287,5,3.551,111
+minmax-d4,alphabeta-d4,porte_raccourci,B,B,True,0,victoire,victoire B,13,6.901,7,3.712,368
+alphabeta-d4,minmax-d4,porte_raccourci,R,B,False,0,defaite,victoire B,13,6.901,6,3.13,117
+minmax-d4,alphabeta-d4,porte_raccourci,B,R,False,0,defaite,victoire R,13,6.919,6,3.204,295
+alphabeta-d4,minmax-d4,porte_raccourci,R,R,True,0,victoire,victoire R,13,6.919,7,3.655,147
+minmax-d4,alphabeta-d4,porte_raccourci,R,B,False,0,defaite,victoire B,13,6.112,6,2.763,295
+alphabeta-d4,minmax-d4,porte_raccourci,B,B,True,0,victoire,victoire B,13,6.112,7,3.295,131
+minmax-d4,alphabeta-d4,porte_raccourci,R,R,True,0,victoire,victoire R,13,6.598,7,3.527,368
+alphabeta-d4,minmax-d4,porte_raccourci,B,R,False,0,defaite,victoire R,13,6.598,6,3.013,117
+minmax-d4,alphabeta-d4,salle_fermee,B,B,True,0,nul,nul (limite de tours),80,25.192,40,10.39,1198
+alphabeta-d4,minmax-d4,salle_fermee,R,B,False,0,nul,nul (limite de tours),80,25.192,40,14.436,701
+minmax-d4,alphabeta-d4,salle_fermee,B,R,False,0,nul,nul (limite de tours),80,20.631,40,7.736,870
+alphabeta-d4,minmax-d4,salle_fermee,R,R,True,0,nul,nul (limite de tours),80,20.631,40,12.544,683
+minmax-d4,alphabeta-d4,salle_fermee,R,B,False,0,nul,nul (limite de tours),80,29.375,40,12.48,1349
+alphabeta-d4,minmax-d4,salle_fermee,B,B,True,0,nul,nul (limite de tours),80,29.375,40,16.538,791
+minmax-d4,alphabeta-d4,salle_fermee,R,R,True,0,nul,nul (limite de tours),80,17.228,40,7.999,923
+alphabeta-d4,minmax-d4,salle_fermee,B,R,False,0,nul,nul (limite de tours),80,17.228,40,8.889,492
+minmax-d4,alphabeta-d4,arene_9x9,B,B,True,0,victoire,victoire B,23,42.578,12,25.206,2406
+alphabeta-d4,minmax-d4,arene_9x9,R,B,False,0,defaite,victoire B,23,42.578,11,17.248,527
+minmax-d4,alphabeta-d4,arene_9x9,B,R,False,0,defaite,victoire R,23,44.011,11,24.471,2288
+alphabeta-d4,minmax-d4,arene_9x9,R,R,True,0,victoire,victoire R,23,44.011,12,19.427,581
+minmax-d4,alphabeta-d4,arene_9x9,R,B,False,0,defaite,victoire B,23,47.109,11,26.162,2342
+alphabeta-d4,minmax-d4,arene_9x9,B,B,True,0,victoire,victoire B,23,47.109,12,20.835,583
+minmax-d4,alphabeta-d4,arene_9x9,R,R,True,0,victoire,victoire R,23,45.36,12,26.916,2406
+alphabeta-d4,minmax-d4,arene_9x9,B,R,False,0,defaite,victoire R,23,45.36,11,18.331,527
+minmax-d4,alphabeta-d4,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,19.166,22,8.878,905
+alphabeta-d4,minmax-d4,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,19.166,21,10.1,422
+minmax-d4,alphabeta-d4,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,19.725,21,8.534,857
+alphabeta-d4,minmax-d4,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,19.725,22,10.998,436
+minmax-d4,alphabeta-d4,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,19.132,21,8.283,849
+alphabeta-d4,minmax-d4,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,19.132,22,10.66,446
+minmax-d4,alphabeta-d4,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,19.006,22,8.819,905
+alphabeta-d4,minmax-d4,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,19.006,21,9.997,422
+minmax-d4,alphabeta+-d4,couloir_5x5,B,B,True,0,defaite,victoire R,8,2.94,4,1.23,134
+alphabeta+-d4,minmax-d4,couloir_5x5,R,B,False,0,victoire,victoire R,8,2.94,4,1.675,73
+minmax-d4,alphabeta+-d4,couloir_5x5,B,R,False,0,defaite,victoire R,7,3.617,3,1.992,103
+alphabeta+-d4,minmax-d4,couloir_5x5,R,R,True,0,victoire,victoire R,7,3.617,4,1.595,73
+minmax-d4,alphabeta+-d4,couloir_5x5,R,B,False,0,victoire,victoire R,8,3.155,4,1.216,133
+alphabeta+-d4,minmax-d4,couloir_5x5,B,B,True,0,defaite,victoire R,8,3.155,4,1.904,77
+minmax-d4,alphabeta+-d4,couloir_5x5,R,R,True,0,victoire,victoire R,7,2.295,4,1.15,133
+alphabeta+-d4,minmax-d4,couloir_5x5,B,R,False,0,defaite,victoire R,7,2.295,3,1.117,51
+minmax-d4,alphabeta+-d4,exemple_7x7,B,B,True,0,victoire,victoire B,11,7.869,6,4.369,454
+alphabeta+-d4,minmax-d4,exemple_7x7,R,B,False,0,defaite,victoire B,11,7.869,5,3.453,129
+minmax-d4,alphabeta+-d4,exemple_7x7,B,R,False,0,defaite,victoire R,11,7.567,5,3.182,324
+alphabeta+-d4,minmax-d4,exemple_7x7,R,R,True,0,victoire,victoire R,11,7.567,6,4.334,149
+minmax-d4,alphabeta+-d4,exemple_7x7,R,B,False,0,defaite,victoire B,11,7.574,5,3.453,325
+alphabeta+-d4,minmax-d4,exemple_7x7,B,B,True,0,victoire,victoire B,11,7.574,6,4.074,139
+minmax-d4,alphabeta+-d4,exemple_7x7,R,R,True,0,victoire,victoire R,11,6.891,6,3.611,375
+alphabeta+-d4,minmax-d4,exemple_7x7,B,R,False,0,defaite,victoire R,11,6.891,5,3.23,125
+minmax-d4,alphabeta+-d4,porte_raccourci,B,B,True,0,nul,nul (limite de tours),80,27.609,40,11.549,1339
+alphabeta+-d4,minmax-d4,porte_raccourci,R,B,False,0,nul,nul (limite de tours),80,27.609,40,15.712,720
+minmax-d4,alphabeta+-d4,porte_raccourci,B,R,False,0,defaite,victoire R,13,6.711,6,2.857,295
+alphabeta+-d4,minmax-d4,porte_raccourci,R,R,True,0,victoire,victoire R,13,6.711,7,3.797,151
+minmax-d4,alphabeta+-d4,porte_raccourci,R,B,False,0,defaite,victoire B,13,6.785,6,3.204,295
+alphabeta+-d4,minmax-d4,porte_raccourci,B,B,True,0,victoire,victoire B,13,6.785,7,3.501,131
+minmax-d4,alphabeta+-d4,porte_raccourci,R,R,True,0,victoire,victoire R,13,6.74,7,3.195,339
+alphabeta+-d4,minmax-d4,porte_raccourci,B,R,False,0,defaite,victoire R,13,6.74,6,3.489,136
+minmax-d4,alphabeta+-d4,salle_fermee,B,B,True,0,nul,nul (limite de tours),80,28.561,40,11.878,1281
+alphabeta+-d4,minmax-d4,salle_fermee,R,B,False,0,nul,nul (limite de tours),80,28.561,40,16.303,709
+minmax-d4,alphabeta+-d4,salle_fermee,B,R,False,0,defaite,victoire R,41,11.098,20,4.274,446
+alphabeta+-d4,minmax-d4,salle_fermee,R,R,True,0,victoire,victoire R,41,11.098,21,6.643,333
+minmax-d4,alphabeta+-d4,salle_fermee,R,B,False,0,defaite,victoire B,41,17.591,20,6.953,629
+alphabeta+-d4,minmax-d4,salle_fermee,B,B,True,0,victoire,victoire B,41,17.591,21,10.394,389
+minmax-d4,alphabeta+-d4,salle_fermee,R,R,True,0,nul,nul (limite de tours),80,20.031,40,9.171,949
+alphabeta+-d4,minmax-d4,salle_fermee,B,R,False,0,nul,nul (limite de tours),80,20.031,40,10.448,514
+minmax-d4,alphabeta+-d4,arene_9x9,B,B,True,0,victoire,victoire B,23,45.27,12,27.578,2477
+alphabeta+-d4,minmax-d4,arene_9x9,R,B,False,0,defaite,victoire B,23,45.27,11,17.574,517
+minmax-d4,alphabeta+-d4,arene_9x9,B,R,False,0,defaite,victoire R,23,46.2,11,26.221,2288
+alphabeta+-d4,minmax-d4,arene_9x9,R,R,True,0,victoire,victoire R,23,46.2,12,19.871,569
+minmax-d4,alphabeta+-d4,arene_9x9,R,B,False,0,defaite,victoire B,23,45.674,11,25.869,2342
+alphabeta+-d4,minmax-d4,arene_9x9,B,B,True,0,victoire,victoire B,23,45.674,12,19.687,571
+minmax-d4,alphabeta+-d4,arene_9x9,R,R,True,0,nul,nul (limite de tours),80,147.063,40,86.105,8296
+alphabeta+-d4,minmax-d4,arene_9x9,B,R,False,0,nul,nul (limite de tours),80,147.063,40,60.562,1856
+minmax-d4,alphabeta+-d4,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,22.251,22,9.737,982
+alphabeta+-d4,minmax-d4,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,22.251,21,12.313,465
+minmax-d4,alphabeta+-d4,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,19.412,21,8.533,857
+alphabeta+-d4,minmax-d4,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,19.412,22,10.678,438
+minmax-d4,alphabeta+-d4,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,19.24,21,7.961,849
+alphabeta+-d4,minmax-d4,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,19.24,22,11.092,456
+minmax-d4,alphabeta+-d4,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,17.633,22,7.888,783
+alphabeta+-d4,minmax-d4,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,17.633,21,9.537,397
+alphabeta-d4,alphabeta+-d4,couloir_5x5,B,B,True,0,defaite,victoire R,8,3.096,4,1.459,71
+alphabeta+-d4,alphabeta-d4,couloir_5x5,R,B,False,0,victoire,victoire R,8,3.096,4,1.603,73
+alphabeta-d4,alphabeta+-d4,couloir_5x5,B,R,False,0,defaite,victoire R,7,2.718,3,1.084,51
+alphabeta+-d4,alphabeta-d4,couloir_5x5,R,R,True,0,victoire,victoire R,7,2.718,4,1.606,73
+alphabeta-d4,alphabeta+-d4,couloir_5x5,R,B,False,0,victoire,victoire R,8,3.211,4,1.589,73
+alphabeta+-d4,alphabeta-d4,couloir_5x5,B,B,True,0,defaite,victoire R,8,3.211,4,1.588,77
+alphabeta-d4,alphabeta+-d4,couloir_5x5,R,R,True,0,victoire,victoire R,7,2.973,4,1.903,73
+alphabeta+-d4,alphabeta-d4,couloir_5x5,B,R,False,0,defaite,victoire R,7,2.973,3,1.042,51
+alphabeta-d4,alphabeta+-d4,exemple_7x7,B,B,True,0,victoire,victoire B,11,7.314,6,3.884,146
+alphabeta+-d4,alphabeta-d4,exemple_7x7,R,B,False,0,defaite,victoire B,11,7.314,5,3.385,129
+alphabeta-d4,alphabeta+-d4,exemple_7x7,B,R,False,0,defaite,victoire R,11,8.015,5,3.516,116
+alphabeta+-d4,alphabeta-d4,exemple_7x7,R,R,True,0,victoire,victoire R,11,8.015,6,4.445,141
+alphabeta-d4,alphabeta+-d4,exemple_7x7,R,B,False,0,defaite,victoire B,11,6.662,5,2.956,123
+alphabeta+-d4,alphabeta-d4,exemple_7x7,B,B,True,0,victoire,victoire B,11,6.662,6,3.657,134
+alphabeta-d4,alphabeta+-d4,exemple_7x7,R,R,True,0,victoire,victoire R,11,6.878,6,3.713,145
+alphabeta+-d4,alphabeta-d4,exemple_7x7,B,R,False,0,defaite,victoire R,11,6.878,5,3.119,130
+alphabeta-d4,alphabeta+-d4,porte_raccourci,B,B,True,0,nul,nul (limite de tours),80,41.545,40,20.955,852
+alphabeta+-d4,alphabeta-d4,porte_raccourci,R,B,False,0,nul,nul (limite de tours),80,41.545,40,20.193,788
+alphabeta-d4,alphabeta+-d4,porte_raccourci,B,R,False,0,defaite,victoire R,13,5.859,6,2.659,117
+alphabeta+-d4,alphabeta-d4,porte_raccourci,R,R,True,0,victoire,victoire R,13,5.859,7,3.15,135
+alphabeta-d4,alphabeta+-d4,porte_raccourci,R,B,False,0,defaite,victoire B,13,6.226,6,2.985,117
+alphabeta+-d4,alphabeta-d4,porte_raccourci,B,B,True,0,victoire,victoire B,13,6.226,7,3.188,131
+alphabeta-d4,alphabeta+-d4,porte_raccourci,R,R,True,0,victoire,victoire R,13,6.742,7,3.298,147
+alphabeta+-d4,alphabeta-d4,porte_raccourci,B,R,False,0,defaite,victoire R,13,6.742,6,3.389,136
+alphabeta-d4,alphabeta+-d4,salle_fermee,B,B,True,0,nul,nul (limite de tours),80,33.961,40,16.973,796
+alphabeta+-d4,alphabeta-d4,salle_fermee,R,B,False,0,nul,nul (limite de tours),80,33.961,40,16.647,753
+alphabeta-d4,alphabeta+-d4,salle_fermee,B,R,False,0,defaite,victoire R,41,13.453,20,5.933,249
+alphabeta+-d4,alphabeta-d4,salle_fermee,R,R,True,0,victoire,victoire R,41,13.453,21,7.324,319
+alphabeta-d4,alphabeta+-d4,salle_fermee,R,B,False,0,defaite,victoire B,41,18.327,20,8.726,361
+alphabeta+-d4,alphabeta-d4,salle_fermee,B,B,True,0,victoire,victoire B,41,18.327,21,9.406,389
+alphabeta-d4,alphabeta+-d4,salle_fermee,R,R,True,0,nul,nul (limite de tours),80,30.445,40,16.192,683
+alphabeta+-d4,alphabeta-d4,salle_fermee,B,R,False,0,nul,nul (limite de tours),80,30.445,40,13.848,573
+alphabeta-d4,alphabeta+-d4,arene_9x9,B,B,True,0,victoire,victoire B,23,42.428,12,22.322,607
+alphabeta+-d4,alphabeta-d4,arene_9x9,R,B,False,0,defaite,victoire B,23,42.428,11,19.977,546
+alphabeta-d4,alphabeta+-d4,arene_9x9,B,R,False,0,defaite,victoire R,23,68.802,11,32.263,556
+alphabeta+-d4,alphabeta-d4,arene_9x9,R,R,True,0,victoire,victoire R,23,68.802,12,36.349,599
+alphabeta-d4,alphabeta+-d4,arene_9x9,R,B,False,0,defaite,victoire B,23,68.131,11,32.638,556
+alphabeta+-d4,alphabeta-d4,arene_9x9,B,B,True,0,victoire,victoire B,23,68.131,12,35.28,575
+alphabeta-d4,alphabeta+-d4,arene_9x9,R,R,True,0,victoire,victoire R,23,63.8,12,33.292,575
+alphabeta+-d4,alphabeta-d4,arene_9x9,B,R,False,0,defaite,victoire R,23,63.8,11,30.338,504
+alphabeta-d4,alphabeta+-d4,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,39.035,22,18.955,470
+alphabeta+-d4,alphabeta-d4,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,39.035,21,19.685,465
+alphabeta-d4,alphabeta+-d4,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,23.459,21,11.201,422
+alphabeta+-d4,alphabeta-d4,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,23.459,22,12.054,438
+alphabeta-d4,alphabeta+-d4,labyrinthe_11x11,R,B,False,0,defaite,victoire B,43,24.925,21,11.658,422
+alphabeta+-d4,alphabeta-d4,labyrinthe_11x11,B,B,True,0,victoire,victoire B,43,24.925,22,13.026,446
+alphabeta-d4,alphabeta+-d4,labyrinthe_11x11,R,R,True,0,victoire,victoire R,43,24.682,22,12.381,427
+alphabeta+-d4,alphabeta-d4,labyrinthe_11x11,B,R,False,0,defaite,victoire R,43,24.682,21,12.07,397
