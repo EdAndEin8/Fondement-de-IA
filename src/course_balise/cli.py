@@ -8,10 +8,15 @@ Exemples :
     uv run fondement-de-ia jouer salle_fermee --bleu alphabeta-d6 --rouge minmax-d4
     uv run fondement-de-ia decider exemple_7x7 --profondeur 6
     uv run fondement-de-ia raisonner salle_fermee
+    uv run fondement-de-ia decouvrir labyrinthe_11x11 --rayon 1
+    uv run fondement-de-ia jouer arene_9x9 --bleu explorateur --rouge astar
 
 Agents : aleatoire, astar, astar-manhattan, minmax-dN, alphabeta-dN,
 alphabeta+-dN (évaluation améliorée), iteratif-Nms (Alpha-Bêta itératif,
 budget de N millisecondes par coup).
+Information partielle (Partie IV) : explorateur, optimiste-dN, avec les
+suffixes facultatifs -rN (rayon de vue N, 1 par défaut) et -g (position de
+la balise connue dès le départ), par exemple explorateur-r2-g.
 """
 
 from __future__ import annotations
@@ -21,7 +26,8 @@ import re
 
 from .affichage import afficher, legende_symboles
 from .agents import (AgentAleatoire, AgentAlphaBeta, AgentAlphaBetaAmeliore,
-                     AgentAlphaBetaIteratif, AgentAStar, AgentMinMax)
+                     AgentAlphaBetaIteratif, AgentAlphaBetaOptimiste, AgentAStar,
+                     AgentExplorateur, AgentMinMax)
 from .carte import charger_carte, lister_cartes
 from .etat import BLEU, ROUGE
 from .jeu import jouer
@@ -44,6 +50,11 @@ def creer_agent(nom: str):
         return AgentAlphaBetaAmeliore(int(m[1]))
     if m := re.fullmatch(r"iteratif-(\d+)ms", nom):
         return AgentAlphaBetaIteratif(int(m[1]) / 1000)
+    if m := re.fullmatch(r"(explorateur|optimiste-d(\d+))(?:-r(\d+))?(-g)?", nom):
+        rayon = int(m[3]) if m[3] else 1
+        if m[2]:
+            return AgentAlphaBetaOptimiste(int(m[2]), rayon, bool(m[4]))
+        return AgentExplorateur(rayon, bool(m[4]))
     raise SystemExit(f"agent inconnu : {nom} (voir --help)")
 
 
@@ -73,6 +84,13 @@ def main(argv: list[str] | None = None) -> None:
     p_rai = sub.add_parser("raisonner", help="base de faits et conclusions déduites (Partie II)")
     p_rai.add_argument("carte")
     p_rai.add_argument("--rouge-commence", action="store_true")
+
+    p_dec2 = sub.add_parser("decouvrir",
+                            help="course d'un robot seul qui découvre la carte (Partie IV)")
+    p_dec2.add_argument("carte")
+    p_dec2.add_argument("--rayon", type=int, default=1)
+    p_dec2.add_argument("--balise-connue", action="store_true")
+    p_dec2.add_argument("--robot", choices=["B", "R"], default="B")
 
     p_jeu = sub.add_parser("jouer", help="simuler une partie")
     p_jeu.add_argument("carte")
@@ -145,6 +163,18 @@ def main(argv: list[str] | None = None) -> None:
         if deplacements:
             print(f"\nJustification de {format_fait(deplacements[0])} :")
             print(bc.expliquer(deplacements[0]))
+    elif args.commande == "decouvrir":
+        from .partiel.solo import course_solo
+        carte = charger_carte(args.carte)
+        agent = AgentExplorateur(args.rayon, args.balise_connue)
+        complet = course_solo(AgentAStar(), carte, args.robot)
+        r = course_solo(agent, carte, args.robot)
+        print(f"Carte connue par {agent} à la fin de la course :")
+        print(agent.memoire.afficher(r.positions[-1]))
+        total = carte.largeur * carte.hauteur
+        print(f"\n{'arrivé' if r.arrive else 'non arrivé'} en {r.pas} pas "
+              f"(carte complète : {complet.pas}), cases connues : "
+              f"{agent.memoire.nb_connues()}/{total}, décisions : {agent.modes}")
     elif args.commande == "jouer":
         carte = charger_carte(args.carte)
         r = jouer(
