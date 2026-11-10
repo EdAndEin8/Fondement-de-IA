@@ -7,6 +7,7 @@ Exemples :
     uv run fondement-de-ia jouer exemple_7x7 --bleu astar --rouge aleatoire --animation
     uv run fondement-de-ia jouer salle_fermee --bleu alphabeta-d6 --rouge minmax-d4
     uv run fondement-de-ia decider exemple_7x7 --profondeur 6
+    uv run fondement-de-ia raisonner salle_fermee
 
 Agents : aleatoire, astar, astar-manhattan, minmax-dN, alphabeta-dN,
 alphabeta+-dN (évaluation améliorée), iteratif-Nms (Alpha-Bêta itératif,
@@ -69,6 +70,10 @@ def main(argv: list[str] | None = None) -> None:
     p_dec.add_argument("--ameliore", action="store_true", help="évaluation E+")
     p_dec.add_argument("--rouge-commence", action="store_true")
 
+    p_rai = sub.add_parser("raisonner", help="base de faits et conclusions déduites (Partie II)")
+    p_rai.add_argument("carte")
+    p_rai.add_argument("--rouge-commence", action="store_true")
+
     p_jeu = sub.add_parser("jouer", help="simuler une partie")
     p_jeu.add_argument("carte")
     p_jeu.add_argument("--bleu", default="aleatoire")
@@ -117,6 +122,29 @@ def main(argv: list[str] | None = None) -> None:
             d = f(jeu, etat, args.profondeur, ev)
             print(f"{nom:<10} d={args.profondeur} : action {d.action}, valeur {d.valeur:.0f}, "
                   f"{d.stats.noeuds} nœuds, {d.stats.temps * 1000:.1f} ms")
+    elif args.commande == "raisonner":
+        from .etat import NOMS
+        from .raisonnement import ROBOT, BaseConnaissances, format_fait
+        carte = charger_carte(args.carte)
+        from .etat import etat_initial
+        etat = etat_initial(carte, ROUGE if args.rouge_commence else BLEU)
+        bc = BaseConnaissances(carte, etat)
+        r = ROBOT[etat.joueur]
+        print(afficher(etat, carte))
+        print(f"Trait à {NOMS[etat.joueur]} ({r}).")
+        print(f"\nFaits observés : {len(bc.faits_base)} ; "
+              f"faits déduits : {len(bc.faits_deduits())}.")
+        for predicat in ("deplacement_possible", "peut_ouvrir", "peut_ramasser",
+                         "coup_gagnant", "interdit"):
+            conclusions = [f for f in bc.requete(predicat) if f[1] == r]
+            if conclusions:
+                print(f"\n{predicat} :")
+                for f in conclusions:
+                    print(f"  {format_fait(f)}")
+        deplacements = [f for f in bc.requete("deplacement_possible") if f[1] == r]
+        if deplacements:
+            print(f"\nJustification de {format_fait(deplacements[0])} :")
+            print(bc.expliquer(deplacements[0]))
     elif args.commande == "jouer":
         carte = charger_carte(args.carte)
         r = jouer(
