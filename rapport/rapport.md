@@ -18,16 +18,57 @@ Le jeu, les objectifs, le plan du rapport. *(à rédiger)*
 ## 3. Partie I — Recherche et planification
 
 ### 3.1 Formulation
-État de recherche (position, clé, clés au sol, portes ouvertes) ; adversaire = obstacle fixe ; coût unitaire.
+
+L'adversaire est considéré comme un obstacle fixe à sa position actuelle, et chaque déplacement coûte 1. L'état de recherche est `(position, clé, clés au sol, portes ouvertes)` : la position seule ne suffit pas. Sur `porte_raccourci`, par exemple, la case (3, 0) n'a pas le même avenir selon que le robot a ramassé la clé ou non. Le problème (`recherche/probleme.py`) réutilise la fonction `deplacement` du simulateur.
 
 ### 3.2 Algorithmes et heuristiques
-BFS, UCS, DFS, A* ; heuristiques Manhattan, distance relaxée, détour par clé. Preuve d'admissibilité par relaxation, vérifiée par test.
+
+Les quatre algorithmes sont des recherches en graphe (`recherche/algorithmes.py`) :
+
+| Algorithme | Frontière | Test de but | Optimal (coût unitaire) |
+|---|---|---|---|
+| BFS | file FIFO | à la génération | oui |
+| DFS | pile | au retrait | non |
+| UCS | tas sur g | au retrait | oui |
+| A* | tas sur f = g + h | au retrait | oui si h est admissible |
+
+Trois heuristiques sont obtenues en relâchant des contraintes, ce qui les rend admissibles et cohérentes :
+
+1. `manhattan` : ignore murs, portes et adversaire (heuristique de l'énoncé) ;
+2. `relaxee` : distance exacte sur la carte où toutes les portes seraient ouvertes (un BFS depuis G, précalculé) ;
+3. `cles` : comme `relaxee`, mais si toute route vers G traverse une porte fermée et que le robot n'a pas de clé, elle impose le détour par la meilleure clé, `min_k d(pos, k) + d(k, G)`.
+
+L'admissibilité est vérifiée par un test : pour tout état atteignable de chaque carte, `h(s) ≤ h*(s)`, où `h*` est calculé par BFS.
 
 ### 3.3 Résultats
-Tableau complet : `resultats/recherche.md`. Graphique nœuds développés par algorithme et par carte. *(à rédiger)*
+
+Tableau complet, avec les nœuds générés, la taille maximale de la frontière, le temps et le pic mémoire : `resultats/recherche.md` (`experiences/comparaison_recherche.py`). Nœuds développés pour Bleu :
+
+| Carte | BFS | UCS | DFS (longueur) | A* Manhattan | A* relaxée | A* clés | Longueur optimale |
+|---|---|---|---|---|---|---|---|
+| exemple_7x7 | 12 | 17 | 21 (20) | 6 | 6 | 6 | 6 |
+| porte_raccourci | 19 | 24 | 13 (13) | 10 | 7 | 7 | 7 |
+| salle_fermee | 44 | 46 | 40 (21) | 41 | 35 | 21 | 21 |
+| labyrinthe_11x11 | 62 | 70 | 74 (54) | 34 | 22 | 22 | 22 |
+| grand_labyrinthe_25x25 | 430 | 443 | 142 (100) | 349 | 209 | 62 | 62 |
+
+- DFS développe parfois peu de nœuds, mais ses chemins sont bien trop longs : 20 coups au lieu de 6 sur `exemple_7x7`, 100 au lieu de 62 sur le grand labyrinthe.
+- À coût unitaire, UCS développe les mêmes niveaux que BFS, avec un peu plus de nœuds car il teste le but au retrait.
+- Manhattan est peu informée dans un labyrinthe : elle ignore les détours imposés par les murs.
+- Quand la balise est enfermée derrière une porte (`salle_fermee`, grand labyrinthe), seule l'heuristique « clés » voit le détour obligatoire : A* ne développe alors que les nœuds du chemin optimal (62 contre 430 pour BFS).
+- Les temps restent de l'ordre de la milliseconde (2,8 ms pour BFS sur le 25 × 25), et le pic mémoire sous 105 Kio. À cette échelle, le nombre de nœuds est la mesure la plus fiable : le coût de construction des heuristiques (BFS précalculés) n'est pas négligeable devant celui de la recherche.
 
 ### 3.4 Plus court chemin et vraie partie
-Démonstration `experiences/plan_fige.py`. *(à rédiger, voir docs/seance1.md §4)*
+
+`experiences/plan_fige.py salle_fermee` fait suivre à chaque robot son plan initial sans le recalculer. Les deux robots sont à 4 cases de l'unique clé, et leurs plans de 21 coups commencent tous deux par aller la chercher. Bleu joue en premier et la ramasse au tour 6. Au tour 7, l'action prévue par Rouge l'enverrait sur la case de Bleu : le plan est caduc, et de toute façon la clé a disparu.
+
+Le plus court chemin calculé sans adversaire devient sous-optimal pour trois raisons :
+
+1. l'adversaire bouge et peut bloquer un couloir (R3) ;
+2. les ressources sont partagées : une clé ramassée par l'autre disparaît (R4), et une porte qu'il ouvre sert aux deux (R5) ;
+3. c'est une course : le plus court chemin pour soi n'est pas toujours le coup qui maximise ses chances de gagner. Gêner l'adversaire ou lui prendre la clé peut valoir un détour.
+
+L'agent A* qui replanifie à chaque tour corrige en partie le premier point (en partie, il gagne en 41 tours sur `salle_fermee` en commençant), mais pas les deux autres : il faut anticiper les réponses de l'adversaire, ce que font les agents de la Partie III.
 
 ## 4. Partie II — Connaissances et raisonnement
 
@@ -183,6 +224,63 @@ Appliquer Min-Max à l'état réel reviendrait à faire décider le robot avec d
 
 Sinon, l'agent se comporte comme l'explorateur. Cette approximation ne prétend pas résoudre le jeu à information imparfaite : elle traite le jeu supposé comme s'il était le vrai. Elle reste sûre, car le coup choisi est toujours légal (les voisines sont observées), mais elle peut se tromper sur la suite. En pratique, avec un rayon de 1, l'adversaire n'est visible que lorsqu'il est collé au robot : Alpha-Bêta n'est utilisé que pour 8 % des décisions au plus selon la variante et l'adversaire, et jusqu'à 15 % avec un rayon de 2.
 
-## 7. Partie V — Campagne d'évaluation *(à venir)*
+## 7. Partie V — Campagne d'évaluation
+
+Script : `experiences/campagne.py` ; résultats complets : `resultats/campagne.md`, une ligne par agent et par partie dans `resultats/campagne.csv`.
+
+### 7.1 Protocole
+
+- **Agents** : aléatoire, A* (heuristique « clés », plan recalculé après chaque action adverse), Min-Max, Alpha-Bêta (coups triés par E) et Alpha-Bêta avec l'évaluation améliorée E+, tous à profondeur 4.
+- **Cartes** : `couloir_5x5`, `exemple_7x7`, `porte_raccourci`, `salle_fermee`, `arene_9x9`, `labyrinthe_11x11` (le 25 × 25 est exclu, voir 2.3).
+- **Configurations** : chaque paire d'agents joue dans 4 configurations, en inversant les couleurs (donc les positions de départ) et le joueur qui commence. Les cartes étant symétriques, inverser le premier joueur est indispensable.
+- **Graines** : 0 à 9 pour les parties contre l'agent aléatoire ; les autres agents sont déterministes, une partie par configuration suffit. Dans `jouer`, Bleu reçoit la graine 2g et Rouge 2g + 1.
+- **Total** : 1 104 parties, en 16 s environ. Les temps sont ceux du calcul des agents, sans affichage.
+
+### 7.2 Résultats par agent
+
+| Agent | Parties | Victoires | Nuls | Défaites | Tours moyens | Durée d'une partie (ms) | Temps par décision (ms) | Nœuds par décision |
+|---|---|---|---|---|---|---|---|---|
+| aléatoire | 960 | 3 % | 10 % | 87 % | 29,2 | 10,0 | 0,005 | 0 |
+| A* | 312 | 87 % | 2 % | 12 % | 24,3 | 6,8 | 0,36 | 8 |
+| Min-Max d = 4 | 312 | 69 % | 18 % | 13 % | 32,6 | 15,3 | 0,79 | 63 |
+| Alpha-Bêta d = 4 | 312 | 72 % | 16 % | 12 % | 30,1 | 12,8 | 0,69 | 23 |
+| Alpha-Bêta E+ d = 4 | 312 | 79 % | 6 % | 15 % | 28,3 | 12,8 | 0,72 | 23 |
+
+Résultats par paire, en victoires / nuls / défaites de l'agent en ligne :
+
+| | aléatoire | A* | Min-Max | Alpha-Bêta | Alpha-Bêta E+ |
+|---|---|---|---|---|---|
+| A* | 235/1/4 | – | 12/2/10 | 12/2/10 | 12/0/12 |
+| Min-Max | 188/45/7 | 10/2/12 | – | 10/4/10 | 8/4/12 |
+| Alpha-Bêta | 197/40/3 | 10/2/12 | 10/4/10 | – | 9/3/12 |
+| Alpha-Bêta E+ | 212/11/17 | 12/0/12 | 12/4/8 | 12/3/9 | – |
+
+- Entre agents déterministes, **le joueur qui commence gagne 81 % des parties** et n'en perd que 8 %. Sur des cartes symétriques, à force comparable, avoir un demi-coup d'avance suffit. Les seules défaites du premier joueur ont lieu sur `couloir_5x5`, la seule carte asymétrique : Rouge y est à 4 pas de G, Bleu à 6.
+- A* fait jeu égal avec les agents adversariaux (12 victoires sur 24 contre chacun) et bat le mieux l'aléatoire. Sur ces cartes, la partie est surtout une course : aller droit au but est presque toujours le bon coup.
+- Alpha-Bêta E+ est l'agent adversarial le plus efficace (79 %), grâce à `salle_fermee`, où il gagne 75 % de ses parties contre 0 % pour Min-Max et Alpha-Bêta avec E.
+
+### 7.3 Min-Max et Alpha-Bêta à profondeur identique
+
+Min-Max (ordre naturel) contre Alpha-Bêta (tri par E), même évaluation E, 4 configurations par carte, nœuds par décision :
+
+| d | exemple_7x7 | porte_raccourci | salle_fermee | arene_9x9 | labyrinthe_11x11 |
+|---|---|---|---|---|---|
+| 2 | 10 / 8 | 9 / 7 | 7 / 6 | 18 / 11 | 8 / 7 |
+| 4 | 65 / 24 | 51 / 20 | 27 / 17 | 205 / 48 | 41 / 20 |
+| 6 | 397 / 57 | 285 / 44 | 103 / 37 | 2 408 / 164 | 195 / 49 |
+
+- Les deux agents ont le même résultat dans presque toutes les configurations : chacun gagne quand il commence, et `salle_fermee` donne des nuls. À d = 6 sur `salle_fermee`, Alpha-Bêta gagne deux parties que Min-Max ne gagne pas : les deux algorithmes ont la même valeur Min-Max, mais ils départagent différemment les coups ex æquo (ordre naturel contre tri par E), ce qui change la partie.
+- L'élagage économise 14 à 40 % des nœuds à d = 2, 39 à 77 % à d = 4 et 64 à 93 % à d = 6. Dans l'arène à d = 6, la décision passe de 35,6 ms à 7,7 ms.
+- À d = 2, Alpha-Bêta est un peu **plus lent** que Min-Max malgré moins de nœuds (0,39 ms contre 0,27 ms dans l'arène) : le tri des coups coûte une évaluation par coup, plus que ce que l'élagage fait gagner sur un arbre aussi petit.
+
+### 7.4 Échecs et décisions surprenantes
+
+**Les nuls de `salle_fermee` (effet d'horizon).** Avec E, Min-Max et Alpha-Bêta d = 4 font 20 nuls sur 20 contre l'aléatoire sur cette carte, et aussi contre A* quand ils commencent. Ouvrir la porte consomme la clé et ouvre le passage à l'adversaire : E chute, alors que la victoire est au-delà de l'horizon (5 demi-coups, voir 5.4). Le robot reste devant la porte jusqu'à la limite de 80 tours. L'évaluation E+, qui estime la course, corrige ce défaut.
+
+**Alpha-Bêta E+ battu par l'aléatoire sur `couloir_5x5`.** En Bleu, l'agent E+ perd 16 parties sur 20 contre l'agent aléatoire, et certaines durent plus de 50 tours. Bleu est à 6 pas de G, Rouge à 4 : E+ juge la course perdue, et sa valeur ne dépend plus que de la distance de Rouge. Tous les coups de Bleu se valent, et il oscille entre deux cases (S, N, S, N...) en attendant que l'aléatoire tombe sur G. Min-Max suppose un adversaire optimal : contre lui la position est perdue, mais pas contre un joueur aléatoire. Avec E, qui garde le terme `dR − dB`, Bleu continue d'avancer et ne perd que 3 parties sur 20. Il suffirait d'ajouter à E+ un petit terme sur la distance du robot en retard pour garder un gradient.
+
+**Les oscillations entre coups ex æquo.** Min-Max, qui explore dans l'ordre naturel, fait 5 nuls sur 20 contre l'aléatoire dans l'arène, en Rouge : à l'horizon plusieurs coups ont la même valeur, et le premier de l'ordre fait reculer le robot. Alpha-Bêta, qui trie les coups par E, ne fait aucun nul dans la même situation. C'est le défaut déjà observé en séance 2.
+
+**A* aussi fort que Min-Max à d = 4.** Sur des cartes symétriques où la course domine, anticiper 4 demi-coups n'apporte presque rien contre un adversaire qui va droit au but. Les situations où l'anticipation compte (bloquer un couloir, prendre la clé de l'autre) sont rares dans nos cartes, et demandent souvent une profondeur supérieure à 4.
 
 ## 8. Conclusion et limites *(à rédiger)*
